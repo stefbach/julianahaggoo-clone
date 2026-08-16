@@ -1,1395 +1,2209 @@
-<!-- RD Navbar Simple submenu-->
 <!DOCTYPE html>
-
-<html class="wow-animation" lang="en">
+<html lang="en" class="no-js">
 
 <head>
-
-  <title>Portfolio</title>
-
   <meta charset="utf-8">
-
+  <title>Portfolio — Juliana Haggoo, Artist Painter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description"
+    content="The complete body of work of Juliana Haggoo — 36 oil and acrylic paintings from 2009 to 2025.">
+  <meta name="keywords" content="Juliana Haggoo, artist painter, oil painting, acrylic painting, contemporary art">
+  <meta name="theme-color" content="#0a0a0b">
   <meta name="format-detection" content="telephone=no">
 
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio — Juliana Haggoo">
+  <meta property="og:description" content="36 oil and acrylic paintings, 2009–2025.">
+  <meta property="og:image" content="https://www.julianahaggoo.art/images/gallery/summer-2025-1400.webp">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-
-  <meta name="keywords" content="Juliana Haggoo - Artist Painter">
-
-  <meta name="date" content="May 25">
-
-  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
-
-  <link rel="stylesheet" type="text/css"
-    href="https://fonts.googleapis.com/css?family=Questrial%7CPlayfair+Display:400,700%7CLato:400,300">
-
-  <link rel="stylesheet" href="css/bootstrap.css">
-
-  <link rel="stylesheet" href="css/fonts.css">
-
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://www.julianahaggoo.art/portfolio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 
   <style>
-    .title-box {
+    /* ==========================================================================
+       Juliana Haggoo — Portfolio
+       A self-contained gallery: no framework, no runtime dependency, one document.
+       ========================================================================== */
 
-      position: relative;
+    :root {
+      --bg: #0a0a0b;
+      --bg-raised: #131316;
+      --bg-sunken: #060607;
+      --ink: #f4f1ec;
+      --ink-dim: #a9a49d;
+      --ink-faint: #78736d;
+      --line: rgba(255, 255, 255, .11);
+      --line-strong: rgba(255, 255, 255, .24);
+      --accent: #e6dccb;
 
-      background-image: url('images/image-01-1920x1080.webp') !important;
+      --serif: "Playfair Display", "Iowan Old Style", Georgia, serif;
+      --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
 
-      background-size: cover;
+      --shell: clamp(1.25rem, 4.5vw, 5rem);
+      --gap: clamp(1rem, 1.8vw, 2rem);
+      --head-h: 4.25rem;
 
-      background-position: center center;
-
-      height: 30vh;
-      /* Adjust the height as needed */
-
-      display: flex;
-
-      justify-content: center;
-
-      align-items: center;
-
-      text-align: center;
-
-      color: #fff;
-      /* Change text color to match your design */
-
+      --ease: cubic-bezier(.22, .61, .36, 1);
+      --ease-out: cubic-bezier(.16, 1, .3, 1);
+      --speed: .5s;
     }
 
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
 
+    html {
+      -webkit-text-size-adjust: 100%;
+      scroll-behavior: smooth;
+    }
 
-    /* Style for the centered image */
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
 
-    .centered-image {
-
+    img {
+      display: block;
       max-width: 100%;
-
-      max-height: 100%;
-
+      height: auto;
     }
 
-    .thumbnail-apollo p{
-      max-height: none !important;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+      color: inherit;
+      background: none;
+      border: 0;
+      cursor: pointer;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-weight: 400;
+      line-height: 1.05;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    :where(a, button, select, [tabindex]):focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .u-visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+
+    .u-eyebrow {
+      font-size: .6875rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .skip-link {
+      position: fixed;
+      top: .5rem;
+      left: .5rem;
+      z-index: 200;
+      padding: .75rem 1.25rem;
+      background: var(--ink);
+      color: var(--bg);
+      border-radius: 999px;
+      transform: translateY(-150%);
+      transition: transform .2s var(--ease);
+    }
+
+    .skip-link:focus-visible {
+      transform: none;
+    }
+
+    /* Film grain — one fixed layer, never repainted. -------------------------- */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      pointer-events: none;
+      opacity: .035;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* Scroll progress — pure CSS where the browser supports it. --------------- */
+    .scroll-sentinel {
+      position: absolute;
+      top: 0;
+      width: 1px;
+      height: 1px;
+    }
+
+    .progress {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 101;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), #fff);
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+    }
+
+    @supports (animation-timeline: scroll()) {
+      .progress {
+        animation: progress-grow linear both;
+        animation-timeline: scroll(root block);
+      }
+
+      @keyframes progress-grow {
+        to {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    /* ---------------------------------------------------------------- header */
+    .masthead {
+      position: fixed;
+      inset: 0 0 auto;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      height: var(--head-h);
+      padding-inline: var(--shell);
+      border-bottom: 1px solid transparent;
+      transition: background-color .4s var(--ease), border-color .4s var(--ease), backdrop-filter .4s var(--ease);
+    }
+
+    .masthead[data-stuck],
+    .no-js .masthead {
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: blur(22px) saturate(130%);
+      -webkit-backdrop-filter: blur(22px) saturate(130%);
+      border-bottom-color: var(--line);
+    }
+
+    .masthead__brand img {
+      width: clamp(9rem, 16vw, 12.5rem);
+      height: auto;
+    }
+
+    .masthead__nav {
+      margin-left: auto;
+      display: flex;
+      gap: clamp(1.25rem, 2.5vw, 2.5rem);
+      align-items: center;
+    }
+
+    .masthead__nav a {
+      position: relative;
+      padding: .5rem 0;
+      font-size: .8125rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-dim);
+      transition: color .3s var(--ease);
+    }
+
+    .masthead__nav a::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 .15rem;
+      height: 1px;
+      background: currentColor;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition: transform .45s var(--ease-out);
+    }
+
+    .masthead__nav a:hover,
+    .masthead__nav a[aria-current] {
+      color: var(--ink);
+    }
+
+    .masthead__nav a:hover::after,
+    .masthead__nav a[aria-current]::after {
+      transform: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      margin-left: auto;
+      width: 2.75rem;
+      height: 2.75rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-toggle span {
+      position: relative;
+      display: block;
+      width: 1.375rem;
+      height: 1px;
+      background: var(--ink);
+    }
+
+    .menu-toggle span::before,
+    .menu-toggle span::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: inherit;
+    }
+
+    .menu-toggle span::before {
+      top: -.375rem;
+    }
+
+    .menu-toggle span::after {
+      top: .375rem;
+    }
+
+    @media (max-width: 47.99em) {
+      .masthead__nav {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    /* Mobile drawer — a native dialog, so focus and Esc come for free. -------- */
+    .drawer {
+      width: min(24rem, 100vw);
+      max-width: 100%;
+      height: 100%;
+      max-height: 100%;
+      margin: 0 0 0 auto;
+      padding: var(--shell);
+      border: 0;
+      background: var(--bg-raised);
+      color: var(--ink);
+    }
+
+    .drawer::backdrop {
+      background: rgba(0, 0, 0, .6);
+      backdrop-filter: blur(6px);
+    }
+
+    .drawer[open] {
+      animation: drawer-in .4s var(--ease-out);
+    }
+
+    @keyframes drawer-in {
+      from {
+        transform: translateX(100%);
+      }
+    }
+
+    .drawer__close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .drawer nav {
+      display: grid;
+      gap: .25rem;
+      margin-top: 4rem;
+    }
+
+    .drawer nav a {
+      padding: .75rem 0;
+      font-family: var(--serif);
+      font-size: clamp(1.25rem, 5.5vw, 1.75rem);
+      line-height: 1.25;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .drawer__contact {
+      margin-top: 2.5rem;
+      display: grid;
+      gap: .5rem;
+      font-size: .875rem;
+      color: var(--ink-dim);
+    }
+
+    /* ------------------------------------------------------------------ hero */
+    .hero {
+      position: relative;
+      display: grid;
+      align-content: end;
+      min-height: min(88svh, 52rem);
+      padding: calc(var(--head-h) + 4rem) var(--shell) clamp(2.5rem, 6vw, 5rem);
+      overflow: clip;
+      isolation: isolate;
+    }
+
+    /* Backdrop built from the paintings' own 20px placeholders: no extra bytes. */
+    .hero__aura {
+      position: absolute;
+      inset: -20%;
+      z-index: -2;
+      filter: blur(72px) saturate(165%);
+      opacity: .66;
+    }
+
+    .hero__aura span {
+      position: absolute;
+      width: 46%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      animation: drift 34s var(--ease) infinite alternate;
+      animation-delay: calc(var(--i) * -6s);
+    }
+
+    .hero__aura span:nth-child(1) {
+      top: 4%;
+      left: 2%;
+    }
+
+    .hero__aura span:nth-child(2) {
+      top: 30%;
+      left: 34%;
+    }
+
+    .hero__aura span:nth-child(3) {
+      top: 2%;
+      right: 6%;
+    }
+
+    .hero__aura span:nth-child(4) {
+      bottom: 2%;
+      left: 18%;
+    }
+
+    .hero__aura span:nth-child(5) {
+      bottom: 6%;
+      right: 12%;
+    }
+
+    @keyframes drift {
+      to {
+        transform: translate3d(6%, -8%, 0) scale(1.25);
+      }
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(120% 80% at 50% 0%, transparent, var(--bg) 78%),
+        linear-gradient(180deg, rgba(10, 10, 11, .55), rgba(10, 10, 11, .82) 55%, var(--bg));
+    }
+
+    .hero__title {
+      font-family: var(--serif);
+      font-size: clamp(3.75rem, 17vw, 17rem);
+      line-height: .82;
+      letter-spacing: -.03em;
+      margin: clamp(1rem, 2vw, 2rem) 0 0;
+    }
+
+    .hero__title span {
+      display: inline-block;
+      animation: letter-rise .9s var(--ease-out) both;
+      animation-delay: calc(var(--i) * 45ms);
+    }
+
+    @keyframes letter-rise {
+      from {
+        opacity: 0;
+        transform: translateY(.42em) rotate(2deg);
+      }
+    }
+
+    .hero__lede {
+      max-width: 36rem;
+      margin: clamp(1.5rem, 3vw, 2.5rem) 0 0;
+    }
+
+    .hero__lede blockquote {
+      margin: 0;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(1.0625rem, 1.6vw, 1.375rem);
+      line-height: 1.5;
+      color: var(--ink-dim);
+    }
+
+    .hero__lede figcaption {
+      margin-top: .75rem;
+      font-size: .75rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .hero__lede a {
+      border-bottom: 1px solid var(--line-strong);
+      transition: color .3s var(--ease);
+    }
+
+    .hero__lede a:hover {
+      color: var(--ink);
+    }
+
+    .hero__facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 clamp(1.5rem, 4vw, 3.5rem);
+      margin-top: clamp(2rem, 4vw, 3.5rem);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      list-style: none;
+      padding-inline-start: 0;
+    }
+
+    .hero__facts b {
+      display: block;
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--ink);
+    }
+
+    /* ------------------------------------------------------------ filter bar */
+    .controls {
+      position: sticky;
+      top: var(--head-h);
+      z-index: 80;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .75rem 1.5rem;
+      padding: 1rem var(--shell);
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(22px) saturate(130%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      border-block: 1px solid var(--line);
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .375rem;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      min-inline-size: 0;
+    }
+
+    .chip {
+      min-height: 2.25rem;
+      padding: .3125rem 1rem;
+      font-size: .8125rem;
+      letter-spacing: .06em;
+      color: var(--ink-dim);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      transition: color .3s var(--ease), border-color .3s var(--ease), background-color .3s var(--ease);
+    }
+
+    .chip:hover {
+      color: var(--ink);
+      border-color: var(--line-strong);
+    }
+
+    .chip[aria-pressed="true"] {
+      color: var(--bg);
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .field {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+    }
+
+    .field select {
+      min-height: 2.25rem;
+      padding: .3125rem 2rem .3125rem .75rem;
+      font-family: inherit;
+      font-size: .8125rem;
+      letter-spacing: .04em;
+      text-transform: none;
+      color: var(--ink);
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='none' stroke='%23a9a49d'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right .75rem center;
+      background-size: .625rem;
+    }
+
+    .field select option {
+      color: #111;
+      background: #fff;
+    }
+
+    .controls__count {
+      margin-left: auto;
+      font-size: .8125rem;
+      color: var(--ink-faint);
+      font-variant-numeric: tabular-nums;
+    }
+
+    @media (max-width: 47.99em) {
+      .controls {
+        gap: .5rem .875rem;
+        padding: .75rem var(--shell);
+      }
+
+      .chip {
+        min-height: 2.125rem;
+        padding: .25rem .8125rem;
+        font-size: .75rem;
+      }
+
+      .field {
+        gap: .375rem;
+        font-size: .6875rem;
+      }
+
+      .controls__count {
+        margin-left: auto;
+      }
+    }
+
+    /* --------------------------------------------------------------- gallery */
+    .gallery-wrap {
+      padding: clamp(2.5rem, 6vw, 5rem) var(--shell) clamp(4rem, 9vw, 8rem);
+    }
+
+    /* No-JS / pre-hydration baseline: real masonry via columns. */
+    .gallery {
+      columns: 4 17rem;
+      column-gap: var(--gap);
+    }
+
+    .card {
+      break-inside: avoid;
+      margin-bottom: var(--gap);
+    }
+
+    /* Hydrated: absolutely positioned, transform-driven, transition-friendly. */
+    .gallery.is-live {
+      position: relative;
+      columns: auto;
+      column-gap: normal;
+    }
+
+    .gallery.is-live .card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      will-change: transform;
+      transition: transform .62s var(--ease-out), opacity .4s var(--ease);
+    }
+
+    .gallery.is-resizing .card {
+      transition: none;
+    }
+
+    .card[data-out] {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .card__inner {
+      position: relative;
+    }
+
+    .gallery.is-live .card__inner {
+      opacity: 0;
+      transform: translateY(2rem);
+      transition: opacity .8s var(--ease-out), transform .8s var(--ease-out);
+      transition-delay: var(--reveal-delay, 0ms);
+    }
+
+    .gallery.is-live .card[data-in] .card__inner {
+      opacity: 1;
+      transform: none;
+    }
+
+    .card__frame {
+      position: relative;
+      overflow: hidden;
+      background-color: var(--bg-raised);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card__frame::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      box-shadow: inset 0 0 0 1px var(--line);
+      transition: box-shadow .5s var(--ease);
+    }
+
+    .card__frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity .7s var(--ease), transform .9s var(--ease-out);
+    }
+
+    html:not(.no-js) .card__frame img:not(.is-loaded) {
+      opacity: 0;
+      transform: scale(1.02);
+    }
+
+    .card__link:hover .card__frame img,
+    .card__link:focus-visible .card__frame img {
+      transform: scale(1.045);
+    }
+
+    .card__link:hover .card__frame::after,
+    .card__link:focus-visible .card__frame::after {
+      box-shadow: inset 0 0 0 1px var(--line-strong);
+    }
+
+    .card__body {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: .875rem .125rem 0;
+    }
+
+    .card__title {
+      font-family: var(--serif);
+      font-size: clamp(1.0625rem, 1.4vw, 1.3125rem);
+      letter-spacing: -.01em;
+    }
+
+    .card__link:hover .card__title,
+    .card__link:focus-visible .card__title {
+      color: var(--accent);
+    }
+
+    .card__spec {
+      margin-top: .1875rem;
+      font-size: .8125rem;
+      color: var(--ink-faint);
+    }
+
+    .card__spec span + span::before {
+      content: "·";
+      margin: 0 .5em;
+      color: var(--line-strong);
+    }
+
+    .card__tag {
+      margin-left: auto;
+      flex: none;
+      font-size: .75rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--ink-dim);
+      white-space: nowrap;
+    }
+
+    .card__tag[data-sold] {
+      color: var(--ink-faint);
+    }
+
+    /* The zoom affordance sits above the link, never inside it. */
+    .card__zoom {
+      position: absolute;
+      top: .625rem;
+      right: .625rem;
+      display: grid;
+      place-items: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      color: var(--bg);
+      background: color-mix(in srgb, var(--ink) 92%, transparent);
+      border-radius: 50%;
+      opacity: 0;
+      transform: scale(.85);
+      transition: opacity .35s var(--ease), transform .35s var(--ease-out), background-color .3s var(--ease);
+    }
+
+    .card:hover .card__zoom,
+    .card__zoom:focus-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (hover: none) {
+      .card__zoom {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .card__zoom svg {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .gallery-empty {
+      display: grid;
+      justify-items: center;
+      gap: 1.25rem;
+      padding: 5rem 0;
+      text-align: center;
+      color: var(--ink-dim);
+    }
+
+    .gallery-empty[hidden] {
+      display: none;
+    }
+
+    /* -------------------------------------------------------------- lightbox */
+    .viewer {
+      width: 100vw;
+      max-width: 100vw;
+      height: 100dvh;
+      max-height: 100dvh;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: var(--bg-sunken);
+      color: var(--ink);
+      overflow: hidden;
+    }
+
+    .viewer::backdrop {
+      background: #000;
+    }
+
+    .viewer[open] {
+      animation: viewer-in .35s var(--ease-out);
+    }
+
+    @keyframes viewer-in {
+      from {
+        opacity: 0;
+      }
+    }
+
+    .viewer__stage {
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      height: 100%;
+    }
+
+    .viewer__canvas {
+      position: relative;
+      display: grid;
+      /* An explicit fractional row keeps the plate's max-height percentage
+         resolvable — an auto row would make it cyclic, and be ignored. */
+      grid-template-rows: minmax(0, 1fr);
+      place-items: center;
+      min-height: 0;
+      padding: clamp(3.5rem, 7vw, 5rem) clamp(1rem, 8vw, 7rem) 1rem;
+    }
+
+    .viewer__canvas img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      object-fit: contain;
+      box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, .6);
+      animation: plate-in .45s var(--ease-out);
+    }
+
+    @keyframes plate-in {
+      from {
+        opacity: 0;
+        transform: scale(.985);
+      }
+    }
+
+    .viewer__bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      gap: .75rem 2rem;
+      padding: 1.25rem var(--shell) max(1.25rem, env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line);
+    }
+
+    .viewer__title {
+      font-family: var(--serif);
+      font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+    }
+
+    .viewer__spec {
+      margin-top: .25rem;
+      font-size: .8125rem;
+      color: var(--ink-faint);
+    }
+
+    .viewer__spec span + span::before {
+      content: "·";
+      margin: 0 .5em;
+      color: var(--line-strong);
+    }
+
+    .viewer__actions {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .viewer__link {
+      min-height: 2.5rem;
+      display: inline-flex;
+      align-items: center;
+      padding: .375rem 1.25rem;
+      font-size: .8125rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      border: 1px solid var(--line-strong);
+      border-radius: 999px;
+      transition: color .3s var(--ease), background-color .3s var(--ease);
+    }
+
+    .viewer__link:hover {
+      color: var(--bg);
+      background: var(--ink);
+    }
+
+    .viewer__nav {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      display: grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      margin-top: -1.5rem;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: color-mix(in srgb, var(--bg) 60%, transparent);
+      transition: background-color .3s var(--ease), color .3s var(--ease);
+    }
+
+    .viewer__nav:hover {
+      color: var(--bg);
+      background: var(--ink);
+    }
+
+    .viewer__nav--prev {
+      left: clamp(.5rem, 2vw, 1.5rem);
+    }
+
+    .viewer__nav--next {
+      right: clamp(.5rem, 2vw, 1.5rem);
+    }
+
+    .viewer__close {
+      position: absolute;
+      top: clamp(.75rem, 2vw, 1.5rem);
+      right: clamp(.75rem, 2vw, 1.5rem);
+      z-index: 2;
+      width: 2.75rem;
+      height: 2.75rem;
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    .viewer__index {
+      position: absolute;
+      z-index: 2;
+      top: clamp(1rem, 2vw, 1.75rem);
+      left: var(--shell);
+      font-size: .8125rem;
+      color: var(--ink-faint);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ---------------------------------------------------------------- footer */
+    .footer {
+      padding: clamp(3rem, 7vw, 6rem) var(--shell) clamp(2rem, 4vw, 3rem);
+      border-top: 1px solid var(--line);
+      background: var(--bg-sunken);
+    }
+
+    .footer__grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem 4rem;
+      align-items: flex-start;
+    }
+
+    .footer__cta {
+      font-family: var(--serif);
+      font-size: clamp(1.75rem, 5vw, 3.25rem);
+      line-height: 1.1;
+      max-width: 18ch;
+    }
+
+    .footer__cta a {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: .12em;
+      transition: color .3s var(--ease);
+    }
+
+    .footer__cta a:hover {
+      color: var(--accent);
+    }
+
+    .footer__col {
+      display: grid;
+      gap: .375rem;
+      font-size: .875rem;
+      color: var(--ink-dim);
+    }
+
+    .footer__col a:hover {
+      color: var(--ink);
+    }
+
+    .footer__base {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem 1.5rem;
+      margin-top: clamp(2.5rem, 5vw, 4rem);
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      font-size: .75rem;
+      color: var(--ink-faint);
+    }
+
+    /* ------------------------------------------------------- reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .gallery.is-live .card__inner {
+        opacity: 1;
+        transform: none;
+      }
+
+      .card__frame img {
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
-
 </head>
 
 <body>
+  <a class="skip-link" href="#gallery">Skip to the gallery</a>
+  <div class="scroll-sentinel" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
 
-  <!-- Page-->
+  <header class="masthead">
+    <a class="masthead__brand" href="index.html" aria-label="Juliana Haggoo — home">
+      <img src="images/brand.png" width="984" height="91" alt="Juliana Haggoo">
+    </a>
 
-  <div class="page text-center">
+    <nav class="masthead__nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about-me.html">About</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="events.html">Events</a>
+      <a href="mailto:jh@julianahaggoo.art">Contact</a>
+    </nav>
 
-    <!-- Page Head-->
+    <button class="menu-toggle" type="button" data-menu-open aria-label="Open menu"><span></span></button>
+  </header>
 
-    <header class="page-head">
+  <dialog class="drawer" id="drawer" aria-label="Menu">
+    <button class="drawer__close" type="button" data-menu-close aria-label="Close menu">&times;</button>
+    <nav aria-label="Primary, mobile">
+      <a href="index.html">Home</a>
+      <a href="about-me.html">About Me</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="events.html">Events</a>
+      <a href="the-temptation.html">Dark &amp; Light: The Temptation</a>
+    </nav>
+    <div class="drawer__contact">
+      <a href="tel:+33665087560">+33 6 65 08 75 60</a>
+      <a href="mailto:jh@julianahaggoo.art">jh@julianahaggoo.art</a>
+      <a href="https://www.instagram.com/julianahaggooart/" rel="noopener">Instagram</a>
+    </div>
+  </dialog>
 
-      <!-- RD Navbar Transparent-->
+  <main id="main">
+    <section class="hero">
+      <div class="hero__aura" aria-hidden="true"><span style="--i:0;background-image:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAwCdASoUABQAPt1orVEopaQiqAgBEBuJQBOmUDX/wE+gxhsegAD+7NlvE0gTo0vBWnl8/+CC9QflyvA63NcWghnthDFWmeGPnnjnh5dzPBqmJIVXG8WFI5KKYqM9qO78NmeM428AAA==)"></span><span style="--i:1;background-image:url(data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAABQBgCdASoUABQAPt1iqE+opSOiKAqpEBuJbACdMuIluInz2emAbzCAwv029qIHiC1s7Tl5emMM/r2ZAAD+zyYg7BEojPzJNOpnkSbQw9dH1pgNdzsw/BEIHKSQwHxC9rtTuIqzyy+NN7PhmsrTqkBEaUBvvWIuahYB5xiA9o2DxOZKvxlfs9COvHeIl29XnbkzjWN/9pOuG8fV/ljOg7LdZWOVhr1imoy8V/wt7mjm7lNdgOB/wS12Huf1Ucu9tdTtX3kKfqH1vE3iK8wnZhzoGmkYBCS/62OeQudgAAA=)"></span><span style="--i:2;background-image:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBQCdASoUABQAPt1mq1EopSOiqAgBEBuJaACdMt61sA80Ej94DphZE1lpZNde0cA6AAD+6PEZuxtKJYt17kBJ0mdaT7mCXsij8T/v++6p7VY5Dy1tdf358alYV5g4kQKg+s75AxdHMvijZl64YPwPPfdW1qdYpt0teP7jVXeohxyWYlwCAA==)"></span><span style="--i:3;background-image:url(data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwBACdASoUABQAPt1iqE+opSOiKAqpEBuJYwDOOBEcxQ+3r3lEgZxAQ8Jk4AD+6hdeY+vtgXnuZw8SwnPihWhjpLna5F7tCr2Fze97xkYzMDEjwbcogYwuok7Af8QiOHX43XgJLVvQdAk4ivI9bTBJYy3GarQVIMAAAA==)"></span><span style="--i:4;background-image:url(data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAADwBACdASoUABQAPt1mq1EopSOiqAgBEBuJbACdAA/lpVGlov04WRzKt6adNdgK2AAA/Y84BQe1RgomE6qFQi/tC+8dWuC1yP9lHHmbwg0zZC0b2FggA/wmrjoEubuSfSYCfOfH5fRDW9doZDdHdGJhmvr+ufyq94LXG3gJFBn3yl1a7u+J1OllSK+Gl95wEnMmtOv3c0SS4AVq2jZEwjjdj+s4AquyqJI+M7gVaOgvEQBSUpTyLhLIntzKjItAAAA=)"></span></div>
+      <p class="u-eyebrow">Juliana Haggoo — Artist Painter</p>
+      <h1 class="hero__title" aria-label="Portfolio"><span style="--i:0">P</span><span style="--i:1">o</span><span style="--i:2">r</span><span style="--i:3">t</span><span style="--i:4">f</span><span style="--i:5">o</span><span style="--i:6">l</span><span style="--i:7">i</span><span style="--i:8">o</span></h1>
+      <figure class="hero__lede">
+        <blockquote>“I immersed myself in the world of the abstract, letting my emotions and stress dissolve into
+          the colors and shapes on the canvas.”</blockquote>
+        <figcaption>Juliana Haggoo — <a href="about-me.html">about the artist</a></figcaption>
+      </figure>
+      <ul class="hero__facts">
+        <li><span class="u-eyebrow">Works</span><b>36</b></li>
+        <li><span class="u-eyebrow">Years</span><b>2009–2025</b></li>
+        <li><span class="u-eyebrow">Media</span><b>Oil &amp; Acrylic</b></li>
+        <li><span class="u-eyebrow">Available</span><b>25</b></li>
+      </ul>
+    </section>
 
-      <div class="rd-navbar-wrap">
+    <div class="controls">
+      <fieldset class="chips">
+        <legend class="u-visually-hidden">Filter by medium</legend>
+        <button class="chip" type="button" data-filter="medium" data-value="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-filter="medium" data-value="Oil" aria-pressed="false">Oil</button>
+        <button class="chip" type="button" data-filter="medium" data-value="Acrylic" aria-pressed="false">Acrylic</button>
+      </fieldset>
 
-        <nav class="rd-navbar rd-navbar-sidebar-toggle rd-navbar-light" data-auto-height="true"
-          data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
-          data-lg-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-fixed" data-xxl-layout="rd-navbar-fixed"
-          data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed"
-          data-xl-device-layout="rd-navbar-fixed" data-xxl-device-layout="rd-navbar-fixed" data-lg-stick-up="false"
-          data-xl-stick-up="false" data-xxl-stick-up="false" data-lg-hover-on="false" data-xl-hover-on="false"
-          data-xxl-hover-on="false">
+      <fieldset class="chips">
+        <legend class="u-visually-hidden">Filter by availability</legend>
+        <button class="chip" type="button" data-filter="status" data-value="available" aria-pressed="false">Available
+          only</button>
+      </fieldset>
 
-          <div class="rd-navbar-inner">
+      <p class="field"><label for="year-select">Year</label>
+        <select id="year-select" data-filter="year">
+          <option value="all">All years</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+        </select>
+      </p>
 
-            <!-- RD Navbar Panel-->
+      <p class="field"><label for="sort-select">Order</label>
+        <select id="sort-select" data-sort>
+          <option value="recent">Most recent</option>
+          <option value="oldest">Earliest first</option>
+          <option value="title">A – Z</option>
+        </select>
+      </p>
 
-            <div class="rd-navbar-panel">
+      <p class="controls__count" role="status" data-count>36 works</p>
+    </div>
 
-              <!-- RD Navbar Toggle-->
-
-              <button class="rd-navbar-toggle"
-                data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
-
-            </div>
-
-            <div class="rd-navbar-menu-wrap">
-
-              <div class="rd-navbar-nav-wrap">
-
-                <div class="rd-navbar-mobile-scroll-holder">
-
-                  <div class="rd-navbar-mobile-scroll">
-
-                    <!--Navbar Brand Mobile-->
-
-                    <div class="rd-navbar-mobile-brand"><a href="index.html"><img width='200' height='200'
-                          src='images/logo-dark.png' alt='' /></a></div>
-
-                    <!-- RD Navbar Nav-->
-
-                    <ul class="rd-navbar-nav">
-
-                      <li><a href="index.html"><span>Home</span></a>
-
-                      </li>
-
-                      <li><a href="about-me.html"><span>About Me</span></a>
-
-                      </li>
-
-                      <li class="active"><a href="portfolio.html"><span>Portfolio</span></a>
-
-                      </li>
-
-                      <li><a href="events.html"><span>Events</span></a>
-
-                        <ul class="rd-navbar-dropdown">
-
-                          <li><a href="the-temptation.html"><span class="text-middle">Dark & Light as the love: The
-                                Temptation</span></a>
-
-                          </li>
-
-                        </ul>
-
-                      </li>
-
-                    </ul>
-
-                    <div class="rd-navbar-footer">
-
-                      <div class="rd-navbar-address">
-
-                        <dl class="offset-top-0">
-
-                          <dt><span class="mdi mdi-phone"></span></dt>
-
-                          <dd><a href="tel:+33 6 65 08 75 60">+ 33 6 65 08 75 60</a></dd>
-
-                        </dl>
-
-                        <dl>
-
-                          <dt><span class="mdi mdi-email-open"></span></dt>
-
-                          <dd><a href="mailto:jh@julianahaggoo.art">jh@julianahaggoo.art</a></dd>
-
-                        </dl>
-
-                      </div>
-
-                      <ul class="list-inline">
-
-                        <li class="list-inline-item"><a
-                            class="icon fa fa-instagram icon-xxs icon-circle icon-darker-filled"
-                            href="https://www.instagram.com/julianahaggooart/"></a></li>
-
-                      </ul>
-
-                      <p class="small">Juliana Haggoo - Artist Painter &copy; <span id="copyright-year"></span></p>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
+    <div class="gallery-wrap">
+      <div class="gallery" id="gallery" role="list">
+        <article class="card" role="listitem" data-order="0" data-title="Summer"
+          data-medium="Oil" data-year="2025" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="summer-2025.html">
+              <div class="card__frame" style="aspect-ratio:2420/2419;background-image:url(data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAACQBwCdASoUABQAPt1mq1CopSOiqAgBEBuJbACdMoPEKcMwtbQ/oA3iv0AOlVRoIQDWpDsec2fD/WJ+cKhPMPiKItAvVQAA/od3cUp23+Qja6C673PIxYW5B8SZYjdWk+RoVvO/C45y6AXKi+cubPGUZve+Vl2RMlam36mVunM8ncjG0dtUF4fRzwVd5ZRo4mshiKqB2EnB79/gBlb3P+xOPIpiL+K3WjaZkgkJ/+NuFuG0cCFWB5mfuJRMF1Ij/hmRju0xNFtjDnjMyHTvpHoD1y9FoDkbXUYMPCCS484hUp+kvRmjx/24w0+xeWBSBJvvd/z60FxTkHOvstda/xO1NT8bfJtYjZWw8SGELJLv2ziIE5rrRW0Be+mXtgRMSTbAAA==)">
+                <img src="images/gallery/summer-2025-640.webp" srcset="images/gallery/summer-2025-400.webp 400w, images/gallery/summer-2025-640.webp 640w, images/gallery/summer-2025-900.webp 900w, images/gallery/summer-2025-1400.webp 1400w, images/gallery/summer-2025-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2420" height="2419" alt="Summer — oil painting, 2025" loading="eager" decoding="async">
               </div>
-
-            </div>
-
-          </div>
-
-        </nav>
-
-      </div>
-
-    </header>
-
-    <!-- Page Content-->
-
-    <main class="page-content">
-
-      <!-- Page Header-->
-
-      <!-- Jessica Bennett-->
-
-      <!-- <section class="section parallax-container" data-parallax-img="images/image-01-1920x1080.webp">
-
-                  <div class="parallax-content">
-
-                    <div class="container section-85"></div>
-
-                  </div>
-
-                </section>
-
-                 -->
-
-      <div class="container-fluid title-box">
-
-        <a href="index.html"><img class="centered-image" src="images/brand.png" width="50%" height="auto" alt=""></a>
-
-      </div>
-
-      <!-- Portfolio-->
-
-      <section class="section-85">
-
-        <div class="container-fluid">
-
-          <ul class="p list-inline list-inline-dashed offset-top-24">
-
-            <li class="list-inline-item"><a href="index.html">Home</a></li>
-
-            <li class="list-inline-item">Portfolio</li>
-
-          </ul>
-
-          <h1 class="fw-bold">Portfolio</h1>
-
-
-
-          <div class="offset-top-30">
-
-            <div class="isotope-wrap">
-
-              <div class="row">
-
-                <!-- Isotope Filters-->
-
-                <div class="col-xl-3">
-
-                  <div class="isotope-filters isotope-filters-vertical">
-
-                    <h4 class="text-uppercase fw-bold isotope-filters-title offset-top-34">Paintings</h4>
-
-                    <ul class="list-inline list-inline-sm">
-
-                      <li class="list-inline-item d-lg-none">
-
-                        <p>Choose your category:</p>
-
-                      </li>
-
-                      <li class="list-inline-item section-relative">
-
-                        <button class="isotope-filters-toggle btn btn-sm btn-primary" data-custom-toggle="isotope-53"
-                          data-custom-toggle-disable-on-blur="true">Filter<span class="caret"></span></button>
-
-                        <ul class="list-sm-inline isotope-filters-list" id="isotope-53">
-
-                          <li><a class="fw-bold active" data-isotope-filter="*" href="portfolio.html#">All Paintings</a></li>
-
-                          <li><a class="fw-bold" data-isotope-filter="Oil-Painting" href="portfolio.html#">Oil Painting</a></li>
-
-                          <li><a class="fw-bold" data-isotope-filter="Acrylic-Painting" href="portfolio.html#">Acrylic Painting</a>
-                          </li>
-
-                        </ul>
-
-                      </li>
-
-                    </ul>
-
-                  </div>
-
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Summer</h3>
+                  <p class="card__spec"><span>Oil</span><span>2025</span><span>120 × 120 × 3 cm</span></p>
                 </div>
-
-                <!-- Isotope Content-->
-
-                <div class="col-xl-9 offset-xl-top-0 offset-top-34">
-
-                  <div class="isotope" data-isotope-layout="masonry">
-
-                    <div class="row" data-lightgallery="group">
-
-                      <!-- newGALLERY 0-->
-                      
-                      
-
-<!-- 2025 SUMMER-->
-<div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-  <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="summer-2025.html">
-    <figure><img width="442" height="332" src="images/summer.png" alt="SUMMER" />
-      <figcaption>
-        <div>
-          <h3 class="thumbnail-apollo-title">SUMMER</h3>
-        </div>
-        <p class="small">Oil Painting - 2025 <br> 120 × 120 × 3 cm <br> €2900</p><span
-          class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-      </figcaption>
-    </figure>
-  </a>
-</div>
-
-<!-- 2025 The Red-->
-<div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-  <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-red.html">
-    <figure><img width="442" height="332" src="images/THE&#32;RED&#32;1.png" alt="The Red" />
-      <figcaption>
-        <div>
-          <h3 class="thumbnail-apollo-title">THE RED <br> (SOLD)</h3>
-        </div>
-        <p class="small">Oil Painting - 2025 <br> 130 x 130 cm </p><span
-          class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-      </figcaption>
-    </figure>
-  </a>
-</div>
-
-
-<!-- 2025 Breath of Light-->
-<div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-  <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="Breath-of-Light.html">
-
-    <figure><img width="442" height="332" src="images/Breath-of-Light.png" alt="Breath of Light" />
-
-      <figcaption>
-
-        <div>
-
-          <h3 class="thumbnail-apollo-title">Breath of Light (SOLD)</h3>
-
-        </div>
-
-        <p class="small">Oil Painting - 2025 <br> 100 x 100 cm </p><span
-          class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-      </figcaption>
-
-    </figure>
-  </a>
-
-</div>
-
-
-<!-- 2025 The Blue-->
-<div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-  <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-blue.html">
-
-    <figure><img width="442" height="332" src="images/the_blue.png" alt="The Blue" />
-
-      <figcaption>
-
-        <div>
-
-          <h3 class="thumbnail-apollo-title">The Blue <br> (SOLD) </h3>
-
-        </div>
-
-        <p class="small">Oil Painting - 2025 <br> 120 x 120 cm </p><span
-          class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-      </figcaption>
-
-    </figure>
-  </a>
-
-</div>
-
-
-
-
-
-
-            <!-- 2025 Earth Vision 1-->
-            <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-              <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="Earth-vision.html">
-
-                <figure><img width="442" height="332" src="images/Les-deux-tableaux-portfolio.png" alt="Earth Vision" />
-
-                  <figcaption>
-
-                    <div>
-
-                      <h3 class="thumbnail-apollo-title">Earth Vision</h3>
-
-                    </div>
-
-                    <p class="small">Oil Painting - 2025 <br> 65 x 100 x 3cm <br> €2600</p><span
-                      class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                  </figcaption>
-
-                </figure>
-              </a>
-
-            </div>
-
-
-
-            <!-- 2025 serenity-->
-                        <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                                    <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="serenity-of-motion.html">
-            
-                                      <figure><img width="442" height="332" src="images/serenity-of-motion-imageneavant.png"
-                                          alt="SERENITY OF MOTION" />
-            
-                                        <figcaption>
-            
-                                          <div>
-            
-                                            <h3 class="thumbnail-apollo-title">SERENITY OF MOTION</h3>
-            
-                                          </div>
-            
-                                          <p class="small">Oil Painting - 2025 <br> 130 x 130 x 3 cm <br> €3800</p><span
-                                            class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-            
-                                        </figcaption>
-            
-                                      </figure>
-                                    </a>
-            
-                        </div>
-
-
-            <!-- 2024 flow of engergy-->
-            <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-              <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="flow-of-energy.html">
-
-                <figure><img width="442" height="332" src="images/FLOW-OF-ENERGY.png" alt="FLOW OF ENERGY" />
-
-                  <figcaption>
-
-                    <div>
-
-                      <h3 class="thumbnail-apollo-title">FLOW OF ENERGY</h3>
-
-                    </div>
-
-                    <p class="small">Oil Painting - 2024 <br> 100 x 100 x 3 cm <br> €2300</p><span
-                      class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                  </figcaption>
-
-                </figure>
-              </a>
-
-            </div>
-
-            <!-- 2024 whispers of pink-->
-            <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                          <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="whispers-of-pink.html">
-  
-                            <figure><img width="442" height="332" src="images/WHISPERS-OF-PINK.png"
-                                alt="WHISPERS OF PINK" />
-  
-                              <figcaption>
-  
-                                <div>
-  
-                                  <h3 class="thumbnail-apollo-title">WHISPERS OF PINK</h3>
-  
-                                </div>
-  
-                                <p class="small">Oil Painting - 2024 <br> 100 x 100 x 3 cm <br> € 2200 </p><span
-                                  class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-  
-                              </figcaption>
-  
-                            </figure>
-                          </a>
-  
-            </div>
-
-            <!-- 2025 blue-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="blue-shadows.html">
-
-                          <figure><img width="442" height="332" src="images/BLUE-SHADOWS.png" alt="BLUE SHADOWS" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">BLUE SHADOWS</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2024 <br> 100 x 100 x 3 cm <br> €2400</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="passion-palette.html">
-
-                          <figure><img width="442" height="332" src="images/image-04-442x332.png"
-                              alt="Passion Palette" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">PASSION PALETTE</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 150 x 200 x 5 cm <br> €6700</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="midnight-whispers.html">
-
-                          <figure><img width="442" height="590" src="images/image-11.png" alt="Midnight Whispers" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">MIDNIGHT WHISPERS (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 150 x 100 x 3 cm <br> €2100</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="sensuality.html">
-
-                          <figure><img width="442" height="589" src="images/sensuality-07.webp" alt="Sensuality" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">SENSUALITY</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 150 x 150 x 5 cm <br> €5400</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="feeling-flow.html">
-
-                          <figure><img width="442" height="442" src="images/image-18.webp" alt="Feeling Flow" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">FEELING FLOW</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 100 x 100 x 3 cm <br> €2200</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="blue-bubble.html">
-
-                          <figure><img width="442" height="339" src="images/image-23.webp" alt="Blue Bubble" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">BLUE BUBBLE</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 100 x 100 x 3 cm <br> €2300</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="sunset-silhouettes.html">
-
-                          <figure><img width="442" height="442" src="images/image-24.webp" alt="Sunset Silhouettes" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">SUNSET SILHOUETTES</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 100 x 100 x 3 cm <br> €2300</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="deep-blue-lagoon.html">
-
-                          <figure><img width="442" height="442" src="images/image-25.webp" alt="Deep Blue Lagoon" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">DEEP BLUE LAGOON (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 100 x 100 x 3 cm </p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-dark-and-light.html">
-
-                          <figure><img width="442" height="367" src="images/image-29.webp" alt="The Dark and Light" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE DARK AND LIGHT</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 100 x 120 x 3 cm <br> €2400</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2023-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="harmony.html">
-
-                          <figure><img width="442" height="367" src="images/harmony-2.png" alt="Harmony" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">HARMONY (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2023 <br> 60 x 80 x 2 cm</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="rise-like-a-sun.html">
-
-                          <figure><img width="442" height="442" src="images/image-09-442x332.webp"
-                              alt="Rise Like a Sun" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">RISE LIKE A SUN (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 100 x 100 x 4 cm <br> €2000</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-curve.html">
-
-                          <figure><img width="442" height="442" src="images/image-08-442x442.webp" alt="The Curve" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE CURVE</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 100 x 100 x 4 cm <br> €2300</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Acrylic-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="in-shades-of-pink.html">
-
-                          <figure><img width="442" height="332" src="images/image-2-442x332.webp"
-                              alt="In Shades of Pink" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">IN SHADES OF PINK</h3>
-
-                              </div>
-
-                              <p class="small">Acrylic Painting - 2022 <br> 100 x 120 x 3 cm <br> €2000</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="blue-white.html">
-
-                          <figure><img width="442" height="442" src="images/image-21-442x332.webp" alt="Blue White" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">BLUE WHITE (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 100 x 100 x 4 cm </p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="waves.html">
-
-                          <figure><img width="442" height="372" src="images/image-21.webp" alt="Waves" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">WAVES</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 100 x 120 x 2 cm <br> €2400</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Acrylic-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="deep-blue.html">
-
-                          <figure><img width="442" height="375" src="images/image-27.webp" alt="Deep Blue" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">DEEP BLUE</h3>
-
-                              </div>
-
-                              <p class="small">Acrylic Painting - 2022 <br> 100 x 120 x 3 cm <br> €1900</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-wall.html">
-
-                          <figure><img width="442" height="442" src="images/image-28.webp" alt="The Wall" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE WALL</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 100 x 100 x 2cm <br> €2200</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="summer.html">
-
-                          <figure><img width="442" height="533" src="images/image-30.webp" alt="Summer" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">SUMMER (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 80 x 60 x 4 cm</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="intensity.html">
-
-                          <figure><img width="442" height="343" src="images/image-31.webp" alt="Intensity" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">INTENSITY</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 60 x 80 x 4 cm <br> €1500</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2022-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-7-hearts.html">
-
-                          <figure><img width="442" height="367" src="images/image-32.webp" alt="The 7 Hearts" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE 7 HEARTS</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2022 <br> 100 x 120 x 4 cm <br> €2300</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2021-->
-                      <div class="col-12 col-md-6 col-xl-4 offset-top-66 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="nightfall.html">
-
-                          <figure><img width="442" height="442" src="images/image-05.webp" alt="Nightfall" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">NIGHTFALL</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2021 <br> 80 x 80 x 4 cm <br> €1600</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2020-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-white-cross.html">
-
-                          <figure><img width="442" height="332" src="images/image-3-442x332.webp"
-                              alt="The White Cross" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE WHITE CROSS</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2020 <br> 80 x 100 x 2 cm <br> €1700</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2020
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">-->
-
-                       <!-- Thumbnail Apollo--> <!--<a class="thumbnail-apollo" href="smokey-flames.html">
-
-                          <figure><img width="442" height="442" src="images/image-19.png" alt="Smokey Flames" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">SMOKEY FLAMES</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2020 <br> 60 x 60 x 4 cm <br> €500 </p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div> -->
-
-            <!-- 2019-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-red-wall.html">
-
-                          <figure><img width="442" height="339" src="images/image-22.webp" alt="The Red Wall" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE RED WALL</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2019 <br> 97 x 130 x 2 cm <br> €2500</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2013-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="freedom-and-love.html">
-
-                          <figure><img width="442" height="332" src="images/image-06.webp" alt="Freedom and Love" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">FREEDOM AND LOVE (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2013 <br> 100 x 100 x 4 cm <br> €4700</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2012-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="fly-like-a-bird.html">
-
-                          <figure><img width="442" height="442" src="images/image-07.webp" alt="Fly like a Bird" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">FLY LIKE A BIRD (SOLD)</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2012 <br> 100 x 100 x 4 cm <span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2012
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">-->
-
-                        <!-- Thumbnail Apollo--><!--<a class="thumbnail-apollo" href="hold-my-hand.html">
-
-                          <figure><img width="442" height="332" src="images/image-10.webp" alt="Hold My Hand" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">HOLD MY HAND</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2012 <br> 60 x 60 x 4 cm <br> €1400</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>-->
-
-            <!-- 2012
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">-->
-
-                       <!--  Thumbnail Apollo--><!--<a class="thumbnail-apollo" href="broken.html">
-
-                          <figure><img width="442" height="590" src="images/image-15.webp" alt="Broken" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">BROKEN</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2012 <br> 92 x 73 x 2 cm <br> €600</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>-->
-
-            <!-- 2012-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="the-circle.html">
-
-                          <figure><img width="442" height="442" src="images/image-16.webp" alt="The Circle" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE CIRCLE</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2012 <br> 100 x 100 x 4 cm <br>€2100 </p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2011
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">-->
-
-                        <!-- Thumbnail Apollo--><!--<a class="thumbnail-apollo" href="illusion.html">
-
-                          <figure><img width="442" height="332" src="images/image-17.webp" alt="Illusion" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">ILLUSION</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2011 <br> 60 x 80 x 2 cm <br> €1300</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>-->
-
-            <!-- 2010-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="mystic-flames.html">
-
-                          <figure><img width="442" height="332" src="images/image-14.webp" alt="Mystic Flames" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">MYSTIC FLAMES</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2010 <br> 100 x 100 x 2 cm <br> €2200</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-            <!-- 2010
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">-->
-
-                       <!--  Thumbnail Apollo--><!--<a class="thumbnail-apollo" href="the-yellow-flame.html">
-
-                          <figure><img width="442" height="590" src="images/image-13.webp" alt="The Yellow Flame" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">THE YELLOW FLAME</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2010 <br> 100 x 70 x 2 cm <br> €1200</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>-->
-
-            <!-- 2010
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">-->
-
-                        <!-- Thumbnail Apollo--><!--<a class="thumbnail-apollo" href="winter-bouquet.html">
-
-                          <figure><img width="442" height="520" src="images/image-20.webp" alt="Winter Bouquet" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">WINTER BOUQUET</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2010 <br> 41 x 33 x 2 cm <br> €500</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>-->
-
-             <!-- 2009-->
-                      <div class="col-12 col-md-6 col-xl-4 isotope-item" data-filter="Oil-Painting">
-
-                        <!-- Thumbnail Apollo--><a class="thumbnail-apollo" href="winter.html">
-
-                          <figure><img width="442" height="332" src="images/image-12.webp" alt="Winter" />
-
-                            <figcaption>
-
-                              <div>
-
-                                <h3 class="thumbnail-apollo-title">WINTER</h3>
-
-                              </div>
-
-                              <p class="small">Oil Painting - 2009 <br> 54 x 65 x 2 cm <br> €1500</p><span
-                                class="novi-icon icon icon-xxs d-none d-md-inline-block fa-arrow-right"></span>
-
-                            </figcaption>
-
-                          </figure>
-                        </a>
-
-                      </div>
-
-
-
-
-
-
-                    </div>
-
-                  </div>
-
-                </div>
-
+                <p class="card__tag">€2900</p>
               </div>
-
-            </div>
-
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Summer full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
           </div>
+        </article>
+        <article class="card" role="listitem" data-order="1" data-title="The Red"
+          data-medium="Oil" data-year="2025" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="the-red.html">
+              <div class="card__frame" style="aspect-ratio:2710/2711;background-image:url(data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAwCdASoUABQAPt1orVEopaQiqAgBEBuJQBOmUDX/wE+gxhsegAD+7NlvE0gTo0vBWnl8/+CC9QflyvA63NcWghnthDFWmeGPnnjnh5dzPBqmJIVXG8WFI5KKYqM9qO78NmeM428AAA==)">
+                <img src="images/gallery/the-red-640.webp" srcset="images/gallery/the-red-400.webp 400w, images/gallery/the-red-640.webp 640w, images/gallery/the-red-900.webp 900w, images/gallery/the-red-1400.webp 1400w, images/gallery/the-red-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2710" height="2711" alt="The Red — oil painting, 2025" loading="eager" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The Red</h3>
+                  <p class="card__spec"><span>Oil</span><span>2025</span><span>130 × 130 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The Red full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="2" data-title="Breath of Light"
+          data-medium="Oil" data-year="2025" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="Breath-of-Light.html">
+              <div class="card__frame" style="aspect-ratio:2536/2536;background-image:url(data:image/webp;base64,UklGRgABAABXRUJQVlA4IPQAAACQBgCdASoUABQAPt1kqE+opaOiKAqpEBuJbACdMuK6D6AN3Nr+9lsiQgrXDGMavzeQe679fElgJevt3RMAAPrydIFWNvVcUlEgYLJlY9k91uIhdhDHj2O7pExaYN1hNqXte4oDfqJDX538YoKBQWT9qFyx9g4me76/3XVrhETp4ZRnQX9fMCiA6agcgKb0rn+MOiogN0Jvb384SsL7km8zgdzmrNDONRaaPJ3WAJE7ZcfrdEsY5MJTlvFHrfHnB42w3U0ohrswSwSXqN4jMt3TXO8tBVkA2/Hz8FZRAxV9Vo9rAENNmrslGXEgXcYYvmFF0AAA)">
+                <img src="images/gallery/breath-of-light-640.webp" srcset="images/gallery/breath-of-light-400.webp 400w, images/gallery/breath-of-light-640.webp 640w, images/gallery/breath-of-light-900.webp 900w, images/gallery/breath-of-light-1400.webp 1400w, images/gallery/breath-of-light-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2536" height="2536" alt="Breath of Light — oil painting, 2025" loading="eager" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Breath of Light</h3>
+                  <p class="card__spec"><span>Oil</span><span>2025</span><span>100 × 100 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Breath of Light full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="3" data-title="The Blue"
+          data-medium="Oil" data-year="2025" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="the-blue.html">
+              <div class="card__frame" style="aspect-ratio:2400/2400;background-image:url(data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBQCdASoUABQAPt1mq1EopSOiqAgBEBuJaACdMt61sA80Ej94DphZE1lpZNde0cA6AAD+6PEZuxtKJYt17kBJ0mdaT7mCXsij8T/v++6p7VY5Dy1tdf358alYV5g4kQKg+s75AxdHMvijZl64YPwPPfdW1qdYpt0teP7jVXeohxyWYlwCAA==)">
+                <img src="images/gallery/the-blue-640.webp" srcset="images/gallery/the-blue-400.webp 400w, images/gallery/the-blue-640.webp 640w, images/gallery/the-blue-900.webp 900w, images/gallery/the-blue-1400.webp 1400w, images/gallery/the-blue-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2400" height="2400" alt="The Blue — oil painting, 2025" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The Blue</h3>
+                  <p class="card__spec"><span>Oil</span><span>2025</span><span>120 × 120 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The Blue full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="4" data-title="Earth Vision"
+          data-medium="Oil" data-year="2025" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="Earth-vision.html">
+              <div class="card__frame" style="aspect-ratio:2998/1999;background-image:url(data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoUAA0APt1apkyopSOiMAgBEBuJZAC06CIg+lXJKASjXR0tgAD+8ieGi6ENvg31rmV0o4ahTlHNlx2bamYpL/56NXUdf8wcMrPakoQ3xABWz3o4i8CroUe7R1UghDxf+cx/gtEfOqQadwqrtzfGDqA3po4L3rQoFNoAAA==)">
+                <img src="images/gallery/earth-vision-640.webp" srcset="images/gallery/earth-vision-400.webp 400w, images/gallery/earth-vision-640.webp 640w, images/gallery/earth-vision-900.webp 900w, images/gallery/earth-vision-1400.webp 1400w, images/gallery/earth-vision-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2998" height="1999" alt="Earth Vision — oil painting, 2025" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Earth Vision</h3>
+                  <p class="card__spec"><span>Oil</span><span>2025</span><span>65 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2600</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Earth Vision full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="5" data-title="Serenity of Motion"
+          data-medium="Oil" data-year="2025" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="serenity-of-motion.html">
+              <div class="card__frame" style="aspect-ratio:2712/2712;background-image:url(data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAADwBACdASoUABQAPt1mrFEopSQiqAgBEBuJaQAGaBpAmVAy61qYR85S5SaXgeyNcAAA/uAFecGWtcclLAJwk2G3plYURWVB4dTjjP1lL5B+0j6h/YVKf8AynhRNLMabmzbWA2sNXT+Hs6oH8DDHeTmQn0i9BGfl0M2dntya8NPU+ceqpegTuZFKNHfXYvEQ6Yl+aqht7ksVMHGH+PvbpuRTkUaFh5u42nnvTtwlj2092JsFg3gl+fn8Jmb6kbIOB+EChE2wAAA=)">
+                <img src="images/gallery/serenity-of-motion-640.webp" srcset="images/gallery/serenity-of-motion-400.webp 400w, images/gallery/serenity-of-motion-640.webp 640w, images/gallery/serenity-of-motion-900.webp 900w, images/gallery/serenity-of-motion-1400.webp 1400w, images/gallery/serenity-of-motion-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2712" height="2712" alt="Serenity of Motion — oil painting, 2025" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Serenity of Motion</h3>
+                  <p class="card__spec"><span>Oil</span><span>2025</span><span>130 × 130 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€3800</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Serenity of Motion full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="6" data-title="Flow of Energy"
+          data-medium="Oil" data-year="2024" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="flow-of-energy.html">
+              <div class="card__frame" style="aspect-ratio:2524/2524;background-image:url(data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAABQBgCdASoUABQAPt1iqE+opSOiKAqpEBuJbACdMuIluInz2emAbzCAwv029qIHiC1s7Tl5emMM/r2ZAAD+zyYg7BEojPzJNOpnkSbQw9dH1pgNdzsw/BEIHKSQwHxC9rtTuIqzyy+NN7PhmsrTqkBEaUBvvWIuahYB5xiA9o2DxOZKvxlfs9COvHeIl29XnbkzjWN/9pOuG8fV/ljOg7LdZWOVhr1imoy8V/wt7mjm7lNdgOB/wS12Huf1Ucu9tdTtX3kKfqH1vE3iK8wnZhzoGmkYBCS/62OeQudgAAA=)">
+                <img src="images/gallery/flow-of-energy-640.webp" srcset="images/gallery/flow-of-energy-400.webp 400w, images/gallery/flow-of-energy-640.webp 640w, images/gallery/flow-of-energy-900.webp 900w, images/gallery/flow-of-energy-1400.webp 1400w, images/gallery/flow-of-energy-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2524" height="2524" alt="Flow of Energy — oil painting, 2024" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Flow of Energy</h3>
+                  <p class="card__spec"><span>Oil</span><span>2024</span><span>100 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2300</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Flow of Energy full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="7" data-title="Whispers of Pink"
+          data-medium="Oil" data-year="2024" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="whispers-of-pink.html">
+              <div class="card__frame" style="aspect-ratio:2644/2645;background-image:url(data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwBACdASoUABQAPt1iqE+opSOiKAqpEBuJYwDOOBEcxQ+3r3lEgZxAQ8Jk4AD+6hdeY+vtgXnuZw8SwnPihWhjpLna5F7tCr2Fze97xkYzMDEjwbcogYwuok7Af8QiOHX43XgJLVvQdAk4ivI9bTBJYy3GarQVIMAAAA==)">
+                <img src="images/gallery/whispers-of-pink-640.webp" srcset="images/gallery/whispers-of-pink-400.webp 400w, images/gallery/whispers-of-pink-640.webp 640w, images/gallery/whispers-of-pink-900.webp 900w, images/gallery/whispers-of-pink-1400.webp 1400w, images/gallery/whispers-of-pink-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2644" height="2645" alt="Whispers of Pink — oil painting, 2024" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Whispers of Pink</h3>
+                  <p class="card__spec"><span>Oil</span><span>2024</span><span>100 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2200</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Whispers of Pink full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="8" data-title="Blue Shadows"
+          data-medium="Oil" data-year="2024" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="blue-shadows.html">
+              <div class="card__frame" style="aspect-ratio:2517/2518;background-image:url(data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwBACdASoUABQAPt1oq1EopaOiqAgBEBuJYwAALnRbihzzbngUYVLlBwAA/uyOfdxt4nbyb6DBhOhMMY6rppAFdHir0pCarVO/kz6L4zrGmh6AAAA=)">
+                <img src="images/gallery/blue-shadows-640.webp" srcset="images/gallery/blue-shadows-400.webp 400w, images/gallery/blue-shadows-640.webp 640w, images/gallery/blue-shadows-900.webp 900w, images/gallery/blue-shadows-1400.webp 1400w, images/gallery/blue-shadows-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="2517" height="2518" alt="Blue Shadows — oil painting, 2024" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Blue Shadows</h3>
+                  <p class="card__spec"><span>Oil</span><span>2024</span><span>100 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2400</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Blue Shadows full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="9" data-title="Passion Palette"
+          data-medium="Oil" data-year="2023" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="passion-palette.html">
+              <div class="card__frame" style="aspect-ratio:702/510;background-image:url(data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABwBACdASoUAA8APt1apkyopSOiMAgBEBuJaACdMoKP/bf4tiJUy7pX6v+SAAD7tV+C9f04RFDAvECuDv5xK6wRqlWOR4NsZ9YBDSgtqEu0izYl/xVagnAVYXJ+jxOvjSZ40uLRaTP4reviJDVuJOHOX+JmVjgN9sPc3O1jyeIkk5kEQb06pjEHFLIpWQU9vxR5faf0NiPAAAAA)">
+                <img src="images/gallery/passion-palette-640.webp" srcset="images/gallery/passion-palette-400.webp 400w, images/gallery/passion-palette-640.webp 640w, images/gallery/passion-palette-702.webp 702w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="702" height="510" alt="Passion Palette — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Passion Palette</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>150 × 200 × 5 cm</span></p>
+                </div>
+                <p class="card__tag">€6700</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Passion Palette full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="10" data-title="Midnight Whispers"
+          data-medium="Oil" data-year="2023" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="midnight-whispers.html">
+              <div class="card__frame" style="aspect-ratio:980/1387;background-image:url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABQBACdASoUABwAPtVaoUyoJSMiMAwBABqJQBdgBDvglntlrPcD+Kf1GHwAAPwRSYJjk5074Z0rZ8P4600yYOaA2cU/skDL+kn6mS+OUq8XtpQ/KFs2jh/lEziv9luHQ/ep7RTQIfsc/pxaa3xT0mfX+akA9ahUTgg2KAxo/q9p2IPuQI77yNqUYFx7RQScMk/rOyf8EsbAAA==)">
+                <img src="images/gallery/midnight-whispers-640.webp" srcset="images/gallery/midnight-whispers-400.webp 400w, images/gallery/midnight-whispers-640.webp 640w, images/gallery/midnight-whispers-900.webp 900w, images/gallery/midnight-whispers-980.webp 980w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="980" height="1387" alt="Midnight Whispers — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Midnight Whispers</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>150 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Midnight Whispers full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="11" data-title="Sensuality"
+          data-medium="Oil" data-year="2023" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="sensuality.html">
+              <div class="card__frame" style="aspect-ratio:1388/1387;background-image:url(data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAABwBQCdASoUABQAPt1mq1EopSOiqAgBEBuJQBlAO4FvLEaLtUxtAAZr1FdG3wiFV0zVCfugAPltXLGAjjXbXL3MXnHTLRgfqfnhTIeRqJX6wZ6s8bYGx+5JIN+akzW3277j+RLZjVudf7JJhEDrtH9EgVM2GvpdRoUfreRTX5W6R0cCHtlU1VVxMKHuGRRStUKqu+kgQwRr0mMMx/58kUkOBQhy892VaaSw7tnmMS8Ptf9paZOqXufBaP3GK2fcxmdSxNksMlfqafVaWDApuP5qjrbLM8fFM5D4OiOVO9yQlRbl5lR8M89SiZnJ5L6AAAA=)">
+                <img src="images/gallery/sensuality-640.webp" srcset="images/gallery/sensuality-400.webp 400w, images/gallery/sensuality-640.webp 640w, images/gallery/sensuality-900.webp 900w, images/gallery/sensuality-1388.webp 1388w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1388" height="1387" alt="Sensuality — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Sensuality</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>150 × 150 × 5 cm</span></p>
+                </div>
+                <p class="card__tag">€5400</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Sensuality full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="12" data-title="Feeling Flow"
+          data-medium="Oil" data-year="2023" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="feeling-flow.html">
+              <div class="card__frame" style="aspect-ratio:442/442;background-image:url(data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAABwBgCdASoUABQAPt1gp04opaMiKA1REBuJbACdMoR+N5zxYkx1ILt2ASzmiKaIUm4EhSbxd0I75CeMS4AA/udAc7syx/gcYutpvpADNL1yJDW+3StZY8cXPbshf5/WL+P0e5H4qx/D38f5BPXqwK52dGvNrjL5j+xUAQInWL32begJsXTsmdER6jYVs0jNa6pJ+fSaRWv87Hwf5Q6SNetbhex4prB3Tlp1J/lHPuTKXwL6k7//B57H98IJ/U0z/x5D0QChWDS6SDj4399ChkAhGpAUMYY+MfDzKAAA)">
+                <img src="images/gallery/feeling-flow-442.webp" srcset="images/gallery/feeling-flow-400.webp 400w, images/gallery/feeling-flow-442.webp 442w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="442" height="442" alt="Feeling Flow — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Feeling Flow</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>100 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2200</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Feeling Flow full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="13" data-title="Blue Bubble"
+          data-medium="Oil" data-year="2023" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="blue-bubble.html">
+              <div class="card__frame" style="aspect-ratio:1387/1387;background-image:url(data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoUABQAPt1mq1EopSOiqAgBEBuJaACdMoPEKyt6RAjBdpfi9ArzeUpa9F8TIRDwAP7v15pXDeJojhSuL5qymQZzPnM3jBasxH1WVKrnxLkRlFNe1hAs9XI26B+DWnPEobR8k0GvkWQEc3YsMeN4VY3BBYYvXwfTn/8vV1JUBDQpQ+C5A6jXEWb01ws0WPQ/K7UEpWIt4uQXahoCbmTuZtuYNjYA2RbegAAAAA==)">
+                <img src="images/gallery/blue-bubble-640.webp" srcset="images/gallery/blue-bubble-400.webp 400w, images/gallery/blue-bubble-640.webp 640w, images/gallery/blue-bubble-900.webp 900w, images/gallery/blue-bubble-1387.webp 1387w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1387" height="1387" alt="Blue Bubble — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Blue Bubble</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>100 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2300</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Blue Bubble full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="14" data-title="Sunset Silhouettes"
+          data-medium="Oil" data-year="2023" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="sunset-silhouettes.html">
+              <div class="card__frame" style="aspect-ratio:1387/1387;background-image:url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBQCdASoUABQAPt1iqU+opaOiKAqpEBuJagCdMzLuzGAAWbY+r+4XUuNZJBf5Nnv04AD+u1ZYNTurivijnxabtk0D+YDqteo0CSsFj/XjtzfCTBiOdm6N78N2siHial2O+GQExLpBHb5Y6iQ2YJgCCKd5nhPUuKC2TWYiB+7jRsRlyWOahEmeDgK89XKEhT7mVsF4LfKVplJRqjUlqAAA)">
+                <img src="images/gallery/sunset-silhouettes-640.webp" srcset="images/gallery/sunset-silhouettes-400.webp 400w, images/gallery/sunset-silhouettes-640.webp 640w, images/gallery/sunset-silhouettes-900.webp 900w, images/gallery/sunset-silhouettes-1387.webp 1387w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1387" height="1387" alt="Sunset Silhouettes — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Sunset Silhouettes</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>100 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2300</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Sunset Silhouettes full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="15" data-title="Deep Blue Lagoon"
+          data-medium="Oil" data-year="2023" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="deep-blue-lagoon.html">
+              <div class="card__frame" style="aspect-ratio:1387/1387;background-image:url(data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBQCdASoUABQAPtFQokyoJKMiN/qoAQAaCWoAuzMy5YxJo8Yv1PBjp9pMxRf5wvkiShAA/s8lzNHnAyx9/6yhYnlHF6DUf/G8foc/bvpyJ29TfX2xdiECL6ZFPW/n4qW2Hv8tznfhjylVHnapsl5hgyp6jAIrSZP1/2Kkd1zaA5K4a5cbOhndAC5h2A69vtyIZzEwrNRxR+IDtt3U5VpHEhPDVYv/PbGYVNgAAAA=)">
+                <img src="images/gallery/deep-blue-lagoon-640.webp" srcset="images/gallery/deep-blue-lagoon-400.webp 400w, images/gallery/deep-blue-lagoon-640.webp 640w, images/gallery/deep-blue-lagoon-900.webp 900w, images/gallery/deep-blue-lagoon-1387.webp 1387w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1387" height="1387" alt="Deep Blue Lagoon — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Deep Blue Lagoon</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>100 × 100 × 3 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Deep Blue Lagoon full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="16" data-title="The Dark and Light"
+          data-medium="Oil" data-year="2023" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="the-dark-and-light.html">
+              <div class="card__frame" style="aspect-ratio:705/585;background-image:url(data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwBACdASoUABEAPt1orFEopaQiqAgBEBuJZQC+wA+zsI4Dv2KhS4w3xzmRVFNTSGAA/nL99WZO0+M0Qyj7uw8QOKWT8J+m9FRThZBwv+wy0IL2nPz2I2CZJMzZqBYeCtT+AOi6YkGB5kAA)">
+                <img src="images/gallery/the-dark-and-light-640.webp" srcset="images/gallery/the-dark-and-light-400.webp 400w, images/gallery/the-dark-and-light-640.webp 640w, images/gallery/the-dark-and-light-705.webp 705w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="705" height="585" alt="The Dark and Light — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The Dark and Light</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>100 × 120 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2400</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The Dark and Light full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="17" data-title="Harmony"
+          data-medium="Oil" data-year="2023" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="harmony.html">
+              <div class="card__frame" style="aspect-ratio:3981/2986;background-image:url(data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwBACdASoUAA8APt1apkyopSOiMAgBEBuJbACdMoLUC7AAOJ1gX1CdH8oYAAD9up2kNahFwE27ud8+F/wgylL6fUd9jgolDbwfQOwVn0M7aiL+zDj4t5HdblD48lKvLe1UNN3HtoEAEK2GZ4MewtSFuIL+glUQN3z48yV798qaU/Uc4tEMBAwYAAA=)">
+                <img src="images/gallery/harmony-640.webp" srcset="images/gallery/harmony-400.webp 400w, images/gallery/harmony-640.webp 640w, images/gallery/harmony-900.webp 900w, images/gallery/harmony-1400.webp 1400w, images/gallery/harmony-1800.webp 1800w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="3981" height="2986" alt="Harmony — oil painting, 2023" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Harmony</h3>
+                  <p class="card__spec"><span>Oil</span><span>2023</span><span>60 × 80 × 2 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Harmony full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="18" data-title="Rise Like a Sun"
+          data-medium="Oil" data-year="2022" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="rise-like-a-sun.html">
+              <div class="card__frame" style="aspect-ratio:1387/1387;background-image:url(data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAABQBQCdASoUABQAPt1mrFEopSQiqAgBEBuJbACw+BRCvAC3PYgDQrs6ff1jWSchxe3O+AAA/tFCz6kiL8e48RYSQ4IpSEn/YODJ4xzbtyu47v0kUgEPxCOBfAIbqIJdDiROIlAu9qcPEyRH1k8i3KZ/ndgt6voyWBw2EP9RrxptyRBEDUfbTniPQ3X0y8nXamN9Ebpkkutdn+NveRkhDC8C/Hsff//I2rPzbWuOoPDDj0XW3wJwO6JeCS9y3AYq/zEoVYN47//k5Mroo/+Aw+/a7eHU1FdF9TRmfp8I4QwAAA==)">
+                <img src="images/gallery/rise-like-a-sun-640.webp" srcset="images/gallery/rise-like-a-sun-400.webp 400w, images/gallery/rise-like-a-sun-640.webp 640w, images/gallery/rise-like-a-sun-900.webp 900w, images/gallery/rise-like-a-sun-1387.webp 1387w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1387" height="1387" alt="Rise Like a Sun — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Rise Like a Sun</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>100 × 100 × 4 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Rise Like a Sun full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="19" data-title="The Curve"
+          data-medium="Oil" data-year="2022" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="the-curve.html">
+              <div class="card__frame" style="aspect-ratio:699/699;background-image:url(data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASoUABQAPt1kqE+opaOiKAqpEBuJbACxH1pBVhKwGMPpO0NpiyVumIItMRUF0AD9pu4p7vibSQzc8ICs/Dxp4o1T0DWunqtC+FbszmHP9Jq1cTHvVbJYHw1tmct0/H7dQ8jZdxuZJd5RMB0lQQ1MAAZy/Bd9amboLjkNRm4NG+xZ9jBetR75aDMaWKFukAAA)">
+                <img src="images/gallery/the-curve-640.webp" srcset="images/gallery/the-curve-400.webp 400w, images/gallery/the-curve-640.webp 640w, images/gallery/the-curve-699.webp 699w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="699" height="699" alt="The Curve — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The Curve</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>100 × 100 × 4 cm</span></p>
+                </div>
+                <p class="card__tag">€2300</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The Curve full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="20" data-title="In Shades of Pink"
+          data-medium="Acrylic" data-year="2022" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="in-shades-of-pink.html">
+              <div class="card__frame" style="aspect-ratio:701/594;background-image:url(data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBQCdASoUABEAPt1mq1CopSOiqAgBEBuJaAC293fsAAGMnInqqFMZtppxLnP2575YAOIg27ZvHMfMtHompGJFixPj4zQ2rMBeL4zUkOT//xDh4W3/j1m4/NLtGYdsU+E5hhKMpd9Ojzas9dyX8OlSRlCRpRQTXAw09APOpNdqMdTNRHAPVkHtAdA6AAAA)">
+                <img src="images/gallery/in-shades-of-pink-640.webp" srcset="images/gallery/in-shades-of-pink-400.webp 400w, images/gallery/in-shades-of-pink-640.webp 640w, images/gallery/in-shades-of-pink-701.webp 701w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="701" height="594" alt="In Shades of Pink — acrylic painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">In Shades of Pink</h3>
+                  <p class="card__spec"><span>Acrylic</span><span>2022</span><span>100 × 120 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€2000</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View In Shades of Pink full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="21" data-title="Blue White"
+          data-medium="Oil" data-year="2022" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="blue-white.html">
+              <div class="card__frame" style="aspect-ratio:1387/1387;background-image:url(data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAAAwBQCdASoUABQAPt1mrFCopSQiqAgBEBuJYgC+SywTjYVrXLAzFqs8a10nDeGo84VigADOI30zqfwdTmxneWxn0O8s8V++FhqiHE7e/wOmpvUEMHX5TrWNy/1gSWhUs+pCmg26evHwXGRGE9Fmldm+zlDC8WbNemEY83waPy1ZZf0lVL9rRf4k+ZUJKccGW8QwCSRd4PcbQyEua3CwrAlnqB3wD/vvmULZkLJJx+iiIJ0/z53LtS+YEOIMIlVkXrCfVl6WNnzA+fqKr2Umbx03rvEbVm0iqSGvegd38DORcDVDE8kFmiARVAHNZAAA)">
+                <img src="images/gallery/blue-white-640.webp" srcset="images/gallery/blue-white-400.webp 400w, images/gallery/blue-white-640.webp 640w, images/gallery/blue-white-900.webp 900w, images/gallery/blue-white-1387.webp 1387w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1387" height="1387" alt="Blue White — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Blue White</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>100 × 100 × 4 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Blue White full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="22" data-title="Waves"
+          data-medium="Oil" data-year="2022" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="waves.html">
+              <div class="card__frame" style="aspect-ratio:704/592;background-image:url(data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAAAQBQCdASoUABEAPt1orFCopaQiqAgBEBuJZgCpHIAVyKcKPndjYsKwtv1jCs36+lhwAPvFftf6gcHTTlh9kKuPZuHKKZX+pf4oMb0UHL4EFtkYFTEzIjPzGWRQiFUlgr5Vekn5ENEFmLsYu5QL3SAmobhyA3peCOvLuwZS/0L0o8LJleBqj4utjtrDkoa0qpWQnqiRc8Cv0GkudBLZDDvVp57BEJP9HoiKM5gA)">
+                <img src="images/gallery/waves-640.webp" srcset="images/gallery/waves-400.webp 400w, images/gallery/waves-640.webp 640w, images/gallery/waves-704.webp 704w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="704" height="592" alt="Waves — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Waves</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>100 × 120 × 2 cm</span></p>
+                </div>
+                <p class="card__tag">€2400</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Waves full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="23" data-title="Deep Blue"
+          data-medium="Acrylic" data-year="2022" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="deep-blue.html">
+              <div class="card__frame" style="aspect-ratio:701/594;background-image:url(data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADwBACdASoUABEAPt1kp1AopSMiqAqpEBuJbAC7KLGA7Roo5o0yXbRMqTdUaOLtPgAA4ixhEMz3EJDdKfwE28bAGuErkrnYkVquC3tksGJSLaD7Dqn4RNt6Hh9WxybMxvxYRXa8H/X3lDsZUb00mgXqbQEt0LGmJ2ISLjVINdmBvCrYh1975/F0ZH912Mq6neSwF17Szy0cEaYBzQJek5AWFZ4AAA==)">
+                <img src="images/gallery/deep-blue-640.webp" srcset="images/gallery/deep-blue-400.webp 400w, images/gallery/deep-blue-640.webp 640w, images/gallery/deep-blue-701.webp 701w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="701" height="594" alt="Deep Blue — acrylic painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Deep Blue</h3>
+                  <p class="card__spec"><span>Acrylic</span><span>2022</span><span>100 × 120 × 3 cm</span></p>
+                </div>
+                <p class="card__tag">€1900</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Deep Blue full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="24" data-title="The Wall"
+          data-medium="Oil" data-year="2022" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="the-wall.html">
+              <div class="card__frame" style="aspect-ratio:701/702;background-image:url(data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAADwBACdASoUABQAPt1mrFEopSQiqAgBEBuJZgDG9YuudGF9mLcw08r8TYhagkoVFwAA/qr5WfCtJJMo87AGr10m9qV5Xb+l1AQ1S0yFEzTvB/v1HRbNvc1D/ZNgQElK90wiPmUUZP2+pVQ1T37skCsQlH/Obmt89Dcrm6DnRsrrfxAweiXvc/L/z9ICWAAJI+kTnw5Gcgxp6plhkXujW9FdAiSvqFNVyv3v2FUYJPRUw9824Rd600PJUplre7jKQF6vzsQKmM8lJWrMG4jRW/paCHWOaawhP4eND+mAisAAAA==)">
+                <img src="images/gallery/the-wall-640.webp" srcset="images/gallery/the-wall-400.webp 400w, images/gallery/the-wall-640.webp 640w, images/gallery/the-wall-701.webp 701w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="701" height="702" alt="The Wall — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The Wall</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>100 × 100 × 2 cm</span></p>
+                </div>
+                <p class="card__tag">€2200</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The Wall full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="25" data-title="Summer"
+          data-medium="Oil" data-year="2022" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="summer.html">
+              <div class="card__frame" style="aspect-ratio:442/570;background-image:url(data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAADwBQCdASoUABoAPt1aqU6opKOiMBgIARAbiUAX5zGTze/35aU4Jbkb2+FTbxnN9nbRWIGPs0pUAAD+mMXmQD5lwmFpERIcMdyHW4SikGbIiMPa71fxHDdf8u++Vt9xxBUDTuONVBgn1snOWLOuQEMJCtfnieNwC8FaMDf30FKii7Aj/aUMGGjEn8h01gOVoY4W/oPqeZTT9QpV80lGbQDJYvI/8lC7djGhDAMG/74RYyB3w6KkEmPjGrKTa8srmJzIlmkHLb+50m/Q5JT65rQX5sR3+/vCIAmRLyl/QtKH1kr5Y+AcaHgvC0DcJUdRIzfn+oXzPd+W82tm5XsS/CQtO8EvV50YF1D1a2/QAAA=)">
+                <img src="images/gallery/summer-2022-442.webp" srcset="images/gallery/summer-2022-400.webp 400w, images/gallery/summer-2022-442.webp 442w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="442" height="570" alt="Summer — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Summer</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>80 × 60 × 4 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Summer full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="26" data-title="Intensity"
+          data-medium="Oil" data-year="2022" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="intensity.html">
+              <div class="card__frame" style="aspect-ratio:1193/925;background-image:url(data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASoUABAAPt1apkyopSOiMAgBEBuJagCdAYwm3q/FOjAGgvmAAP6lP2bhOs7s3bI0bH4lBpzSBmiYktJn/OKZrKokqL4uwOqL7dMcfZfOuv567xTmIxhTMmEFB6502sAEAJkRpz76WzchWrKDSU5kePeVYJEupkmV6o0RKiFvF1dW4nHgAAA=)">
+                <img src="images/gallery/intensity-640.webp" srcset="images/gallery/intensity-400.webp 400w, images/gallery/intensity-640.webp 640w, images/gallery/intensity-900.webp 900w, images/gallery/intensity-1193.webp 1193w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1193" height="925" alt="Intensity — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Intensity</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>60 × 80 × 4 cm</span></p>
+                </div>
+                <p class="card__tag">€1500</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Intensity full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="27" data-title="The 7 Hearts"
+          data-medium="Oil" data-year="2022" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="the-7-hearts.html">
+              <div class="card__frame" style="aspect-ratio:581/701;background-image:url(data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAAAwBQCdASoUABgAPt1orFEopaQiqAgBEBuJbACdMzQ1B7oAI1m9B7QoZ/a+DvxVxyZnAAD+7V//kvHbqgcQmI9Qm5niDHHG1NaP6EWUBk6N759SyXTrQS1Taw+bai+O/ZcQ3+MUb+2HCw8D3nBJQddAA69gFNtvnGAR5i7EUj6RM92Fo07ElmVLfHf/pboPnx3YXVuyjgPt9gKWtFh8KreY6Y5IyI0Q4I+EAA==)">
+                <img src="images/gallery/the-7-hearts-581.webp" srcset="images/gallery/the-7-hearts-400.webp 400w, images/gallery/the-7-hearts-581.webp 581w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="581" height="701" alt="The 7 Hearts — oil painting, 2022" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The 7 Hearts</h3>
+                  <p class="card__spec"><span>Oil</span><span>2022</span><span>100 × 120 × 4 cm</span></p>
+                </div>
+                <p class="card__tag">€2300</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The 7 Hearts full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="28" data-title="Nightfall"
+          data-medium="Oil" data-year="2021" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="nightfall.html">
+              <div class="card__frame" style="aspect-ratio:1485/1485;background-image:url(data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABQBACdASoUABQAPt1iqE+opSOiKAqpEBuJQBajZfg1Psbdpym2Gtn7GcAAAP6qtGUkra/hEWAqWxEgBPzVl5RorZ4zJt721sd9EHJxNvwJXlUV8EtDlaLi1pnQRk3EAmROvlDwTVGnS5sAILKkzZA48IMM58GSUWiwAAAA)">
+                <img src="images/gallery/nightfall-640.webp" srcset="images/gallery/nightfall-400.webp 400w, images/gallery/nightfall-640.webp 640w, images/gallery/nightfall-900.webp 900w, images/gallery/nightfall-1400.webp 1400w, images/gallery/nightfall-1485.webp 1485w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1485" height="1485" alt="Nightfall — oil painting, 2021" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Nightfall</h3>
+                  <p class="card__spec"><span>Oil</span><span>2021</span><span>80 × 80 × 4 cm</span></p>
+                </div>
+                <p class="card__tag">€1600</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Nightfall full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="29" data-title="The White Cross"
+          data-medium="Oil" data-year="2020" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="the-white-cross.html">
+              <div class="card__frame" style="aspect-ratio:697/575;background-image:url(data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwAwCdASoUABAAPt1apkyopSOiMAgBEBuJbACdMoR3ACnHy7vIhZSYAPwRPIs52kPJztq6K5znFeLnb/24c7Jnl2IiYbpzRUK7OLbNbF8MKZod3/+JU80ljA0PGLpW9f6VF/ZWnldMT8R+L+pNiXzSaZNGy/UqQ1lDCXVwonTDP11RdwNYUZ5m2YAAAA==)">
+                <img src="images/gallery/the-white-cross-640.webp" srcset="images/gallery/the-white-cross-400.webp 400w, images/gallery/the-white-cross-640.webp 640w, images/gallery/the-white-cross-697.webp 697w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="697" height="575" alt="The White Cross — oil painting, 2020" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The White Cross</h3>
+                  <p class="card__spec"><span>Oil</span><span>2020</span><span>80 × 100 × 2 cm</span></p>
+                </div>
+                <p class="card__tag">€1700</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The White Cross full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="30" data-title="The Red Wall"
+          data-medium="Oil" data-year="2019" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="the-red-wall.html">
+              <div class="card__frame" style="aspect-ratio:703/539;background-image:url(data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwBACdASoUAA8APt1apkyopSOiMAgBEBuJbACdMoR3ACnUHXu8Do4q7i8deAD9bspsclZKDl6rrGn9xU0m6h+RooKHWrATUHqRl+s7qP7DCSnpjVaTzWg7oyhh70tE/R8jxTAtx//tJn2YAAA=)">
+                <img src="images/gallery/the-red-wall-640.webp" srcset="images/gallery/the-red-wall-400.webp 400w, images/gallery/the-red-wall-640.webp 640w, images/gallery/the-red-wall-703.webp 703w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="703" height="539" alt="The Red Wall — oil painting, 2019" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The Red Wall</h3>
+                  <p class="card__spec"><span>Oil</span><span>2019</span><span>97 × 130 × 2 cm</span></p>
+                </div>
+                <p class="card__tag">€2500</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The Red Wall full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="31" data-title="Freedom and Love"
+          data-medium="Oil" data-year="2013" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="freedom-and-love.html">
+              <div class="card__frame" style="aspect-ratio:1485/1486;background-image:url(data:image/webp;base64,UklGRvgAAABXRUJQVlA4IOwAAACQBQCdASoUABQAPt1mq1EopSOiqAgBEBuJbADMHd0jeHNEnkXn9x2IYM4276fqA3qQ9/HCaAD2vbDH79LcHPI0oSWxg7sKpQ1U7EBlrMXrt/ojrPy9Yyf3xxieeJP8w598LiudHeUn+WvbshTGhKM28gIKGiqZ7c32ek4hymkOOdyrkCQAp/fdKAFUs/NGK9s3UxLQtJvLnYbfHajLXJetWzPvaaOJl8mA27YbqNLJB+3POBU+WbzJfpIC7Cu67sSFh/S9+No8Vu/Y7OsBnyL0d6fSJgBxxaZQfhss2BUHLtiA5Dvgqf93pfwAAA==)">
+                <img src="images/gallery/freedom-and-love-640.webp" srcset="images/gallery/freedom-and-love-400.webp 400w, images/gallery/freedom-and-love-640.webp 640w, images/gallery/freedom-and-love-900.webp 900w, images/gallery/freedom-and-love-1400.webp 1400w, images/gallery/freedom-and-love-1485.webp 1485w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1485" height="1486" alt="Freedom and Love — oil painting, 2013" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Freedom and Love</h3>
+                  <p class="card__spec"><span>Oil</span><span>2013</span><span>100 × 100 × 4 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Freedom and Love full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="32" data-title="Fly Like a Bird"
+          data-medium="Oil" data-year="2012" data-status="sold">
+          <div class="card__inner">
+            <a class="card__link" href="fly-like-a-bird.html">
+              <div class="card__frame" style="aspect-ratio:1485/1485;background-image:url(data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAACQBQCdASoUABQAPt1orVEopaQiqAgBEBuJaACxHzQ5mIABMcnB1Qsc9LMv6OJd/QxQf6voAADJYUeXPqMUPQcNc3J8ZduSZDsESmL72A4n+olJLe5Acp/jn+1CqFA18n1lYUijUvxpslSHn/z/1EeeRQp0LsEmi1D7/DIAWMNM2uTlyZ2RLY2ZxcSWQm4WPDTPADnF4wXZ0gLSYBSKmmAA)">
+                <img src="images/gallery/fly-like-a-bird-640.webp" srcset="images/gallery/fly-like-a-bird-400.webp 400w, images/gallery/fly-like-a-bird-640.webp 640w, images/gallery/fly-like-a-bird-900.webp 900w, images/gallery/fly-like-a-bird-1400.webp 1400w, images/gallery/fly-like-a-bird-1485.webp 1485w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1485" height="1485" alt="Fly Like a Bird — oil painting, 2012" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Fly Like a Bird</h3>
+                  <p class="card__spec"><span>Oil</span><span>2012</span><span>100 × 100 × 4 cm</span></p>
+                </div>
+                <p class="card__tag" data-sold>Collected</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Fly Like a Bird full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="33" data-title="The Circle"
+          data-medium="Oil" data-year="2012" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="the-circle.html">
+              <div class="card__frame" style="aspect-ratio:699/698;background-image:url(data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAABwBQCdASoUABQAPt1mp1AopaMiqAqpEBuJaACdMzLwtCBYSCiTd/9mUwP182DAuO670i4AAP7rJ1yZfce4W9KxSqAFIBtJnvUpmiBu8nJOkgTCF3ojZf6rOs7gLMhxDduOp+3YZB5jb/U39mPzxz07UHGfQMUYXSghYsR4QeNQ/8PZDeuVmx0O9dOGV9htjgkXt81xlSCBzzOnUXFfRBWopX8yWH+NqWFI2lr6DAAFE6TsCleio/6NBYLgJWmLRJIAAA==)">
+                <img src="images/gallery/the-circle-640.webp" srcset="images/gallery/the-circle-400.webp 400w, images/gallery/the-circle-640.webp 640w, images/gallery/the-circle-699.webp 699w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="699" height="698" alt="The Circle — oil painting, 2012" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">The Circle</h3>
+                  <p class="card__spec"><span>Oil</span><span>2012</span><span>100 × 100 × 4 cm</span></p>
+                </div>
+                <p class="card__tag">€2100</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View The Circle full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="34" data-title="Mystic Flames"
+          data-medium="Oil" data-year="2010" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="mystic-flames.html">
+              <div class="card__frame" style="aspect-ratio:1387/1387;background-image:url(data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAADwBACdASoUABQAPt1mq1EopSOiqAgBEBuJbACdAA/lpVGlov04WRzKt6adNdgK2AAA/Y84BQe1RgomE6qFQi/tC+8dWuC1yP9lHHmbwg0zZC0b2FggA/wmrjoEubuSfSYCfOfH5fRDW9doZDdHdGJhmvr+ufyq94LXG3gJFBn3yl1a7u+J1OllSK+Gl95wEnMmtOv3c0SS4AVq2jZEwjjdj+s4AquyqJI+M7gVaOgvEQBSUpTyLhLIntzKjItAAAA=)">
+                <img src="images/gallery/mystic-flames-640.webp" srcset="images/gallery/mystic-flames-400.webp 400w, images/gallery/mystic-flames-640.webp 640w, images/gallery/mystic-flames-900.webp 900w, images/gallery/mystic-flames-1387.webp 1387w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1387" height="1387" alt="Mystic Flames — oil painting, 2010" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Mystic Flames</h3>
+                  <p class="card__spec"><span>Oil</span><span>2010</span><span>100 × 100 × 2 cm</span></p>
+                </div>
+                <p class="card__tag">€2200</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Mystic Flames full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+        <article class="card" role="listitem" data-order="35" data-title="Winter"
+          data-medium="Oil" data-year="2009" data-status="available">
+          <div class="card__inner">
+            <a class="card__link" href="winter.html">
+              <div class="card__frame" style="aspect-ratio:1078/924;background-image:url(data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoUABEAPt1mq1CopSOiqAgBEBuJYwDCgYvgZcA1AZkUbBnpAvEuUUnfzgAA/gdWWEThqjbyFNiCrjbIDqf1l9sbPtY4VZXPmUbGnI0bVH9WmJBuvgsf05Z+Tnx7yyQqrHWB/cxekznc3UQeOW1xPPKWCBKBYNayHX2NuFseJyB7bkTG+pUjv8gtcebxwCc4NtiAAA==)">
+                <img src="images/gallery/winter-640.webp" srcset="images/gallery/winter-400.webp 400w, images/gallery/winter-640.webp 640w, images/gallery/winter-900.webp 900w, images/gallery/winter-1078.webp 1078w" sizes="(max-width:559px) 92vw, (max-width:899px) 46vw, (max-width:1399px) 31vw, 23vw"
+                  width="1078" height="924" alt="Winter — oil painting, 2009" loading="lazy" decoding="async">
+              </div>
+              <div class="card__body">
+                <div>
+                  <h3 class="card__title">Winter</h3>
+                  <p class="card__spec"><span>Oil</span><span>2009</span><span>54 × 65 × 2 cm</span></p>
+                </div>
+                <p class="card__tag">€1500</p>
+              </div>
+            </a>
+            <button class="card__zoom" type="button" data-zoom
+              aria-label="View Winter full size"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5"/></svg></button>
+          </div>
+        </article>
+      </div>
+      <div class="gallery-empty" hidden data-empty>
+        <p>No work matches this selection.</p>
+        <button class="chip" type="button" data-reset>Show every work</button>
+      </div>
+    </div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer__grid">
+      <p class="footer__cta">Interested in a canvas? <a href="mailto:jh@julianahaggoo.art">Write to the studio.</a></p>
+      <div class="footer__col">
+        <span class="u-eyebrow">Studio</span>
+        <a href="tel:+33665087560">+33 6 65 08 75 60</a>
+        <a href="mailto:jh@julianahaggoo.art">jh@julianahaggoo.art</a>
+        <a href="https://www.instagram.com/julianahaggooart/" rel="noopener">Instagram</a>
+      </div>
+      <div class="footer__col">
+        <span class="u-eyebrow">Explore</span>
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="events.html">Events</a>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>Juliana Haggoo — Artist Painter © <span id="copyright-year"></span></span>
+      <span>All works and images are the property of the artist.</span>
+    </div>
+  </footer>
+
+  <dialog class="viewer" id="viewer" aria-label="Artwork viewer">
+    <div class="viewer__stage">
+      <div class="viewer__canvas">
+        <p class="viewer__index" data-viewer-index></p>
+        <button class="viewer__close" type="button" data-viewer-close aria-label="Close viewer">&times;</button>
+        <button class="viewer__nav viewer__nav--prev" type="button" data-viewer-prev aria-label="Previous work">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <path d="M15 4 7 12l8 8" />
+          </svg>
+        </button>
+        <button class="viewer__nav viewer__nav--next" type="button" data-viewer-next aria-label="Next work">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <path d="m9 4 8 8-8 8" />
+          </svg>
+        </button>
+      </div>
+      <div class="viewer__bar">
+        <div>
+          <h2 class="viewer__title" data-viewer-title></h2>
+          <p class="viewer__spec" data-viewer-spec></p>
         </div>
+        <div class="viewer__actions">
+          <span class="viewer__tag" data-viewer-tag></span>
+          <a class="viewer__link" data-viewer-link href="#">Open the work</a>
+        </div>
+      </div>
+    </div>
+  </dialog>
 
-      </section>
+  <script>
+    /* =======================================================================
+       Portfolio runtime — masonry, filtering, reveal and viewer.
+       No dependencies; every layout write is a transform.
+       ======================================================================= */
+    (() => {
+      "use strict";
+      const root = document.documentElement;
+      root.classList.remove("no-js");
 
-    </main>
+      const $ = (sel, ctx = document) => ctx.querySelector(sel);
+      const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
+      const calm = matchMedia("(prefers-reduced-motion: reduce)");
 
-  </div>
+      $("#copyright-year").textContent = new Date().getFullYear();
 
-  <!-- Global Mailform Output-->
+      /* ------------------------------------------------------------ masthead */
+      const masthead = $(".masthead");
+      new IntersectionObserver(
+        ([entry]) => masthead.toggleAttribute("data-stuck", !entry.isIntersecting)
+      ).observe($(".scroll-sentinel"));
 
-  <div class="snackbars" id="form-output-global"></div>
+      /* -------------------------------------------------------------- drawer */
+      const drawer = $("#drawer");
+      $("[data-menu-open]").addEventListener("click", () => drawer.showModal());
+      $("[data-menu-close]").addEventListener("click", () => drawer.close());
+      drawer.addEventListener("click", (e) => { if (e.target === drawer) drawer.close(); });
 
-  <!-- Java script-->
+      /* ------------------------------------------------------------- gallery */
+      const gallery = $("#gallery");
+      const cards = $$(".card", gallery);
+      const countEl = $("[data-count]");
+      const emptyEl = $("[data-empty]");
+      const GAP = () => parseFloat(getComputedStyle(gallery).getPropertyValue("--gap")) ||
+        parseFloat(getComputedStyle(document.body).getPropertyValue("--gap")) || 24;
 
-  <script src="js/core.min.js"></script>
+      const state = { medium: "all", status: "all", year: "all", sort: "recent" };
+      let visible = cards.slice();
 
-  <script src="js/script.js"></script>
+      const columnsFor = (width) => width < 560 ? 1 : width < 900 ? 2 : width < 1400 ? 3 : 4;
 
+      /** Pack the visible cards into the shortest column, writing transforms only. */
+      function layout() {
+        const width = gallery.clientWidth;
+        if (!width) return;
+        const gap = GAP();
+        const cols = columnsFor(width);
+        const colWidth = (width - gap * (cols - 1)) / cols;
+
+        for (const card of visible) card.style.width = `${colWidth}px`;
+        const heights = visible.map((card) => card.offsetHeight); // single forced reflow
+        const cursor = new Array(cols).fill(0);
+
+        visible.forEach((card, i) => {
+          let col = 0;
+          for (let c = 1; c < cols; c++) if (cursor[c] < cursor[col] - 0.5) col = c;
+          card.style.transform = `translate3d(${Math.round(col * (colWidth + gap))}px, ${Math.round(cursor[col])}px, 0)`;
+          cursor[col] += heights[i] + gap;
+        });
+
+        gallery.style.height = `${Math.max(0, Math.max(...cursor) - gap)}px`;
+        rewatch();
+      }
+
+      /* Reveal each card once, staggered inside its own viewport batch. */
+      const pending = new Set();
+      const revealer = new IntersectionObserver((entries, obs) => {
+        let batch = 0;
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const card = entry.target;
+          card.style.setProperty("--reveal-delay", `${Math.min(batch++, 8) * 55}ms`);
+          card.setAttribute("data-in", "");
+          pending.delete(card);
+          obs.unobserve(card);
+        }
+      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+
+      /* A card moved by a transform does not re-trigger the observer, so every
+         relayout re-arms the ones still waiting to appear. */
+      function rewatch() {
+        for (const card of pending) {
+          revealer.unobserve(card);
+          revealer.observe(card);
+        }
+      }
+
+      function watch(card) {
+        pending.add(card);
+        revealer.observe(card);
+      }
+
+      /* --------------------------------------------------------- filter/sort */
+      const matches = (card) =>
+        (state.medium === "all" || card.dataset.medium === state.medium) &&
+        (state.year === "all" || card.dataset.year === state.year) &&
+        (state.status === "all" || card.dataset.status === state.status);
+
+      const comparators = {
+        recent: (a, b) => a.dataset.order - b.dataset.order,
+        oldest: (a, b) => b.dataset.order - a.dataset.order,
+        title: (a, b) => a.dataset.title.localeCompare(b.dataset.title, "en"),
+      };
+
+      function apply({ animate = true } = {}) {
+        const next = cards.filter(matches).sort(comparators[state.sort]);
+
+        for (const card of cards) {
+          const shown = next.includes(card);
+          card.toggleAttribute("data-out", !shown);
+          card.inert = !shown;
+          card.setAttribute("aria-hidden", String(!shown));
+        }
+
+        // DOM order follows visual order so tabbing matches what the eye reads.
+        const frag = document.createDocumentFragment();
+        for (const card of next) frag.appendChild(card);
+        gallery.appendChild(frag);
+
+        visible = next;
+        if (!animate) gallery.classList.add("is-resizing");
+        layout();
+        if (!animate) requestAnimationFrame(() => gallery.classList.remove("is-resizing"));
+
+        countEl.textContent = `${next.length} ${next.length === 1 ? "work" : "works"}`;
+        emptyEl.hidden = next.length > 0;
+        for (const card of next) if (!card.hasAttribute("data-in")) watch(card);
+      }
+
+      function syncUrl() {
+        const params = new URLSearchParams();
+        for (const [key, value] of Object.entries(state)) {
+          if (value !== "all" && !(key === "sort" && value === "recent")) params.set(key, value);
+        }
+        const query = params.toString();
+        history.replaceState(null, "", query ? `?${query}` : location.pathname);
+      }
+
+      function readUrl() {
+        const params = new URLSearchParams(location.search);
+        for (const key of Object.keys(state)) {
+          const value = params.get(key);
+          if (value) state[key] = value;
+        }
+        for (const chip of $$(".chip[data-filter]")) {
+          const on = chip.dataset.filter === "status"
+            ? state.status === chip.dataset.value
+            : state[chip.dataset.filter] === chip.dataset.value;
+          chip.setAttribute("aria-pressed", String(on));
+        }
+        $("#year-select").value = state.year;
+        $("#sort-select").value = state.sort;
+      }
+
+      for (const chip of $$(".chip[data-filter]")) {
+        chip.addEventListener("click", () => {
+          const { filter, value } = chip.dataset;
+          if (filter === "status") {
+            state.status = state.status === value ? "all" : value;
+            chip.setAttribute("aria-pressed", String(state.status === value));
+          } else {
+            state[filter] = value;
+            for (const sibling of $$(`.chip[data-filter="${filter}"]`)) {
+              sibling.setAttribute("aria-pressed", String(sibling.dataset.value === value));
+            }
+          }
+          apply();
+          syncUrl();
+        });
+      }
+
+      $("[data-reset]").addEventListener("click", () => {
+        Object.assign(state, { medium: "all", status: "all", year: "all" });
+        for (const chip of $$(".chip[data-filter]")) {
+          chip.setAttribute("aria-pressed", String(chip.dataset.value === "all"));
+        }
+        $("#year-select").value = "all";
+        apply();
+        syncUrl();
+      });
+
+      for (const select of $$("select")) {
+        select.addEventListener("change", () => {
+          state[select.dataset.sort !== undefined ? "sort" : select.dataset.filter] = select.value;
+          apply();
+          syncUrl();
+        });
+      }
+
+      /* -------------------------------------------------------------- viewer */
+      const viewer = $("#viewer");
+      const canvas = $(".viewer__canvas", viewer);
+      const plateSizes = "(max-width: 900px) 92vw, 78vw";
+      let cursor = 0;
+      let opener = null;
+
+      function show(index) {
+        cursor = (index + visible.length) % visible.length;
+        const card = visible[cursor];
+        const source = $("img", card);
+
+        $("[data-viewer-plate]", viewer)?.remove();
+        const plate = new Image();
+        plate.dataset.viewerPlate = "";
+        plate.srcset = source.srcset;
+        plate.sizes = plateSizes;
+        plate.src = source.src;
+        plate.width = source.getAttribute("width");
+        plate.height = source.getAttribute("height");
+        plate.alt = source.alt;
+        canvas.appendChild(plate);
+
+        $("[data-viewer-title]", viewer).textContent = card.dataset.title;
+        $("[data-viewer-spec]", viewer).innerHTML = $(".card__spec", card).innerHTML;
+        $("[data-viewer-tag]", viewer).textContent = $(".card__tag", card).textContent;
+        $("[data-viewer-link]", viewer).href = $(".card__link", card).href;
+        $("[data-viewer-index]", viewer).textContent = `${cursor + 1} / ${visible.length}`;
+      }
+
+      function open(card) {
+        const index = visible.indexOf(card);
+        if (index < 0) return;
+        opener = document.activeElement;
+        show(index);
+        viewer.showModal();
+      }
+
+      gallery.addEventListener("click", (event) => {
+        const zoom = event.target.closest(".card__zoom");
+        if (!zoom) return;
+        event.preventDefault();
+        open(zoom.closest(".card"));
+      });
+
+      $("[data-viewer-close]", viewer).addEventListener("click", () => viewer.close());
+      $("[data-viewer-prev]", viewer).addEventListener("click", () => show(cursor - 1));
+      $("[data-viewer-next]", viewer).addEventListener("click", () => show(cursor + 1));
+      viewer.addEventListener("close", () => opener?.focus());
+      viewer.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowLeft") { event.preventDefault(); show(cursor - 1); }
+        if (event.key === "ArrowRight") { event.preventDefault(); show(cursor + 1); }
+      });
+
+      let swipeFrom = null;
+      canvas.addEventListener("pointerdown", (e) => { swipeFrom = e.clientX; });
+      canvas.addEventListener("pointerup", (e) => {
+        if (swipeFrom === null) return;
+        const delta = e.clientX - swipeFrom;
+        swipeFrom = null;
+        if (Math.abs(delta) > 60) show(cursor + (delta < 0 ? 1 : -1));
+      });
+
+      /* ------------------------------------------------------------ start-up */
+      for (const img of $$(".card img")) {
+        if (img.complete) img.classList.add("is-loaded");
+        else img.addEventListener("load", () => img.classList.add("is-loaded"), { once: true });
+      }
+
+      gallery.classList.add("is-live");
+      readUrl();
+      apply({ animate: false });
+      if (calm.matches) {
+        for (const card of cards) card.setAttribute("data-in", "");
+        pending.clear();
+      }
+
+      let frame = 0;
+      new ResizeObserver(() => {
+        cancelAnimationFrame(frame);
+        gallery.classList.add("is-resizing");
+        frame = requestAnimationFrame(() => {
+          layout();
+          requestAnimationFrame(() => gallery.classList.remove("is-resizing"));
+        });
+      }).observe(gallery);
+
+      document.fonts?.ready.then(layout);
+      addEventListener("load", layout);
+    })();
+  </script>
 </body>
 
 </html>
