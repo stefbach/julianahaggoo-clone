@@ -35,8 +35,13 @@ Edit one of these instead, then rebuild.
 python3 tools/build-images.py   # re-encode the WebP renditions → tools/site.json
 python3 tools/build-site.py     # render the 42 pages
 # or both:
-npm run build
+npm run generate
 ```
+
+Generation is an authoring step, run locally, and its output is committed. The host
+serves the repository as-is and must not build anything — Pillow is not installed there.
+That is why the script is called `generate` and **not** `build`: a script named `build`
+makes Vercel run it on every deploy, and the deploy fails.
 
 `build-images.py` needs Pillow (`pip install Pillow`). For each painting it picks the
 truest, highest-resolution rendition in the repository — separating the canvas from the
