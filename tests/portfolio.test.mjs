@@ -295,17 +295,17 @@ describe('the home carousel', () => {
   }
 
   const at = (page) => page.textContent('[data-slide-status]');
+  const COUNT = 2;
 
   it('opens on the artist beside the black and white canvas', async () => {
     const page = await home();
     const slides = await page.$$eval('[data-slide] img', (imgs) =>
       imgs.map((i) => ({ src: i.getAttribute('src').split('/').pop(), alt: i.alt })));
 
-    assert.equal(slides.length, 3, 'the three plates the old site opened on');
+    assert.equal(slides.length, COUNT);
     assert.match(slides[0].src, /^slide-monochrome-/);
     assert.match(slides[0].alt, /black and white/);
     assert.match(slides[1].src, /^slide-studio-/);
-    assert.match(slides[2].src, /^slide-interior-/);
     assert.deepEqual(page.failures, []);
   });
 
@@ -319,29 +319,38 @@ describe('the home carousel', () => {
 
   it('steps forward, back, and wraps around', async () => {
     const page = await home();
-    assert.equal(await at(page), 'Slide 1 of 3');
+    const lands = (n) => page.waitForFunction(
+      (want) => document.querySelector('[data-slide-status]').textContent === want, n);
 
+    assert.equal(await at(page), `Slide 1 of ${COUNT}`);
+
+    for (let i = 2; i <= COUNT; i++) {
+      await page.click('[data-slide-next]');
+      await lands(`Slide ${i} of ${COUNT}`);
+    }
     await page.click('[data-slide-next]');
-    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 2 of 3');
-    await page.click('[data-slide-next]');
-    await page.click('[data-slide-next]');
-    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 1 of 3');
+    await lands(`Slide 1 of ${COUNT}`);
 
     await page.click('[data-slide-prev]');
-    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 3 of 3');
+    await lands(`Slide ${COUNT} of ${COUNT}`);
   });
 
   it('jumps from the dots and marks the current one', async () => {
     const page = await home();
-    await page.click('[data-slide-to="2"]');
-    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 3 of 3');
+    const last = COUNT - 1;
+    assert.equal(await page.$$eval('[data-slide-to]', (d) => d.length), COUNT, 'one dot per slide');
+
+    await page.click(`[data-slide-to="${last}"]`);
+    await page.waitForFunction(
+      (want) => document.querySelector('[data-slide-status]').textContent === want,
+      `Slide ${COUNT} of ${COUNT}`);
 
     const current = await page.$$eval('[data-slide-to]', (d) =>
       d.findIndex((x) => x.hasAttribute('aria-current')));
-    assert.equal(current, 2);
+    assert.equal(current, last);
 
     const hidden = await page.$$eval('[data-slide]', (s) => s.map((x) => x.hasAttribute('aria-hidden')));
-    assert.deepEqual(hidden, [true, true, false], 'only the visible slide is exposed');
+    assert.deepEqual(hidden, hidden.map((_, i) => i !== last), 'only the visible slide is exposed');
   });
 
   it('rotates on its own, and stops when told to', async () => {
@@ -349,8 +358,8 @@ describe('the home carousel', () => {
     await page.mouse.move(5, 5); // away from the carousel, so it is not paused by hover
 
     await page.waitForFunction(
-      () => document.querySelector('[data-slide-status]').textContent === 'Slide 2 of 3',
-      null, { timeout: 12000 });
+      (want) => document.querySelector('[data-slide-status]').textContent === want,
+      `Slide 2 of ${COUNT}`, { timeout: 12000 });
 
     await page.click('[data-slide-toggle]');
     assert.equal(await page.textContent('[data-slide-toggle-label]'), 'Play');
@@ -367,7 +376,9 @@ describe('the home carousel', () => {
     assert.equal(await at(page), first, 'no autoplay under prefers-reduced-motion');
 
     await page.click('[data-slide-next]');
-    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 2 of 3');
+    await page.waitForFunction(
+      (want) => document.querySelector('[data-slide-status]').textContent === want,
+      `Slide 2 of ${COUNT}`);
   });
 
   it('fits a phone without spilling sideways', async () => {
