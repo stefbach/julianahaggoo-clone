@@ -963,6 +963,165 @@ html:not(.no-js) .plate img:not(.is-loaded) {
   line-height: 1.15;
 }
 
+/* --------------------------------------------------------------- carousel */
+
+.slider {
+  position: relative;
+  isolation: isolate;
+  background: var(--paper-sunken);
+}
+
+.slider__viewport {
+  overflow: hidden;
+}
+
+.slider__track {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+  transition: transform .85s var(--ease-out);
+}
+
+.slider.is-jumping .slider__track {
+  transition: none;
+}
+
+.slider__slide {
+  position: relative;
+  flex: 0 0 100%;
+  aspect-ratio: 3 / 2;
+}
+
+@media (max-width: 44em) {
+  .slider__slide {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+.slider__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__caption {
+  position: absolute;
+  left: var(--shell);
+  bottom: clamp(3.75rem, 8vw, 4.5rem);
+  max-width: min(28rem, 70vw);
+}
+
+.slider__caption span {
+  display: inline-block;
+  padding: .45rem 1.1rem;
+  font-family: var(--serif);
+  font-size: clamp(1.0625rem, 1.7vw, 1.375rem);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.slider__arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-top: -1.5rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: color .3s var(--ease), background-color .3s var(--ease);
+}
+
+.slider__arrow:hover {
+  color: var(--paper);
+  background: var(--ink);
+}
+
+.slider__arrow--prev {
+  left: clamp(.5rem, 2vw, 1.5rem);
+}
+
+.slider__arrow--next {
+  right: clamp(.5rem, 2vw, 1.5rem);
+}
+
+.slider__controls {
+  position: absolute;
+  z-index: 2;
+  left: var(--shell);
+  right: var(--shell);
+  bottom: clamp(1rem, 2.5vw, 1.75rem);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.slider__dots {
+  display: flex;
+  gap: .5rem;
+}
+
+/* The dot is small, its hit area is not: WCAG 2.2 wants 24px of target. */
+.slider__dots button {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+.slider__dots button::after {
+  content: "";
+  position: absolute;
+  inset: .5rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--ink) 30%, transparent);
+  transition: background-color .3s var(--ease), inset .3s var(--ease);
+}
+
+.slider__dots button:hover::after {
+  background: color-mix(in srgb, var(--ink) 60%, transparent);
+}
+
+.slider__dots button[aria-current]::after {
+  inset: .375rem;
+  background: var(--ink);
+}
+
+.slider__play {
+  margin-left: auto;
+  padding: .3rem .9rem;
+  font-size: .625rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  min-height: 1.75rem;
+}
+
+/* Without JS the track cannot move, so show the slides stacked instead. */
+.no-js .slider__track {
+  flex-direction: column;
+}
+
+.no-js .slider__arrow,
+.no-js .slider__controls {
+  display: none;
+}
+
+.no-js .slider__slide[aria-hidden] {
+  display: block;
+}
+
 /* -------------------------------------------------------------- selection */
 
 .grid-3 {
@@ -1271,6 +1430,10 @@ html:not(.no-js) .plate img:not(.is-loaded) {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+
+  .slider__track {
+    transition: none;
   }
 
   html:not(.no-js) .plate img:not(.is-loaded) {

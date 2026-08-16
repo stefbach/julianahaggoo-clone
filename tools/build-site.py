@@ -16,7 +16,7 @@ import sys
 from urllib.parse import quote
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from artworks import ARTWORKS, STUDIO  # noqa: E402
+from artworks import ARTWORKS, HOME_SLIDES, STUDIO  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -31,6 +31,7 @@ SIZES = {
     "canvas": "(max-width:62em) 92vw, 62vw",
     "wide": "(max-width:60em) 92vw, 68vw",
     "photo": "(max-width:40em) 92vw, (max-width:70em) 46vw, 23vw",
+    "slide": "100vw",
 }
 
 NAV = [
@@ -262,6 +263,55 @@ def teaser(work: dict, *, eager: bool = False) -> str:
 
 # -------------------------------------------------------------------- pages
 
+def carousel(page: dict) -> str:
+    """The artist beside her own canvases — the plates the old site opened on."""
+    slides = "\n".join(f"""          <li class="slider__slide" data-slide{' aria-hidden="true"' if i else ''}>
+            {img(page[s['key']], SIZES['slide'], s['alt'],
+                 loading='eager' if i == 0 else 'lazy', target=1400,
+                 extra=f' style="object-position:{s["focus"]}"')}
+            <p class="slider__caption"><span>{e(s['caption'])}</span></p>
+          </li>""" for i, s in enumerate(HOME_SLIDES))
+
+    def dot(i: int) -> str:
+        current = ' aria-current="true"' if i == 0 else ""
+        return (f'            <button type="button" data-slide-to="{i}" '
+                f'aria-label="Go to slide {i + 1}"{current}></button>')
+
+    dots = "\n".join(dot(i) for i in range(len(HOME_SLIDES)))
+
+    return f"""
+    <section class="slider" data-slider aria-roledescription="carousel"
+      aria-label="Juliana Haggoo and her work">
+      <div class="slider__viewport">
+        <ul class="slider__track" data-track>
+{slides}
+        </ul>
+      </div>
+
+      <button class="slider__arrow slider__arrow--prev" type="button" data-slide-prev
+        aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+          stroke-width="1.4" aria-hidden="true"><path d="M15 4 7 12l8 8" /></svg>
+      </button>
+      <button class="slider__arrow slider__arrow--next" type="button" data-slide-next
+        aria-label="Next slide">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+          stroke-width="1.4" aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>
+      </button>
+
+      <div class="slider__controls">
+        <div class="slider__dots" role="group" aria-label="Choose a slide">
+{dots}
+        </div>
+        <button class="slider__play" type="button" data-slide-toggle aria-label="Pause the carousel">
+          <span data-slide-toggle-label>Pause</span>
+        </button>
+      </div>
+      <p class="visually-hidden" role="status" data-slide-status></p>
+    </section>
+"""
+
+
 def build_home(works: list[dict], page: dict) -> str:
     hero = works[0]
     selection = works[1:7]
@@ -276,7 +326,7 @@ def build_home(works: list[dict], page: dict) -> str:
   <main id="main">
     <section class="shell opening">
       <div>
-        <p class="eyebrow">{STUDIO['role']} — Paris</p>
+        <p class="eyebrow">{STUDIO['role']} — Paris &amp; Mauritius</p>
         <h1 class="opening__name">{STUDIO['name']}</h1>
       </div>
       <div class="opening__meta">
@@ -286,10 +336,11 @@ def build_home(works: list[dict], page: dict) -> str:
       </div>
     </section>
 
-    <section class="shell section--tight section--after-title">
+{carousel(page)}
+    <section class="shell section--tight">
       <div class="feature">
         <a href="{url(hero['page'])}" aria-label="{e(hero['title'])}">
-          {plate(hero['canvas'], SIZES['wide'], alt, loading='eager', target=1400)}
+          {plate(hero['canvas'], SIZES['wide'], alt, target=1400)}
         </a>
         <div class="feature__caption">
           <p class="eyebrow">Latest work</p>
@@ -599,7 +650,7 @@ def build_work(work: dict, previous: dict, following: dict, related: list[dict])
     cards = "\n".join(teaser(w) for w in related)
     facts = [("Medium", f'{work["medium"]} on canvas'), ("Year", str(work["year"])),
              ("Dimensions", work["size"]),
-             ("Status", "Collected" if work["sold"] else (work["price"] or "On request"))]
+             ("Status", "Sold" if work["sold"] else (work["price"] or "On request"))]
     fact_rows = "\n".join(
         f'          <div><dt>{label}</dt>\n            <dd>{e(value)}</dd>\n          </div>'
         for label, value in facts)

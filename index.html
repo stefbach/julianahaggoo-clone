@@ -59,7 +59,7 @@
   <main id="main">
     <section class="shell opening">
       <div>
-        <p class="eyebrow">Artist Painter — Paris</p>
+        <p class="eyebrow">Artist Painter — Paris &amp; Mauritius</p>
         <h1 class="opening__name">Juliana Haggoo</h1>
       </div>
       <div class="opening__meta">
@@ -69,10 +69,54 @@
       </div>
     </section>
 
-    <section class="shell section--tight section--after-title">
+
+    <section class="slider" data-slider aria-roledescription="carousel"
+      aria-label="Juliana Haggoo and her work">
+      <div class="slider__viewport">
+        <ul class="slider__track" data-track>
+          <li class="slider__slide" data-slide>
+            <img src="images/page/slide-monochrome-1400.webp" srcset="images/page/slide-monochrome-800.webp 800w, images/page/slide-monochrome-1400.webp 1400w, images/page/slide-monochrome-1800.webp 1800w" sizes="100vw" width="2634" height="2019" alt="Juliana Haggoo beside a black and white canvas" loading="eager" decoding="async" fetchpriority="high" style="object-position:center 42%">
+            <p class="slider__caption"><span>Serenity of Motion</span></p>
+          </li>
+          <li class="slider__slide" data-slide aria-hidden="true">
+            <img src="images/page/slide-studio-1080.webp" srcset="images/page/slide-studio-800.webp 800w, images/page/slide-studio-1080.webp 1080w" sizes="100vw" width="1080" height="1080" alt="Juliana Haggoo in front of a blue and red canvas" loading="lazy" decoding="async" style="object-position:center 28%">
+            <p class="slider__caption"><span>In the studio</span></p>
+          </li>
+          <li class="slider__slide" data-slide aria-hidden="true">
+            <img src="images/page/slide-interior-1400.webp" srcset="images/page/slide-interior-800.webp 800w, images/page/slide-interior-1400.webp 1400w, images/page/slide-interior-1660.webp 1660w" sizes="100vw" width="1660" height="934" alt="Juliana Haggoo seated in front of a large abstract canvas" loading="lazy" decoding="async" style="object-position:center 45%">
+            <p class="slider__caption"><span>Passion Palette</span></p>
+          </li>
+        </ul>
+      </div>
+
+      <button class="slider__arrow slider__arrow--prev" type="button" data-slide-prev
+        aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+          stroke-width="1.4" aria-hidden="true"><path d="M15 4 7 12l8 8" /></svg>
+      </button>
+      <button class="slider__arrow slider__arrow--next" type="button" data-slide-next
+        aria-label="Next slide">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+          stroke-width="1.4" aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>
+      </button>
+
+      <div class="slider__controls">
+        <div class="slider__dots" role="group" aria-label="Choose a slide">
+            <button type="button" data-slide-to="0" aria-label="Go to slide 1" aria-current="true"></button>
+            <button type="button" data-slide-to="1" aria-label="Go to slide 2"></button>
+            <button type="button" data-slide-to="2" aria-label="Go to slide 3"></button>
+        </div>
+        <button class="slider__play" type="button" data-slide-toggle aria-label="Pause the carousel">
+          <span data-slide-toggle-label>Pause</span>
+        </button>
+      </div>
+      <p class="visually-hidden" role="status" data-slide-status></p>
+    </section>
+
+    <section class="shell section--tight">
       <div class="feature">
         <a href="summer-2025.html" aria-label="Summer">
-          <div class="plate" style="aspect-ratio:2420/2419;background-image:url(data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAACQBwCdASoUABQAPt1mq1CopSOiqAgBEBuJbACdMoPEKcMwtbQ/oA3iv0AOlVRoIQDWpDsec2fD/WJ+cKhPMPiKItAvVQAA/od3cUp23+Qja6C673PIxYW5B8SZYjdWk+RoVvO/C45y6AXKi+cubPGUZve+Vl2RMlam36mVunM8ncjG0dtUF4fRzwVd5ZRo4mshiKqB2EnB79/gBlb3P+xOPIpiL+K3WjaZkgkJ/+NuFuG0cCFWB5mfuJRMF1Ij/hmRju0xNFtjDnjMyHTvpHoD1y9FoDkbXUYMPCCS484hUp+kvRmjx/24w0+xeWBSBJvvd/z60FxTkHOvstda/xO1NT8bfJtYjZWw8SGELJLv2ziIE5rrRW0Be+mXtgRMSTbAAA==)"><img src="images/gallery/summer-2025-1400.webp" srcset="images/gallery/summer-2025-400.webp 400w, images/gallery/summer-2025-640.webp 640w, images/gallery/summer-2025-900.webp 900w, images/gallery/summer-2025-1400.webp 1400w, images/gallery/summer-2025-1800.webp 1800w" sizes="(max-width:60em) 92vw, 68vw" width="2420" height="2419" alt="Summer — oil painting, 2025" loading="eager" decoding="async" fetchpriority="high"></div>
+          <div class="plate" style="aspect-ratio:2420/2419;background-image:url(data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAACQBwCdASoUABQAPt1mq1CopSOiqAgBEBuJbACdMoPEKcMwtbQ/oA3iv0AOlVRoIQDWpDsec2fD/WJ+cKhPMPiKItAvVQAA/od3cUp23+Qja6C673PIxYW5B8SZYjdWk+RoVvO/C45y6AXKi+cubPGUZve+Vl2RMlam36mVunM8ncjG0dtUF4fRzwVd5ZRo4mshiKqB2EnB79/gBlb3P+xOPIpiL+K3WjaZkgkJ/+NuFuG0cCFWB5mfuJRMF1Ij/hmRju0xNFtjDnjMyHTvpHoD1y9FoDkbXUYMPCCS484hUp+kvRmjx/24w0+xeWBSBJvvd/z60FxTkHOvstda/xO1NT8bfJtYjZWw8SGELJLv2ziIE5rrRW0Be+mXtgRMSTbAAA==)"><img src="images/gallery/summer-2025-1400.webp" srcset="images/gallery/summer-2025-400.webp 400w, images/gallery/summer-2025-640.webp 640w, images/gallery/summer-2025-900.webp 900w, images/gallery/summer-2025-1400.webp 1400w, images/gallery/summer-2025-1800.webp 1800w" sizes="(max-width:60em) 92vw, 68vw" width="2420" height="2419" alt="Summer — oil painting, 2025" loading="lazy" decoding="async"></div>
         </a>
         <div class="feature__caption">
           <p class="eyebrow">Latest work</p>
@@ -96,7 +140,7 @@
               <h3 class="card__title">The Red</h3>
               <p class="cartel card__spec"><span>Oil</span><span>2025</span><span>130 × 130 cm</span></p>
             </div>
-            <p class="card__tag">Collected</p>
+            <p class="card__tag">Sold</p>
           </div>
         </a>
         <a class="card__link reveal" href="Breath-of-Light.html">
@@ -106,7 +150,7 @@
               <h3 class="card__title">Breath of Light</h3>
               <p class="cartel card__spec"><span>Oil</span><span>2025</span><span>100 × 100 cm</span></p>
             </div>
-            <p class="card__tag">Collected</p>
+            <p class="card__tag">Sold</p>
           </div>
         </a>
         <a class="card__link reveal" href="the-blue.html">
@@ -116,7 +160,7 @@
               <h3 class="card__title">The Blue</h3>
               <p class="cartel card__spec"><span>Oil</span><span>2025</span><span>120 × 120 cm</span></p>
             </div>
-            <p class="card__tag">Collected</p>
+            <p class="card__tag">Sold</p>
           </div>
         </a>
         <a class="card__link reveal" href="Earth-vision.html">

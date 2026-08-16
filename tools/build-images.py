@@ -21,7 +21,8 @@ import sys
 from PIL import Image
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from artworks import ARTWORKS, EXHIBITION_PHOTOS, PAGE_IMAGES, PLATES, Art  # noqa: E402
+from artworks import (ARTWORKS, EXHIBITION_PHOTOS, HOME_SLIDES, PAGE_IMAGES,  # noqa: E402
+                      PLATES, Art)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -161,7 +162,13 @@ def main() -> None:
         im = load(path)
         assert im is not None, f"missing page image {path}"
         manifest["page"][key] = encode(im, "page", key, "page")
-    print(f"  page images            {len(manifest['page'])}")
+
+    for slide in HOME_SLIDES:
+        im = load(slide["src"])
+        assert im is not None, f"missing slide {slide['src']}"
+        manifest["page"][slide["key"]] = encode(im, "page", slide["key"], "page")
+    print(f"  page images            {len(manifest['page'])} "
+          f"({len(HOME_SLIDES)} of them carousel slides)")
 
     with open(os.path.join(HERE, "site.json"), "w", encoding="utf-8") as fh:
         json.dump(manifest, fh, indent=1)

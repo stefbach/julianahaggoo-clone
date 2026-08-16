@@ -280,6 +280,103 @@ describe('portfolio gallery', () => {
   });
 });
 
+describe('the home carousel', () => {
+  /** Open the home page and wait for the carousel to take over. */
+  async function home(options = {}) {
+    const context = await browser.newContext({ viewport: { width: 1440, height: 950 }, ...options });
+    const page = await context.newPage();
+    const failures = [];
+    page.on('pageerror', (e) => failures.push(e.message));
+    await page.goto(`${origin}/index.html`, { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() =>
+      document.querySelector('[data-slide-status]')?.textContent.startsWith('Slide'));
+    page.failures = failures;
+    return page;
+  }
+
+  const at = (page) => page.textContent('[data-slide-status]');
+
+  it('opens on the artist beside the black and white canvas', async () => {
+    const page = await home();
+    const slides = await page.$$eval('[data-slide] img', (imgs) =>
+      imgs.map((i) => ({ src: i.getAttribute('src').split('/').pop(), alt: i.alt })));
+
+    assert.equal(slides.length, 3, 'the three plates the old site opened on');
+    assert.match(slides[0].src, /^slide-monochrome-/);
+    assert.match(slides[0].alt, /black and white/);
+    assert.match(slides[1].src, /^slide-studio-/);
+    assert.match(slides[2].src, /^slide-interior-/);
+    assert.deepEqual(page.failures, []);
+  });
+
+  it('has every slide in hand before anyone clicks', async () => {
+    const page = await home();
+    // A slide waiting off-screen must not download on the click that reveals it.
+    await page.waitForFunction(
+      () => [...document.querySelectorAll('[data-slide] img')].every((i) => i.complete && i.naturalWidth),
+      null, { timeout: 15000 });
+  });
+
+  it('steps forward, back, and wraps around', async () => {
+    const page = await home();
+    assert.equal(await at(page), 'Slide 1 of 3');
+
+    await page.click('[data-slide-next]');
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 2 of 3');
+    await page.click('[data-slide-next]');
+    await page.click('[data-slide-next]');
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 1 of 3');
+
+    await page.click('[data-slide-prev]');
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 3 of 3');
+  });
+
+  it('jumps from the dots and marks the current one', async () => {
+    const page = await home();
+    await page.click('[data-slide-to="2"]');
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 3 of 3');
+
+    const current = await page.$$eval('[data-slide-to]', (d) =>
+      d.findIndex((x) => x.hasAttribute('aria-current')));
+    assert.equal(current, 2);
+
+    const hidden = await page.$$eval('[data-slide]', (s) => s.map((x) => x.hasAttribute('aria-hidden')));
+    assert.deepEqual(hidden, [true, true, false], 'only the visible slide is exposed');
+  });
+
+  it('rotates on its own, and stops when told to', async () => {
+    const page = await home();
+    await page.mouse.move(5, 5); // away from the carousel, so it is not paused by hover
+
+    await page.waitForFunction(
+      () => document.querySelector('[data-slide-status]').textContent === 'Slide 2 of 3',
+      null, { timeout: 12000 });
+
+    await page.click('[data-slide-toggle]');
+    assert.equal(await page.textContent('[data-slide-toggle-label]'), 'Play');
+    const held = await at(page);
+    await page.waitForTimeout(8000);
+    assert.equal(await at(page), held, 'a paused carousel must stay put');
+  });
+
+  it('holds still for anyone who asked for stillness', async () => {
+    const page = await home({ reducedMotion: 'reduce' });
+    assert.equal(await page.textContent('[data-slide-toggle-label]'), 'Play');
+    const first = await at(page);
+    await page.waitForTimeout(8000);
+    assert.equal(await at(page), first, 'no autoplay under prefers-reduced-motion');
+
+    await page.click('[data-slide-next]');
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]').textContent === 'Slide 2 of 3');
+  });
+
+  it('fits a phone without spilling sideways', async () => {
+    const page = await home({ viewport: { width: 390, height: 844 } });
+    assert.equal(await page.evaluate(
+      () => document.documentElement.scrollWidth - document.documentElement.clientWidth), 0);
+  });
+});
+
 describe('the site around it', () => {
   const PAGES = ['index.html', 'about-me.html', 'portfolio.html', 'events.html',
     'art-exhibition.html', 'the-temptation.html', 'summer-2025.html', 'winter.html'];
@@ -349,6 +446,33 @@ describe('the site around it', () => {
 
     await page.keyboard.press('Escape');
     await page.waitForFunction(() => !document.querySelector('#viewer').open);
+    await context.close();
+  });
+
+  it('says Sold, never Collected', async () => {
+    for (const name of ['portfolio.html', 'the-red.html', 'index.html']) {
+      const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+      const page = await context.newPage();
+      await page.goto(`${origin}/${name}`, { waitUntil: 'domcontentloaded' });
+      const text = await page.evaluate(() => document.body.innerText);
+      assert.ok(!/Collected/.test(text), `${name} still says Collected`);
+      await context.close();
+    }
+
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    await page.goto(`${origin}/the-red.html`, { waitUntil: 'domcontentloaded' });
+    const status = await page.$$eval('.work__facts div', (rows) =>
+      rows.map((r) => r.textContent.replace(/\s+/g, ' ').trim()));
+    assert.ok(status.includes('Status Sold'), status.join(' | '));
+    await context.close();
+  });
+
+  it('names both studios on the home page', async () => {
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    await page.goto(`${origin}/index.html`, { waitUntil: 'domcontentloaded' });
+    assert.match(await page.textContent('.opening .eyebrow'), /Paris\s*&\s*Mauritius/);
     await context.close();
   });
 
