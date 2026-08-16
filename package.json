@@ -1,0 +1,17 @@
+{
+  "name": "julianahaggoo-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static site for Juliana Haggoo, artist painter",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "test": "node --test \"tests/**/*.test.mjs\"",
+    "generate": "python3 tools/build-images.py && python3 tools/build-site.py",
+    "generate:images": "python3 tools/build-images.py",
+    "generate:pages": "python3 tools/build-site.py"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
