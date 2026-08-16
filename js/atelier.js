@@ -149,6 +149,96 @@
     });
   }
 
+  /* ------------------------------------------------------------- carousel */
+  const slider = $("[data-slider]");
+  if (slider) {
+    const track = $("[data-track]", slider);
+    const slides = $$("[data-slide]", slider);
+    const dots = $$("[data-slide-to]", slider);
+    const status = $("[data-slide-status]", slider);
+    const toggle = $("[data-slide-toggle]", slider);
+    const toggleLabel = $("[data-slide-toggle-label]", slider);
+    const DWELL = 6000;
+
+    let index = 0;
+    let timer = 0;
+    // Anyone who asked for stillness gets a carousel that only moves on demand.
+    let playing = !calm.matches;
+
+    function show(next) {
+      index = (next + slides.length) % slides.length;
+      track.style.transform = `translate3d(${-index * 100}%, 0, 0)`;
+      slides.forEach((slide, i) => slide.toggleAttribute("aria-hidden", i !== index));
+      dots.forEach((dot, i) => dot.toggleAttribute("aria-current", i === index));
+      status.textContent = `Slide ${index + 1} of ${slides.length}`;
+    }
+
+    function schedule() {
+      clearTimeout(timer);
+      if (playing) timer = setTimeout(() => show(index + 1), DWELL);
+    }
+
+    function go(next) {
+      show(next);
+      schedule();
+    }
+
+    function setPlaying(on) {
+      playing = on;
+      toggleLabel.textContent = on ? "Pause" : "Play";
+      toggle.setAttribute("aria-label", on ? "Pause the carousel" : "Play the carousel");
+      schedule();
+    }
+
+    $("[data-slide-prev]", slider).addEventListener("click", () => go(index - 1));
+    $("[data-slide-next]", slider).addEventListener("click", () => go(index + 1));
+    for (const dot of dots) {
+      dot.addEventListener("click", () => go(Number(dot.dataset.slideTo)));
+    }
+    toggle.addEventListener("click", () => setPlaying(!playing));
+
+    slider.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") { event.preventDefault(); go(index - 1); }
+      if (event.key === "ArrowRight") { event.preventDefault(); go(index + 1); }
+    });
+
+    // Hovering, reading, or looking at another tab all suspend the rotation.
+    for (const [event, on] of [["pointerenter", false], ["pointerleave", true],
+                               ["focusin", false], ["focusout", true]]) {
+      slider.addEventListener(event, () => {
+        clearTimeout(timer);
+        if (on) schedule();
+      });
+    }
+    document.addEventListener("visibilitychange", () => {
+      clearTimeout(timer);
+      if (!document.hidden) schedule();
+    });
+
+    let swipeFrom = null;
+    track.addEventListener("pointerdown", (e) => { swipeFrom = e.clientX; });
+    track.addEventListener("pointerup", (e) => {
+      if (swipeFrom === null) return;
+      const delta = e.clientX - swipeFrom;
+      swipeFrom = null;
+      if (Math.abs(delta) > 50) go(index + (delta < 0 ? 1 : -1));
+    });
+
+    /* A slide parked off to the right is outside the viewport, so a lazy one
+       only starts downloading on the click that reveals it — and the first
+       transition lands on an empty frame. Warm them once the page is in. */
+    function warm() {
+      for (const img of $$("[data-slide] img", slider)) img.loading = "eager";
+    }
+    if (document.readyState === "complete") warm();
+    else addEventListener("load", warm, { once: true });
+
+    slider.classList.add("is-jumping");
+    show(0);
+    requestAnimationFrame(() => slider.classList.remove("is-jumping"));
+    setPlaying(playing);
+  }
+
   /* -------------------------------------------------------------- gallery */
   const gallery = $("#gallery");
   if (!gallery) return;

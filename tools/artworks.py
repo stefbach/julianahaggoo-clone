@@ -29,7 +29,7 @@ class Art:
 
     @property
     def tag(self) -> str:
-        return "Collected" if self.sold else (self.price or "On request")
+        return "Sold" if self.sold else (self.price or "On request")
 
     @property
     def cartel(self) -> list[str]:
@@ -79,11 +79,36 @@ ARTWORKS: list[Art] = [
 # Everything on the site that is not a painting.
 PAGE_IMAGES = {
     "portrait": "images/V2-2-About-Me.png",
-    "home-hero": "images/image-01-1920x1080.webp",
-    "home-studio": "images/image2-04-1920x1080.jpeg",
     "event-exhibition": "images/Cover-Event-2.png",
     "event-temptation": "images/the-temptation.png",
 }
+
+# The home carousel — the artist beside her own canvases, the three plates the
+# original site opened on. `focus` is the object-position: these are portraits,
+# so the crop is anchored on her, never on the middle of the frame.
+HOME_SLIDES = [
+    {
+        "key": "slide-monochrome",
+        "src": "images/image2-04-1920x1080.jpeg",
+        "alt": "Juliana Haggoo beside a black and white canvas",
+        "caption": "Serenity of Motion",
+        "focus": "center 42%",
+    },
+    {
+        "key": "slide-studio",
+        "src": "images/coverslider3.png",
+        "alt": "Juliana Haggoo in front of a blue and red canvas",
+        "caption": "In the studio",
+        "focus": "center 28%",
+    },
+    {
+        "key": "slide-interior",
+        "src": "images/image-01-1920x1080.webp",
+        "alt": "Juliana Haggoo seated in front of a large abstract canvas",
+        "caption": "Passion Palette",
+        "focus": "center 45%",
+    },
+]
 
 EXHIBITION_PHOTOS = [f"images/Art-Exhibition-Gallery-{i}.jpg" for i in range(1, 19)]
 
