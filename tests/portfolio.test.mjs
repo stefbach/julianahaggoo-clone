@@ -105,7 +105,7 @@ describe('portfolio gallery', () => {
 
     assert.equal(result.cards, 36);
     assert.equal(result.overlaps, 0);
-    assert.equal(result.columns, 3, 'three columns at 1440px');
+    assert.equal(result.columns, 3, 'never more than three canvases across');
     assert.equal(result.overflowX, 0);
     assert.ok(result.galleryHeight > 1000, 'gallery is given an explicit height');
     assert.deepEqual(page.failures, []);
@@ -237,7 +237,15 @@ describe('portfolio gallery', () => {
 
   it('reveals every work up front when motion is not welcome', async () => {
     const page = await open('', { reducedMotion: 'reduce' });
-    assert.equal(await page.$$eval('.card[data-in]', (c) => c.length), 36);
+    assert.equal(await page.$$eval('.card .reveal[data-in]', (c) => c.length), 36);
+  });
+
+  it('holds to three columns on a wide desktop too', async () => {
+    const page = await open('', { viewport: { width: 1920, height: 1080 } });
+    const columns = await page.evaluate(() =>
+      new Set([...document.querySelectorAll('.card:not([data-out])')]
+        .map((c) => Math.round(c.getBoundingClientRect().left))).size);
+    assert.equal(columns, 3);
   });
 
   it('renders the artworks with JavaScript disabled', async () => {
@@ -269,5 +277,88 @@ describe('portfolio gallery', () => {
       imgs.flatMap((i) => i.srcset.split(',').map((s) => s.trim().split(' ')[0])));
     const codes = await Promise.all(sources.map(async (s) => (await fetch(`${origin}/${s}`)).status));
     assert.deepEqual([...new Set(codes)], [200], 'a srcset entry is missing from images/gallery');
+  });
+});
+
+describe('the site around it', () => {
+  const PAGES = ['index.html', 'about-me.html', 'portfolio.html', 'events.html',
+    'art-exhibition.html', 'the-temptation.html', 'summer-2025.html', 'winter.html'];
+
+  it('serves every page with the shared shell', async () => {
+    for (const name of PAGES) {
+      const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+      const page = await context.newPage();
+      const failures = [];
+      page.on('pageerror', (e) => failures.push(`${name}: ${e.message}`));
+      const response = await page.goto(`${origin}/${name}`, { waitUntil: 'domcontentloaded' });
+
+      assert.equal(response.status(), 200, name);
+      assert.deepEqual(failures, [], name);
+      assert.ok(await page.$('.masthead'), `${name} has the header`);
+      assert.ok(await page.$('.footer'), `${name} has the footer`);
+      assert.ok(await page.$('a.skip-link'), `${name} has a skip link`);
+      assert.equal(await page.$$eval('h1', (h) => h.length), 1, `${name} has exactly one h1`);
+      await context.close();
+    }
+  });
+
+  it('paints on white, everywhere', async () => {
+    for (const name of ['index.html', 'portfolio.html', 'summer-2025.html']) {
+      const context = await browser.newContext();
+      const page = await context.newPage();
+      await page.goto(`${origin}/${name}`, { waitUntil: 'domcontentloaded' });
+      assert.equal(await page.evaluate(() => getComputedStyle(document.body).backgroundColor),
+        'rgb(255, 255, 255)', name);
+      await context.close();
+    }
+  });
+
+  it('never asks the browser to fetch a missing image', async () => {
+    for (const name of PAGES) {
+      const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+      const page = await context.newPage();
+      const missing = [];
+      page.on('response', (r) => { if (r.status() === 404) missing.push(`${name}: ${r.url()}`); });
+      await page.goto(`${origin}/${name}`, { waitUntil: 'networkidle' });
+      assert.deepEqual(missing, []);
+      await context.close();
+    }
+  });
+
+  it('walks the whole catalogue with prev / next', async () => {
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    await page.goto(`${origin}/summer-2025.html`, { waitUntil: 'domcontentloaded' });
+
+    const links = await page.$$eval('.pager a', (a) => a.map((x) => new URL(x.href).pathname.slice(1)));
+    assert.equal(links.length, 2);
+    assert.equal(links[0], 'winter.html', 'the first work wraps back to the last');
+    assert.equal(links[1], 'the-red.html');
+    await context.close();
+  });
+
+  it('opens an artwork plate in the viewer', async () => {
+    const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const page = await context.newPage();
+    await page.goto(`${origin}/serenity-of-motion.html`, { waitUntil: 'networkidle' });
+
+    await page.click('.work__canvas [data-viewer-open]');
+    await page.waitForFunction(() => document.querySelector('#viewer').open);
+    assert.equal(await page.textContent('[data-viewer-title]'), 'Serenity of Motion');
+    assert.match(await page.textContent('[data-viewer-spec]'), /Oil · 2025/);
+
+    await page.keyboard.press('Escape');
+    await page.waitForFunction(() => !document.querySelector('#viewer').open);
+    await context.close();
+  });
+
+  it('defers the heavy films until someone presses play', async () => {
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    await page.goto(`${origin}/the-temptation.html`, { waitUntil: 'domcontentloaded' });
+    const video = await page.$eval('video', (v) => ({ preload: v.preload, poster: !!v.poster }));
+    assert.equal(video.preload, 'none', 'a 90 MB film must not download on load');
+    assert.ok(video.poster, 'and it needs a poster to stand in for it');
+    await context.close();
   });
 });

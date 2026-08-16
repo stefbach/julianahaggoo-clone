@@ -1,0 +1,3042 @@
+{
+ "works": [
+  {
+   "slug": "summer-2025",
+   "title": "Summer",
+   "page": "summer-2025.html",
+   "medium": "Oil",
+   "year": 2025,
+   "size": "120 \u00d7 120 \u00d7 3 cm",
+   "price": "\u20ac2900",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2900",
+   "canvas": {
+    "w": 2420,
+    "h": 2419,
+    "lqip": "data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAACQBwCdASoUABQAPt1mq1CopSOiqAgBEBuJbACdMoPEKcMwtbQ/oA3iv0AOlVRoIQDWpDsec2fD/WJ+cKhPMPiKItAvVQAA/od3cUp23+Qja6C673PIxYW5B8SZYjdWk+RoVvO/C45y6AXKi+cubPGUZve+Vl2RMlam36mVunM8ncjG0dtUF4fRzwVd5ZRo4mshiKqB2EnB79/gBlb3P+xOPIpiL+K3WjaZkgkJ/+NuFuG0cCFWB5mfuJRMF1Ij/hmRju0xNFtjDnjMyHTvpHoD1y9FoDkbXUYMPCCS484hUp+kvRmjx/24w0+xeWBSBJvvd/z60FxTkHOvstda/xO1NT8bfJtYjZWw8SGELJLv2ziIE5rrRW0Be+mXtgRMSTbAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/summer-2025-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/summer-2025-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/summer-2025-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/summer-2025-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/summer-2025-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 6000,
+     "h": 8000,
+     "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABQBQCdASoUABsAPt1epEyopSMiMBgMARAbiWcAzFgPSl9HpMyd6Q+U0ESIix6ICejf3QAA/bDLeb41pFfM6N3li8wtFVCCcXEREFM99fJlFVy9tT20HNH+cuOYiSnInVPIyB3Of5mNu3ZvpLvVoO54EURVOB4N3ETUoNIWmqC6X2bGqKAF96GDvJEIFlQdFtw/RWB2lS1KPykNnSAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/summer-2025-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/summer-2025-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/summer-2025-view-1-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-red",
+   "title": "The Red",
+   "page": "the-red.html",
+   "medium": "Oil",
+   "year": 2025,
+   "size": "130 \u00d7 130 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 2710,
+    "h": 2711,
+    "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwAwCdASoUABQAPt1orVEopaQiqAgBEBuJQBOmUDX/wE+gxhsegAD+7NlvE0gTo0vBWnl8/+CC9QflyvA63NcWghnthDFWmeGPnnjnh5dzPBqmJIVXG8WFI5KKYqM9qO78NmeM428AAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-red-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-red-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/the-red-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/the-red-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/the-red-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2784,
+     "h": 3970,
+     "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAADwBACdASoUAB0APt1eqU6opSOiMBgIARAbiWwAnQAIGCJTHas/rUndEHuQUIfm1rAA/mhBeTdCkqJhR2TzW3bTtRmViS3Bd58Ni1xZJ0f0ixkh+1H+1HX4ACSwpO2OpbcSkPd3nMqEWvUys2oNRvLwEC/dlgn6xOnkB4rDMqFjMrCTOC9kVs2vnnC4DR3VeGXDejJK5anRkl7Vm3YAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-red-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-red-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-red-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 3987,
+     "h": 2956,
+     "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoUAA8APt1apkyopSOiMAgBEBuJQBfnA6RCMPPX2SXTKbr6kAD7pBGJIMQvN8pfOe3513YiaH2HDSC8TrMnc4rhlQ8XYSOahTBR6whhXfbWI3O8kt/VdWmpKzNgWo5o5sMAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-red-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-red-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-red-view-2-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "breath-of-light",
+   "title": "Breath of Light",
+   "page": "Breath-of-Light.html",
+   "medium": "Oil",
+   "year": 2025,
+   "size": "100 \u00d7 100 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 2536,
+    "h": 2536,
+    "lqip": "data:image/webp;base64,UklGRgABAABXRUJQVlA4IPQAAACQBgCdASoUABQAPt1kqE+opaOiKAqpEBuJbACdMuK6D6AN3Nr+9lsiQgrXDGMavzeQe679fElgJevt3RMAAPrydIFWNvVcUlEgYLJlY9k91uIhdhDHj2O7pExaYN1hNqXte4oDfqJDX538YoKBQWT9qFyx9g4me76/3XVrhETp4ZRnQX9fMCiA6agcgKb0rn+MOiogN0Jvb384SsL7km8zgdzmrNDONRaaPJ3WAJE7ZcfrdEsY5MJTlvFHrfHnB42w3U0ohrswSwSXqN4jMt3TXO8tBVkA2/Hz8FZRAxV9Vo9rAENNmrslGXEgXcYYvmFF0AAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/breath-of-light-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/breath-of-light-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/breath-of-light-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/breath-of-light-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/breath-of-light-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 7000,
+     "h": 8000,
+     "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABQBQCdASoUABcAPt1mp0+opaMiKAqpEBuJYwC2+vIBxf3826aT6yGbRpNnyGiadkZdmgAA/vHv0y7ptUhLrUnczo3X3qBtFJrMrMqHq9D74ZI5GoFD81Mv7Rr6oVHvH9qx49qaa9Iu52eiTTAldvctS+FADBOak7TfUUyzh0Lga5b8bwJOyPk8WKjQEqxf962RFi5MrIT8tGghZZnf0l1f9gAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/breath-of-light-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/breath-of-light-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/breath-of-light-view-1-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-blue",
+   "title": "The Blue",
+   "page": "the-blue.html",
+   "medium": "Oil",
+   "year": 2025,
+   "size": "120 \u00d7 120 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 2400,
+    "h": 2400,
+    "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBQCdASoUABQAPt1mq1EopSOiqAgBEBuJaACdMt61sA80Ej94DphZE1lpZNde0cA6AAD+6PEZuxtKJYt17kBJ0mdaT7mCXsij8T/v++6p7VY5Dy1tdf358alYV5g4kQKg+s75AxdHMvijZl64YPwPPfdW1qdYpt0teP7jVXeohxyWYlwCAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-blue-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-blue-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/the-blue-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/the-blue-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/the-blue-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 5900,
+     "h": 7906,
+     "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADwBACdASoUABsAPt1orVEopaQiqAgBEBuJZgCw7BESuuej5A2+PuXgXGUrPcQwdgAA2+Fq7JBIJucCkJA+g5ncph9R9XpdbTf1cpdi6wTg3+w07jY3FImH4kKGnjDYmo/x0ZudvAJdxeiITruI3NRn4dgFc/k0lS4t7bcIrV2Dxah64z/THyLUMU2U9MMVnn6YEDongT9aAmQzNzG5KwR9y+w6IAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-blue-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-blue-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-blue-view-1-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "earth-vision",
+   "title": "Earth Vision",
+   "page": "Earth-vision.html",
+   "medium": "Oil",
+   "year": 2025,
+   "size": "65 \u00d7 100 \u00d7 3 cm",
+   "price": "\u20ac2600",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2600",
+   "canvas": {
+    "w": 2998,
+    "h": 1999,
+    "lqip": "data:image/webp;base64,UklGRowAAABXRUJQVlA4IIAAAAAQBACdASoUAA0APt1apkyopSOiMAgBEBuJZAC06CIg+lXJKASjXR0tgAD+8ieGi6ENvg31rmV0o4ahTlHNlx2bamYpL/56NXUdf8wcMrPakoQ3xABWz3o4i8CroUe7R1UghDxf+cx/gtEfOqQadwqrtzfGDqA3po4L3rQoFNoAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/earth-vision-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/earth-vision-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/earth-vision-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/earth-vision-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/earth-vision-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2602,
+     "h": 3470,
+     "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAwBQCdASoUABsAPt1iqk8opSOiKAqpEBuJagDGfYsicLyup11QKr3R47BGFRPUG60QAAD+6whhwOcfU/sVx3iU2SHQDAY2OtA5B91fISjwDg4jKgUmjdSCac/aMo70tBW3943MoA27GX1Zm26I/yX+gtACVW4ob5QR+lAEYnWn4u9D9r8zDS5HnIPvdpSkwqOYaNtXne/nZa/YptWNLv+kbDbnhubsoLuZQhaxTNdgWBXCtn7agAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/earth-vision-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/earth-vision-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/earth-vision-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 2634,
+     "h": 3512,
+     "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADwBACdASoUABsAPt1kqU+opSOiKAqpEBuJZAAM4AEQ5G439FAn8AOuO5Tyatc9iwAA/QDeTFjbuFFBjJwbzmMSw3nUkZVsk2pxQfoZ+sTjoXgquQzjLgH3o+zPX+Kz3M/yQzP5WSIJxlGsb7GO/1p/GWJav97kMDIM/aDG5qvFcydTzGPI24uGTFodB0daKMUP3i3yUvsLGw56ZTnffZWL6IL96zCNBmgwaPPaQ2n8doKgJPlIJaiPHwAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/earth-vision-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/earth-vision-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/earth-vision-view-2-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 975,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACwBQCdASoUABsAPt1eqE0opSQiKA1REBuJZQDK1OZGNR6TeSIuQSP4amwua9sfFSsEiClgOWAA/vcQHEinrI9s3Bl9DgZLp6q/4vCfxXkuhId6dr6nrYawBX4TjcgB6mBn1RXiOaPe2CP5EFRc98V0bOlK+jZTjlEfAjD5nu2g917mo82diboRi8za91H5mDteDYZfi5w3tg3e20dQNSnyu0QmnpyeCh2FZ/KIfgwSAAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/earth-vision-view-3-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/earth-vision-view-3-900.webp"
+      },
+      {
+       "w": 975,
+       "src": "images/plates/earth-vision-view-3-975.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "serenity-of-motion",
+   "title": "Serenity of Motion",
+   "page": "serenity-of-motion.html",
+   "medium": "Oil",
+   "year": 2025,
+   "size": "130 \u00d7 130 \u00d7 3 cm",
+   "price": "\u20ac3800",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac3800",
+   "canvas": {
+    "w": 2712,
+    "h": 2712,
+    "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAADwBACdASoUABQAPt1mrFEopSQiqAgBEBuJaQAGaBpAmVAy61qYR85S5SaXgeyNcAAA/uAFecGWtcclLAJwk2G3plYURWVB4dTjjP1lL5B+0j6h/YVKf8AynhRNLMabmzbWA2sNXT+Hs6oH8DDHeTmQn0i9BGfl0M2dntya8NPU+ceqpegTuZFKNHfXYvEQ6Yl+aqht7ksVMHGH+PvbpuRTkUaFh5u42nnvTtwlj2092JsFg3gl+fn8Jmb6kbIOB+EChE2wAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/serenity-of-motion-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/serenity-of-motion-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/serenity-of-motion-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/serenity-of-motion-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/serenity-of-motion-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 3584,
+     "h": 4096,
+     "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADwBACdASoUABcAPt1mq1EopSOiqAgBEBuJZwDKAAuic6aIqOukhjEoVGvupNblgAAA/gjllKaBd/BKIYso24H+OVnir+HYGgWpcoasA6glTczpfm2qrqpMfxA2Cbh+kKTBIyxt/LJCx42242Jw8PAJOiq1X73qgIAZq7Sgs1mwWJRB0ijVdKuqeFJ5AAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/serenity-of-motion-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/serenity-of-motion-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/serenity-of-motion-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 4096,
+     "h": 4096,
+     "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAQBQCdASoUABQAPt1mq1EopSOiqAgBEBuJZwAD5Vjs0Zueq1qS7VLHGt+EyB7HjywAAP6106lRE9fFSEDJo68zUbMoRhUPt2z5bHFEG2qENGsIL6QH6PrsywD/4eQbnkiJZ8BP8A6uRHbTW+dIcvSn/2/po0FddVLTGvsBxj8khV0IaQPgmb/5+f+U5An6ncRGCm/8HjcrZWYr45GBHSMXhG+OvpAP+C59UVp3Xrz66nKFhLwWztN7ZbQ+KP6bwAAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/serenity-of-motion-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/serenity-of-motion-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/serenity-of-motion-view-2-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "flow-of-energy",
+   "title": "Flow of Energy",
+   "page": "flow-of-energy.html",
+   "medium": "Oil",
+   "year": 2024,
+   "size": "100 \u00d7 100 \u00d7 3 cm",
+   "price": "\u20ac2300",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2300",
+   "canvas": {
+    "w": 2524,
+    "h": 2524,
+    "lqip": "data:image/webp;base64,UklGRuoAAABXRUJQVlA4IN4AAABQBgCdASoUABQAPt1iqE+opSOiKAqpEBuJbACdMuIluInz2emAbzCAwv029qIHiC1s7Tl5emMM/r2ZAAD+zyYg7BEojPzJNOpnkSbQw9dH1pgNdzsw/BEIHKSQwHxC9rtTuIqzyy+NN7PhmsrTqkBEaUBvvWIuahYB5xiA9o2DxOZKvxlfs9COvHeIl29XnbkzjWN/9pOuG8fV/ljOg7LdZWOVhr1imoy8V/wt7mjm7lNdgOB/wS12Huf1Ucu9tdTtX3kKfqH1vE3iK8wnZhzoGmkYBCS/62OeQudgAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/flow-of-energy-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/flow-of-energy-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/flow-of-energy-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/flow-of-energy-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/flow-of-energy-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1473,
+     "h": 2000,
+     "lqip": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAADwBQCdASoUABsAPt1eqU4opSOiMBgIARAbiWwAnS/WQYAPGrUnU4Tu4twDI23PXBec4aXRiDezAAD+uwt6rJJxg3YINmBj6wCg2P/jNoqjTkdB7qf3qQG8R+4WQuCBA6Dz8IfHWfCR48r1uPSQNOvnxaUEloKfC7PWDuBnxuyXEYUfobm6gp+tYaPZ2RD1FiJCSijyZEPmaDOjSYMK7RIrz1juQ62W8Gw0xoey6wjdA+q89TASoCKbFqSEqZ2UtmRKyR73QNWBJHfN0C1KJYUccrrDAAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/flow-of-energy-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/flow-of-energy-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/flow-of-energy-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 3000,
+     "h": 4000,
+     "lqip": "data:image/webp;base64,UklGRg4BAABXRUJQVlA4IAIBAAAwBgCdASoUABsAPt1gp04opSMiMBgIARAbiWwAnTKDJ0GIG8xgM6L6RW9y1gExfIGHbeJc+fJFMCQAAP6w4rmNr8bogjINqgEO+Z1lCK6133fFDE56+Qbu2yIw6JX7Edprp332JscGg3ko0X1oRapDV0xmkvlre68VW0M4Bqj0jmtaNMsQzabcGpXPWUXM6A4phYOlOIE/TEG1rNIaxo+wRjAeFJ7IIX3ssGJvv8Zs1FI9aV8FbxjBfP8XCsKNElX74I2ZiizI94S6FVHx8Ak31sNkWLDTbtmIx5awmzSFpUq3YNCo0xtKShapplXhpT7MSAbwMT8RcIpuki/XojNkAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/flow-of-energy-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/flow-of-energy-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/flow-of-energy-view-2-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1080,
+     "h": 1063,
+     "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACwBACdASoUABQAPt1orFEopaQiqAgBEBuJZQAAL3gvawW+JjCDn5V7FlCU8YAAAP6ZTT2UmX2jMUriqULvUYLLL2uq5ntJsO+B2+hdSNYbMqyA8SVIqRFuNvPEddfccr77/61sBM31DOJh0wEHgImob9du/nZ1E0+O9zBIJddR34XMbg6uIu2Xhz4WdtfRpnZ1X/QK41JsPXjz+gAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/flow-of-energy-view-3-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/flow-of-energy-view-3-900.webp"
+      },
+      {
+       "w": 1080,
+       "src": "images/plates/flow-of-energy-view-3-1080.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "whispers-of-pink",
+   "title": "Whispers of Pink",
+   "page": "whispers-of-pink.html",
+   "medium": "Oil",
+   "year": 2024,
+   "size": "100 \u00d7 100 \u00d7 3 cm",
+   "price": "\u20ac2200",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2200",
+   "canvas": {
+    "w": 2644,
+    "h": 2645,
+    "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABwBACdASoUABQAPt1iqE+opSOiKAqpEBuJYwDOOBEcxQ+3r3lEgZxAQ8Jk4AD+6hdeY+vtgXnuZw8SwnPihWhjpLna5F7tCr2Fze97xkYzMDEjwbcogYwuok7Af8QiOHX43XgJLVvQdAk4ivI9bTBJYy3GarQVIMAAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/whispers-of-pink-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/whispers-of-pink-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/whispers-of-pink-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/whispers-of-pink-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/whispers-of-pink-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1500,
+     "h": 2000,
+     "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwBACdASoUABsAPt1ep0yopSOiMAgBEBuJQBajUABpuu8t/fUPcRlwxAPd7VwcvgAA/sOCOAeQLH35BLfkAwJEsHq1ZFhfD6Km1j/zs27rML4n1umm5Glf70NiUcW1txHEcZu9rmDRpFbvyZMVLJx1Ctb391R+2xM/9ByqRSXnERYHNfHMrHwFOyoJ2YmmznbplwaoittQOgAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/whispers-of-pink-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/whispers-of-pink-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/whispers-of-pink-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 3934,
+     "h": 4296,
+     "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAADQBACdASoUABYAPt1Yp0yopSOiMBgMARAbiWYAxnwPSH8AmUBf0IWVdZXmza38gAD+8dfPmiZ/DovSFPDtxe7qdUSQiFcJcm8P85/byN4PMAxuhLFSZm38xCVEpH/koDya9CJXJaPsGufaOogZ4MCFItrUbgyyB9/GkiqXeam242lNhydw8Ql2DM5I+JW/ldTBQhmzdyVai2mWoZx8qZyOk990vQnwPtRxS3zZ1QSMxxAvSHIGmAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/whispers-of-pink-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/whispers-of-pink-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/whispers-of-pink-view-2-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "blue-shadows",
+   "title": "Blue Shadows",
+   "page": "blue-shadows.html",
+   "medium": "Oil",
+   "year": 2024,
+   "size": "100 \u00d7 100 \u00d7 3 cm",
+   "price": "\u20ac2400",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2400",
+   "canvas": {
+    "w": 2517,
+    "h": 2518,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwBACdASoUABQAPt1oq1EopaOiqAgBEBuJYwAALnRbihzzbngUYVLlBwAA/uyOfdxt4nbyb6DBhOhMMY6rppAFdHir0pCarVO/kz6L4zrGmh6AAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/blue-shadows-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/blue-shadows-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/blue-shadows-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/blue-shadows-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/blue-shadows-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1200,
+     "h": 1135,
+     "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADwBACdASoUABMAPt1gqk+opSOiKAqpEBuJZQDId1/ALDyTd8NVAq3+hEM25zybdgAA/vTbgc/JGLvB7RI6rMegcBSrjUi7NQIDao9eMBuWxSYM7cEsu76j9T/1m/XEAxqtQ2RTuh5TbQyX6KFUqJMCYnA1PAUvw1qFTSEET54g413bO0mjw6k33iHfWVgrK4ZfuWOn34ATuAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/blue-shadows-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/blue-shadows-view-1-900.webp"
+      },
+      {
+       "w": 1200,
+       "src": "images/plates/blue-shadows-view-1-1200.webp"
+      }
+     ]
+    },
+    {
+     "w": 847,
+     "h": 1200,
+     "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBQCdASoUABwAPt1iqk+opSOiKAqpEBuJZQAALkL0lOd/mxMJxmG7vjplD5Ewdw5FQAD6Be2YLJ+gbOBE7DZNVrf2wnJIUaaxTFloUqbo6g1rVvZYdHQ7qcNBgzU/f/XqrCyuduWqgfe/Ks5IYSnUKA3hAaN16382EJ+ds7gqBJtZBXu8MLIZU2lktypAMb1RTBh1tN9cfdDg0uakqwpsHmEAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/blue-shadows-view-2-500.webp"
+      },
+      {
+       "w": 847,
+       "src": "images/plates/blue-shadows-view-2-847.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "passion-palette",
+   "title": "Passion Palette",
+   "page": "passion-palette.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "150 \u00d7 200 \u00d7 5 cm",
+   "price": "\u20ac6700",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac6700",
+   "canvas": {
+    "w": 702,
+    "h": 510,
+    "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABwBACdASoUAA8APt1apkyopSOiMAgBEBuJaACdMoKP/bf4tiJUy7pX6v+SAAD7tV+C9f04RFDAvECuDv5xK6wRqlWOR4NsZ9YBDSgtqEu0izYl/xVagnAVYXJ+jxOvjSZ40uLRaTP4reviJDVuJOHOX+JmVjgN9sPc3O1jyeIkk5kEQb06pjEHFLIpWQU9vxR5faf0NiPAAAAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/passion-palette-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/passion-palette-640.webp"
+     },
+     {
+      "w": 702,
+      "src": "images/gallery/passion-palette-702.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1362,
+     "h": 1364,
+     "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAABwBACdASoUABQAPt1cqU0opSQiKA1REBuJZwAAKdjgvYkpM4rPgsD9G6zxiAD9aYP2/NoZOXHYulx3EHcF6vH/1dhLIc/5kjzXJ3FpIboXVWXMGN8IcatAjH4vS4cwyB3YRNPq+NvT3/zgam+QvAWdS523mazlf2158z8gAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/passion-palette-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/passion-palette-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/passion-palette-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1387,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAAAQBACdASoUAA0APt1cp0yopSOiMAgBEBuJYwCdAB+OhbtWhebGC3QeQAD+6UM6uljAWXqpudgmiAl+NIwgexPmuEpt+xujawypHNgR4IPxta3bsDr9rzJAXRq8k1TkpWkwWrOAQNb740jZPIAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/passion-palette-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/passion-palette-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/passion-palette-view-2-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "midnight-whispers",
+   "title": "Midnight Whispers",
+   "page": "midnight-whispers.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "150 \u00d7 100 \u00d7 3 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 980,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABQBACdASoUABwAPtVaoUyoJSMiMAwBABqJQBdgBDvglntlrPcD+Kf1GHwAAPwRSYJjk5074Z0rZ8P4600yYOaA2cU/skDL+kn6mS+OUq8XtpQ/KFs2jh/lEziv9luHQ/ep7RTQIfsc/pxaa3xT0mfX+akA9ahUTgg2KAxo/q9p2IPuQI77yNqUYFx7RQScMk/rOyf8EsbAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/midnight-whispers-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/midnight-whispers-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/midnight-whispers-900.webp"
+     },
+     {
+      "w": 980,
+      "src": "images/gallery/midnight-whispers-980.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1300,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADQBACdASoUABQAPt1mq1EopSOiqAgBEBuJaQAALdBk+add7NnuOsBwofsml59gAAD+kb8/+mLb3VFIbtgnXrFnZckvvpHn8rVpZdUKkvU9xTs4m/jI7tvxWP8T6tF2oNP6tCt/US+M6zbMso+ciL2ZWhhmVqekB1iIOwt6CIVDoU9njoDwMrfqtyhoxoaQytAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/midnight-whispers-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/midnight-whispers-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/midnight-whispers-view-1-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sensuality",
+   "title": "Sensuality",
+   "page": "sensuality.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "150 \u00d7 150 \u00d7 5 cm",
+   "price": "\u20ac5400",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac5400",
+   "canvas": {
+    "w": 1388,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAABwBQCdASoUABQAPt1mq1EopSOiqAgBEBuJQBlAO4FvLEaLtUxtAAZr1FdG3wiFV0zVCfugAPltXLGAjjXbXL3MXnHTLRgfqfnhTIeRqJX6wZ6s8bYGx+5JIN+akzW3277j+RLZjVudf7JJhEDrtH9EgVM2GvpdRoUfreRTX5W6R0cCHtlU1VVxMKHuGRRStUKqu+kgQwRr0mMMx/58kUkOBQhy892VaaSw7tnmMS8Ptf9paZOqXufBaP3GK2fcxmdSxNksMlfqafVaWDApuP5qjrbLM8fFM5D4OiOVO9yQlRbl5lR8M89SiZnJ5L6AAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/sensuality-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/sensuality-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/sensuality-900.webp"
+     },
+     {
+      "w": 1388,
+      "src": "images/gallery/sensuality-1388.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1200,
+     "h": 930,
+     "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADwAwCdASoUABAAPt1apkyopSOiMAgBEBuJaQAD5hnaOTq/VuLxlI0YAP5+eKTzE/11ZLqvHF6rT+uKZvKjH06ovDhpDWGPwqXL0vkVWFTLCN9ugn5soknQ3TAz5F74Z1vydgihbPurTb5fUIdjp4mKdy/IIj0uyHOeObUvkuOAoAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/sensuality-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/sensuality-view-1-900.webp"
+      },
+      {
+       "w": 1200,
+       "src": "images/plates/sensuality-view-1-1200.webp"
+      }
+     ]
+    },
+    {
+     "w": 1078,
+     "h": 924,
+     "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoUABEAPt1mq1CopSOiqAgBEBuJYwDCgYvgZcA1AZkUbBnpAvEuUUnfzgAA/gdWWEThqjbyFNiCrjbIDqf1l9sbPtY4VZXPmUbGnI0bVH9WmJBuvgsf05Z+Tnx7yyQqrHWB/cxekznc3UQeOW1xPPKWCBKBYNayHX2NuFseJyB7bkTG+pUjv8gtcebxwCc4NtiAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/sensuality-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/sensuality-view-2-900.webp"
+      },
+      {
+       "w": 1078,
+       "src": "images/plates/sensuality-view-2-1078.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "feeling-flow",
+   "title": "Feeling Flow",
+   "page": "feeling-flow.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "100 \u00d7 100 \u00d7 3 cm",
+   "price": "\u20ac2200",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2200",
+   "canvas": {
+    "w": 442,
+    "h": 442,
+    "lqip": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAABwBgCdASoUABQAPt1gp04opaMiKA1REBuJbACdMoR+N5zxYkx1ILt2ASzmiKaIUm4EhSbxd0I75CeMS4AA/udAc7syx/gcYutpvpADNL1yJDW+3StZY8cXPbshf5/WL+P0e5H4qx/D38f5BPXqwK52dGvNrjL5j+xUAQInWL32begJsXTsmdER6jYVs0jNa6pJ+fSaRWv87Hwf5Q6SNetbhex4prB3Tlp1J/lHPuTKXwL6k7//B57H98IJ/U0z/x5D0QChWDS6SDj4399ChkAhGpAUMYY+MfDzKAAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/feeling-flow-400.webp"
+     },
+     {
+      "w": 442,
+      "src": "images/gallery/feeling-flow-442.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 698,
+     "h": 697,
+     "lqip": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAAAQBwCdASoUABQAPt1kp1AopSMiqAqpEBuJbACdMoSCyIIsJqrgs36zZYBvPhXgBKeUHqpbwO/Gs4iB0dJbmLrMAAD+50CRz5SHuL9r85xH4VbQZ9M25GkfjHr17stbslzIQfU3DNn/8Youq4lHWKb75ob6tBCUs/nzxjf5qWzTdkeBcW7ywkjjYE7mEcEflJ2uyLZJKcgkv2AEbmnzpqClWJnvgit0cSfoU6GW9X87KQkz1hs7+fXZ3bG3bRRaDGDmJj33E487rVfcy7LklkDf40UkZ11ymwhVqy/eDF3EnJ4JTKNGfQBTrlhzYAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/feeling-flow-view-1-500.webp"
+      },
+      {
+       "w": 698,
+       "src": "images/plates/feeling-flow-view-1-698.webp"
+      }
+     ]
+    },
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBQCdASoUAA0APt1apkyopSOiMAgBEBuJbACdMoR4PoLlXfoHv/2SyBbY+UGgT+/lr6sjgAD+4KbgLkqwVEl6LvODjISXUYkPjEBvtMkylsnUX7ye/tU0zFfOULksmeOLp/a0HFg5/yTtIJ1CRr9b+78wp99RaCxTnFt8G5muR0VYJW9BS2Ob7mzMbiK1f+mr9TdyY/5afyVj3tnMTEe8zQBifCjYsQAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/feeling-flow-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/feeling-flow-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/feeling-flow-view-2-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 2828,
+     "h": 3698,
+     "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAADwBACdASoUABoAPt1kqU+opSOiKAqpEBuJagC+SBEc3rt/oLh6cflHZ5rrIsN5bgAA/vHexulN4/b52L1rghZ1pDI1vU3Rettfu5KErU5q70jdrZEObnZobbHltfVyLFyV/48BPO4Xs5lPFyvEFgOisTv2YU/3V4dSvQMI0K+6Bq9mRzFBFhqgiUgTtrqtWukVSCHQerdDtfZ+EuObNqGkwMJDvl0mhXoIv8BZzV1F8AIPxEPTgcev+0EtM0AA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/feeling-flow-view-3-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/feeling-flow-view-3-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/feeling-flow-view-3-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "blue-bubble",
+   "title": "Blue Bubble",
+   "page": "blue-bubble.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "100 \u00d7 100 \u00d7 3 cm",
+   "price": "\u20ac2300",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2300",
+   "canvas": {
+    "w": 1387,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoUABQAPt1mq1EopSOiqAgBEBuJaACdMoPEKyt6RAjBdpfi9ArzeUpa9F8TIRDwAP7v15pXDeJojhSuL5qymQZzPnM3jBasxH1WVKrnxLkRlFNe1hAs9XI26B+DWnPEobR8k0GvkWQEc3YsMeN4VY3BBYYvXwfTn/8vV1JUBDQpQ+C5A6jXEWb01ws0WPQ/K7UEpWIt4uQXahoCbmTuZtuYNjYA2RbegAAAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/blue-bubble-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/blue-bubble-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/blue-bubble-900.webp"
+     },
+     {
+      "w": 1387,
+      "src": "images/gallery/blue-bubble-1387.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1070,
+     "h": 1065,
+     "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACQBQCdASoUABQAPt1orFEopaQiqAgBEBuJYwC3uy6A2QeE1cN+KwAdHF6NtiKDjGPSXMqwkAD+1vR0Ic86IwKT1yzV3ynG4Q+8lOfQgCZtRtuZuMm+3Oi1MJcSRIE46tD1kpoMr9XcRh/ANHx/+7BNxuOI6DAgeiv/Gn22+ErsOmMwkaLRl5WHkLaczpLd0/IZb+S3dGojna9UdbW77Je450WKguAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/blue-bubble-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/blue-bubble-view-1-900.webp"
+      },
+      {
+       "w": 1070,
+       "src": "images/plates/blue-bubble-view-1-1070.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sunset-silhouettes",
+   "title": "Sunset Silhouettes",
+   "page": "sunset-silhouettes.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "100 \u00d7 100 \u00d7 3 cm",
+   "price": "\u20ac2300",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2300",
+   "canvas": {
+    "w": 1387,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAwBQCdASoUABQAPt1iqU+opaOiKAqpEBuJagCdMzLuzGAAWbY+r+4XUuNZJBf5Nnv04AD+u1ZYNTurivijnxabtk0D+YDqteo0CSsFj/XjtzfCTBiOdm6N78N2siHial2O+GQExLpBHb5Y6iQ2YJgCCKd5nhPUuKC2TWYiB+7jRsRlyWOahEmeDgK89XKEhT7mVsF4LfKVplJRqjUlqAAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/sunset-silhouettes-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/sunset-silhouettes-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/sunset-silhouettes-900.webp"
+     },
+     {
+      "w": 1387,
+      "src": "images/gallery/sunset-silhouettes-1387.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1138,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAwBQCdASoUABcAPt1gp06opSMiMBgIARAbiWcAyrQQ75oGLXWXah4vZ/QnXXm0z0ssAAD+7iX18g6SRpOnmg5iB8K5p3HT16i/DK3KixizE9g5TjnW/kNRsy0cQRQG2Mk0zmIre2t7GsPKznW1WS4YyMwIDUZPB+kdTZTM990Y+iJw7d9ZHh0EwXoJnhc0+XGoeRwT5jWHw0WFN8F+LQpqiYpRDi2AAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/sunset-silhouettes-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/sunset-silhouettes-view-1-900.webp"
+      },
+      {
+       "w": 1138,
+       "src": "images/plates/sunset-silhouettes-view-1-1138.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "deep-blue-lagoon",
+   "title": "Deep Blue Lagoon",
+   "page": "deep-blue-lagoon.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "100 \u00d7 100 \u00d7 3 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 1387,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBQCdASoUABQAPtFQokyoJKMiN/qoAQAaCWoAuzMy5YxJo8Yv1PBjp9pMxRf5wvkiShAA/s8lzNHnAyx9/6yhYnlHF6DUf/G8foc/bvpyJ29TfX2xdiECL6ZFPW/n4qW2Hv8tznfhjylVHnapsl5hgyp6jAIrSZP1/2Kkd1zaA5K4a5cbOhndAC5h2A69vtyIZzEwrNRxR+IDtt3U5VpHEhPDVYv/PbGYVNgAAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/deep-blue-lagoon-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/deep-blue-lagoon-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/deep-blue-lagoon-900.webp"
+     },
+     {
+      "w": 1387,
+      "src": "images/gallery/deep-blue-lagoon-1387.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1060,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBACdASoUABkAPt1aqU6opKOiMBgIARAbiUAYdYIcMuVytRNatIaJUkuyyAAA/vIgWf0iuixyJGQFJxp7/g7F8I+oIumb49bBqVQ3ZbTzedz3tL/8LWEqH5C3eE0vU6WM2544WNhkeFTS5+a/JKAm1z360c1AN5xbkOdNYl2fZjivr0pg8qyKXlKELbLoxyA6vBAStkMMIDMerP8ebdqzHjdUq6WbN4AAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/deep-blue-lagoon-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/deep-blue-lagoon-view-1-900.webp"
+      },
+      {
+       "w": 1060,
+       "src": "images/plates/deep-blue-lagoon-view-1-1060.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-dark-and-light",
+   "title": "The Dark and Light",
+   "page": "the-dark-and-light.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "100 \u00d7 120 \u00d7 3 cm",
+   "price": "\u20ac2400",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2400",
+   "canvas": {
+    "w": 705,
+    "h": 585,
+    "lqip": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAADwBACdASoUABEAPt1orFEopaQiqAgBEBuJZQDDrA+zsI4Dv2KhKIng3AwneRmkqrAA/nL99WZO0+M0Qyj7uw8QOKWT8J+m9Fh1UcbQbHRc/7sJYsgQ958QygzZkpwU6mLprObecTc8gHERgAAAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-dark-and-light-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-dark-and-light-640.webp"
+     },
+     {
+      "w": 705,
+      "src": "images/gallery/the-dark-and-light-705.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAA0APt1cp0yopSOiMAgBEBuJZQCsAB5vO5I/L6bFAAD+0Zq6gx0qFPp658i4YOGPnhYcftHcMKvjFzFGjTyEpxAVb3HloamLBzoAAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-dark-and-light-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-dark-and-light-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-dark-and-light-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 4408,
+     "h": 6799,
+     "lqip": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAACQBQCdASoUAB8APt1eqE4opSOiMBgIARAbiWMAsOwxTmKnPoY4xcg/GB2whtGQdR9yDwkzeAD+5+0+zAgpnZeR7/oHO7PKJknVSsgCvRjLJLfN87eQ1U4/b4HGnNaT3JBr9h2s1pVi1vi4F3s5Hg4EKC57TR03hGUCH9r5+rnUiZxcqlhSGnc2xgv0q0w+AQklT9P2pftSylaLkHreN17p/VAaADG8a04y3aM0JjnP5n7exh/Ic+HbJG1pFxaqZR/lBqeSqrW/iLXsN3ClFh0aMsrJ84E9Q/DTqQAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-dark-and-light-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-dark-and-light-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-dark-and-light-view-2-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "harmony",
+   "title": "Harmony",
+   "page": "harmony.html",
+   "medium": "Oil",
+   "year": 2023,
+   "size": "60 \u00d7 80 \u00d7 2 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 3981,
+    "h": 2986,
+    "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAABwBACdASoUAA8APt1apkyopSOiMAgBEBuJbACdMoLUC7AAOJ1gX1CdH8oYAAD9up2kNahFwE27ud8+F/wgylL6fUd9jgolDbwfQOwVn0M7aiL+zDj4t5HdblD48lKvLe1UNN3HtoEAEK2GZ4MewtSFuIL+glUQN3z48yV798qaU/Uc4tEMBAwYAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/harmony-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/harmony-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/harmony-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/harmony-1400.webp"
+     },
+     {
+      "w": 1800,
+      "src": "images/gallery/harmony-1800.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 3704,
+     "h": 2759,
+     "lqip": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQBACdASoUAA8APt1apkyopSOiMAgBEBuJbACdMoRwACUTygfNF2TIAAD+zYMBcPuCJiyq6hzPKgWk5CKjh6PtvoOWsFJ1mXcOszaMmfPMIeqc40IKTXjTBRmbwBl2k58YYfoNAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/harmony-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/harmony-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/harmony-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1056,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAAAQBQCdASoUABkAPt1kqk+opaOiKAqpEBuJYwCdAA3Mirhez2HPToINc0d6/1Wy8gqAAP5rQF5MqzoiHzGRuuOvPgfS4hm6l45VSCn3TK4anbBiFtwC97u7Qi7S9F4LdjthSKldfAdd9JvOi9YYEogZvBv0KXmoMsxmO0GKZn8sHMD/HM1FtJwk+N5lFwqBMh32w1eY5lunGM93CBhDkRhGydTOW2XwhANcmrmeEn0zkZW0M4p9mFEPrv9B5YAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/harmony-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/harmony-view-2-900.webp"
+      },
+      {
+       "w": 1056,
+       "src": "images/plates/harmony-view-2-1056.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "rise-like-a-sun",
+   "title": "Rise Like a Sun",
+   "page": "rise-like-a-sun.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "100 \u00d7 100 \u00d7 4 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 1387,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAABQBQCdASoUABQAPt1mrFEopSQiqAgBEBuJbACw+BRCvAC3PYgDQrs6ff1jWSchxe3O+AAA/tFCz6kiL8e48RYSQ4IpSEn/YODJ4xzbtyu47v0kUgEPxCOBfAIbqIJdDiROIlAu9qcPEyRH1k8i3KZ/ndgt6voyWBw2EP9RrxptyRBEDUfbTniPQ3X0y8nXamN9Ebpkkutdn+NveRkhDC8C/Hsff//I2rPzbWuOoPDDj0XW3wJwO6JeCS9y3AYq/zEoVYN47//k5Mroo/+Aw+/a7eHU1FdF9TRmfp8I4QwAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/rise-like-a-sun-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/rise-like-a-sun-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/rise-like-a-sun-900.webp"
+     },
+     {
+      "w": 1387,
+      "src": "images/gallery/rise-like-a-sun-1387.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 3000,
+     "h": 3000,
+     "lqip": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAAAQBQCdASoUABQAPt1mrFEopSQiqAgBEBuJYgCuPSABjdwt+KISrk3Gu7R9io2K8BIAAP7pXciuNca/u0YkwQO06ukjLZbt5ndoKJ2qvuGSOhD9fZDiUiMkpWHg8/MT2/ZDfChfj9/iu62/WlZx1BEnNIxvcOiQ1Vts7tbtC3Q7SkBOX/yJJysnu/yOvk0VX+cuH/8lnxb/qq78Pk9uqD6l6rq38GxXcAuN7GMsy/oH/eLfxNZLaGn/KbRnubV2+Dg6oOtLv1JGVycdXuhuGOY14dr5UAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/rise-like-a-sun-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/rise-like-a-sun-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/rise-like-a-sun-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 740,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAACwBQCdASoUABkAPt1mp1AopaMiqAqpEBuJagCdM0xBxTr+o/kwEPF2ciVaa5+sak6jguKaBgAA/k6dZIkIBSP7jb22sMtbaX+EZqUQ0bY8AYBVPbt8CFNBCq5uWARqvEvEMKZ0IRTy8K7B6UVofQ2iT17sAnh9RhOT9RKu6kKyq3Rz9RcYf3v+8vllYDuHqGSoUjSNo0u6uppHuTMJZGACTQzz+PHOrOtDg3j/Ngm/E2ypI/+vtIQRhokQ78JfetKGMA70eNskTwsHMBJw64ZCx5LcggZXKP8nfFWgkBhb8CzcAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/rise-like-a-sun-view-2-500.webp"
+      },
+      {
+       "w": 740,
+       "src": "images/plates/rise-like-a-sun-view-2-740.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-curve",
+   "title": "The Curve",
+   "page": "the-curve.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "100 \u00d7 100 \u00d7 4 cm",
+   "price": "\u20ac2300",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2300",
+   "canvas": {
+    "w": 699,
+    "h": 699,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAAAwBQCdASoUABQAPt1kqE+opaOiKAqpEBuJbACxH1pBVhKwGMPpO0NpiyVumIItMRUF0AD9pu4p7vibSQzc8ICs/Dxp4o1T0DWunqtC+FbszmHP9Jq1cTHvVbJYHw1tmct0/H7dQ8jZdxuZJd5RMB0lQQ1MAAZy/Bd9amboLjkNRm4NG+xZ9jBetR75aDMaWKFukAAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-curve-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-curve-640.webp"
+     },
+     {
+      "w": 699,
+      "src": "images/gallery/the-curve-699.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 4096,
+     "h": 2808,
+     "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBACdASoUAA4APt1apkyopSOiMAgBEBuJYgCdEf/qUAJ5UgvjaiKwNwAA8FxNHTDeu2AuP48GPuU+fkpGFwnu/iMKdXC9c3XDo+APZs66epz3+fWQ4gyzPI8O7igIm+lyGYrbUhJJwU9PkLrSvGwcF83begWETOeL4S4fUfgDFhjEDC/zKn7L1HlSnwAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-curve-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-curve-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-curve-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 754,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAAAQBgCdASoUABkAPt1mq1CopSOiqAgBEBuJbACdMoSCv/gIk7zMAykZYdBIt/5JII30g1uUyYBm/QAA/uYDHYe+u0hhqDyXOjxvWH5hSSi0bnAh5eqps4ZzEeM6mH0ZKLIMsCAIQjxQ3o7ibW+fxvBhm2OnPv4NZhDg/xz2JtJJRMCRgC0yQDJySVTiQktC+y2Ao/NCIsytTFs3dH3GVa9JsyVIZ6RgqW8Hp/RV9koRIDXoVHMdIXhoZ+g7O6CjBTYM+q6u4v86zJhF5AAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-curve-view-2-500.webp"
+      },
+      {
+       "w": 754,
+       "src": "images/plates/the-curve-view-2-754.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "in-shades-of-pink",
+   "title": "In Shades of Pink",
+   "page": "in-shades-of-pink.html",
+   "medium": "Acrylic",
+   "year": 2022,
+   "size": "100 \u00d7 120 \u00d7 3 cm",
+   "price": "\u20ac2000",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2000",
+   "canvas": {
+    "w": 701,
+    "h": 594,
+    "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAQBQCdASoUABEAPt1mq1EopSOiqAgBEBuJagC7L8LsAAGMnInqqFMZrcU8klZYC6u4AOIg27ZvHMfMtHompGJFixPj4zQ2rMBeL4zUkOxf/xDia6J9rWPchesyWA5Tf55zEAUkW+KO6u9caQYkfBVvuGyQlCJ8KII2yU1PvRy8RkcNOE+18rAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/in-shades-of-pink-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/in-shades-of-pink-640.webp"
+     },
+     {
+      "w": 701,
+      "src": "images/gallery/in-shades-of-pink-701.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACQAwCdASoUAA0APt1apkyopSOiMAgBEBuJbACdACFdOKc41/9gAP4uInyuJp1fpB8oeDLlyM3uFkeJt5W0yk3DBGzohN2Hf/5NA/8/v95W3/rMdllPwjNDm6C+712LddUr6XojU+0AAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/in-shades-of-pink-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/in-shades-of-pink-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/in-shades-of-pink-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 894,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoUAB0APt1gp0yopaOiMAgBEBuJQBibBDv8eK7F14VxMlQ6ikK9lcmJQ+5uAAD+w7R3oFXrXYsAMOCM2hQGdbZfhd6Ukp/LpXNv5dzvZ7K9Zg6+5x43QbQJHlBHfO8YQADeE8GYjY+Uhpd1eWTFNP0xlWAV0w/RMs0aAFIFSlHNIgLvmRxhmKdffGNggaHV24+PqCHbTCIiQzRhE5Nm250hKAFc6tcbfZoAN6xjBDwVLOFIAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/in-shades-of-pink-view-2-500.webp"
+      },
+      {
+       "w": 894,
+       "src": "images/plates/in-shades-of-pink-view-2-894.webp"
+      }
+     ]
+    },
+    {
+     "w": 740,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABQBQCdASoUABkAPt1kqE+opSOiKAqpEBuJbACxHuN5n7MyqoAr/Zm8rQElTu0mN4r1dwAA77e4pOUIx+gEGB8FK3rqLgCEu9OVOIcftNWucloEVKCkjHuudFVuhj2gei/TnZGhYlaLaVOq44TUy+pqdrZvZQox4XRjh0m9uHJXqihFY/VidQP+qvhmA3fn/9TghjYCjrVavfRuhKaumndArDba37DGUIhqBf9Gg/lMAAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/in-shades-of-pink-view-3-500.webp"
+      },
+      {
+       "w": 740,
+       "src": "images/plates/in-shades-of-pink-view-3-740.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "blue-white",
+   "title": "Blue White",
+   "page": "blue-white.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "100 \u00d7 100 \u00d7 4 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 1387,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRvoAAABXRUJQVlA4IO4AAAAwBQCdASoUABQAPt1mrFCopSQiqAgBEBuJYgC+SywTjYVrXLAzFqs8a10nDeGo84VigADOI30zqfwdTmxneWxn0O8s8V++FhqiHE7e/wOmpvUEMHX5TrWNy/1gSWhUs+pCmg26evHwXGRGE9Fmldm+zlDC8WbNemEY83waPy1ZZf0lVL9rRf4k+ZUJKccGW8QwCSRd4PcbQyEua3CwrAlnqB3wD/vvmULZkLJJx+iiIJ0/z53LtS+YEOIMIlVkXrCfVl6WNnzA+fqKr2Umbx03rvEbVm0iqSGvegd38DORcDVDE8kFmiARVAHNZAAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/blue-white-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/blue-white-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/blue-white-900.webp"
+     },
+     {
+      "w": 1387,
+      "src": "images/gallery/blue-white-1387.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 894,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAABQBQCdASoUAB0APt1eqE4opSOiMBgIARAbiWUAxNg0eCU4RT7tyO/TPzH3mPgyud883IAA/qMiyFL3WUoZO1o7OVYwUDjci7dxFcqQo9VUwn/WFdr1UVQmYRUcHKQy3DxLfkgDMriARxQBd9ES6ZiL+qrXvPY7uNMYrOClnwuANCw0rqCjweKxeekhITUdRkATp31vs6nsq3Ofdfns1EcKoQAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/blue-white-view-1-500.webp"
+      },
+      {
+       "w": 894,
+       "src": "images/plates/blue-white-view-1-894.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "waves",
+   "title": "Waves",
+   "page": "waves.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "100 \u00d7 120 \u00d7 2 cm",
+   "price": "\u20ac2400",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2400",
+   "canvas": {
+    "w": 704,
+    "h": 592,
+    "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABQBQCdASoUABEAPt1orFCopaQiqAgBEBuJZgCpHIAVxscKPndjYsKwQu5OZY/mGs12CRgA+8V+1/OlMliS3TZD8kyX+wUiBM9d/WU0bFGcvfixSRaVLv38CGotkRCIVSGBQ/Boqs+59JQ+ulL60jt3kDEUpu/Fz8s5IbgLFb/xgqNXuI9+yzLmvsQd7i3ko0L0H8JWQndVLwl+gyu/1zNDnvHzKbqHpm9CYh0GYBNMAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/waves-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/waves-640.webp"
+     },
+     {
+      "w": 704,
+      "src": "images/gallery/waves-704.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAAAwBACdASoUAA0APt1apkyopSOiMAgBEBuJbABTAFvpNWJSu+CgNmOA7AAA+7X3PRd6EHHgDzImrubm/lZX0jai2KT8v7fmiSHgKTcNQwqeCwhv/2O7ha7/0JqiZCJCvg2IuYnJg85O31Qvzpa7w21T3WBSTaKamtH9F//VfePXZTe726oSw21Pqr/PJ+BO47ELqZwjqQwjc/7mjChD8rehGzNjfwB92nuMtKNpoYSahjatYIxuHayq7QAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/waves-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/waves-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/waves-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 738,
+     "h": 922,
+     "lqip": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAAAQBgCdASoUABkAPt1mq1EopSOiqAgBEBuJaACdM1pBXf/i2HTisXP46+YBN5w+bc32gp9FS5oBuAAA/rfC21Sv9GM+w1f4wWUKnP3HUBNfs79PDyfxFmB7dPS9jFWd3n8+7kCvIcSbtIouVbQvONPMcellyNcnpZ6eo50ndo9ZUVFAv4CUV6NzKqJ4BQkYV6SAR4Gn3/fcGt5fBlvgzaZntifrmhLNMS5yl2ZG2XxB4wdnDWh0vTMTj9+hkwe447W8Nx7FQYkhDBCEweenFDlj+sGI3O2vP08yXlb/18OplyMePZYYfN9gAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/waves-view-2-500.webp"
+      },
+      {
+       "w": 738,
+       "src": "images/plates/waves-view-2-738.webp"
+      }
+     ]
+    },
+    {
+     "w": 1200,
+     "h": 750,
+     "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAAwAPt1cpkyopSOiMAgBEBuJZQDKACG8BfJtxiWggAD+8iBTgD7F8an9akuBFgIKEvhymsqFP6V0BSkJow10Teo3FtTg+PvxMJKzVAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/waves-view-3-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/waves-view-3-900.webp"
+      },
+      {
+       "w": 1200,
+       "src": "images/plates/waves-view-3-1200.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "deep-blue",
+   "title": "Deep Blue",
+   "page": "deep-blue.html",
+   "medium": "Acrylic",
+   "year": 2022,
+   "size": "100 \u00d7 120 \u00d7 3 cm",
+   "price": "\u20ac1900",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac1900",
+   "canvas": {
+    "w": 701,
+    "h": 594,
+    "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACwBACdASoUABEAPt1kp1AopSMiqAqpEBuJbAC7ABEh6kLomrdEgP2reE9OoyUwAOIsYRDM9xCQ3Sn8BNvGwBrhK5K52JFargt7ZLBiUi2g+w6p+ETbeh4fVscmzMcGWf+vfZz84d2eeGlQXM8F4ALPsLIlfI64tUV1x/SS9p/pnmwmcYHXS6VnEzVfggmSoPGZnX+VyyofJ18HexyA1ThOMAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/deep-blue-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/deep-blue-640.webp"
+     },
+     {
+      "w": 701,
+      "src": "images/gallery/deep-blue-701.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAADwAwCdASoUAA0APt1apkyopSOiMAgBEBuJbACdMoAB2LYyZg0jqA6AAP6pps3BJbOXH0RC1RyyvAReawuFKUXRwXQTLFWAbtuOpRvZdbZer24FLr37OZI5v3R6tdWwwT8uDRG+Da1W5Ph0aFMqGocadTtQvqqzF75pef44qmF+f4HO4mvcZa+rRQUQ+oK6vgAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/deep-blue-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/deep-blue-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/deep-blue-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1138,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADQBACdASoUABcAPt1ip04opaOiMBgIARAbiUAZEwId/4sZqdtuhs01LkL41jQxwAD+7UG/LrZP+jrj+w5E3PPJAxbvUTj1Ii7xerM0kpZ4e4nxZrZ6AeiUGZvqm6pIqY8pmjeOTtEdMXFU7tN4rOKtDTq2GNgHtDraDzXSAANWbRKukw2uR0/XUvbqreLHerGyFpqfiHizlJ8TYxm48+H1QEciExhdRiqakJAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/deep-blue-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/deep-blue-view-2-900.webp"
+      },
+      {
+       "w": 1138,
+       "src": "images/plates/deep-blue-view-2-1138.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-wall",
+   "title": "The Wall",
+   "page": "the-wall.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "100 \u00d7 100 \u00d7 2 cm",
+   "price": "\u20ac2200",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2200",
+   "canvas": {
+    "w": 701,
+    "h": 702,
+    "lqip": "data:image/webp;base64,UklGRuwAAABXRUJQVlA4IOAAAADwBACdASoUABQAPt1mrFEopSQiqAgBEBuJZgDG9YuudGF+bX8MwzqU568yXuHyiMAA/qr5WfCtJJMo87AGr10m9q/XWMmEy/hEp8P5oFQkY9GhkWm7Vx6jgL0+uFo+rZZgVbhr+tZ2T0aq+BrS6xVckNwJ/zwBy+9EcaUz9EXHICLMGsEOIU2cLgHYAAcDGRQjSUPgjNFvJhA4t9IHRW8d1gQSiU+Jz+K+Pu/6nPkqYe+bcItd4D8vsychK6jp8A2VRkpbreawJ0TaMcugPSLhhGLgQ1hCfw7eC9yCOwAAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-wall-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-wall-640.webp"
+     },
+     {
+      "w": 701,
+      "src": "images/gallery/the-wall-701.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBACdASoUAA0APt1apkyopSOiMAgBEBuJZAC7IIm2RiIyDAb4E1D4AVf+oAD+vhz3taRxZxxyuZ+FKrZc/x5I2+uqTsA80pIoPS9nKO3xgR8D0NhRYYrQjerjp9zx2ciyVrpQoHmdkav8bKHAdz1sK2U4QUHaYkwf99ZR5eJ+MQ8MqOwjideG0rk6OEBnXhTY+v9dXqTJ+NY6gKmx4dbhcD1nc+XZ8fhT141KXAsGEAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-wall-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-wall-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-wall-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 740,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRuIAAABXRUJQVlA4INYAAAAQBQCdASoUABkAPt1kqU+opaOiKAqpEBuJbACdMuovjgFQ2W4SaDIHP9REGsW4jeAAAPoz9XsyJJw6El7qmAlvDXWuufhl69MMnSYmGGKruy0/O3aopc/RV/kh8yUTJ5fqlpeaPY4Ui8QMt+J2p9ltr0v3ovkD3TxJdWNYmpDENAM0Ww9U4jq70jmOEsS1JkyfH7JKapBihBsedTba5iF8yOP9N2a9LSqU5YCzfA13hUf9K1xNlRQsfBSjBGjZ2txZb22nyb37VIvgw0Mc2ns43oP6MAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-wall-view-2-500.webp"
+      },
+      {
+       "w": 740,
+       "src": "images/plates/the-wall-view-2-740.webp"
+      }
+     ]
+    },
+    {
+     "w": 1300,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoUABQAPt1mrFEopSQiqAgBEBuJZQAALk7D5QRRdywV0XsgQAAA/u9J1b2Dmcq12PjWO9Vo+DSEKb9LumcELlRyD/Sei48zJzETHNGlLEaUBN7euzems72l1ipueyLuyOFST4N5gDVGlsqH9oklw6B+DEQTYOWoEFIBAAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-wall-view-3-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-wall-view-3-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-wall-view-3-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "summer-2022",
+   "title": "Summer",
+   "page": "summer.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "80 \u00d7 60 \u00d7 4 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 442,
+    "h": 570,
+    "lqip": "data:image/webp;base64,UklGRhoBAABXRUJQVlA4IA4BAADwBQCdASoUABoAPt1aqU6opKOiMBgIARAbiUAX5zGTze/35aU4Jbkb2+FTbxnN9nbRWIGPs0pUAAD+mMXmQD5lwmFpERIcMdyHW4SikGbIiMPa71fxHDdf8u++Vt9xxBUDTuONVBgn1snOWLOuQEMJCtfnieNwC8FaMDf30FKii7Aj/aUMGGjEn8h01gOVoY4W/oPqeZTT9QpV80lGbQDJYvI/8lC7djGhDAMG/74RYyB3w6KkEmPjGrKTa8srmJzIlmkHLb+50m/Q5JT65rQX5sR3+/vCIAmRLyl/QtKH1kr5Y+AcaHgvC0DcJUdRIzfn+oXzPd+W82tm5XsS/CQtO8EvV50YF1D1a2/QAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/summer-2022-400.webp"
+     },
+     {
+      "w": 442,
+      "src": "images/gallery/summer-2022-442.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 544,
+     "h": 702,
+     "lqip": "data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAACwBQCdASoUABoAPt1kqU+opSOiKAqpEBuJQBdgN8xylhKesD0cLgJJ9r9NfeEXncjyJP+0QAAA/OAeSjL/xc9KuFPwhO2ex6yhKuonsmP6CkMlYOnRj8IHpmofb/d7pUf9JzSwIHTzfBO0yUom4pPrScKsQwvtiqYiO7nZW924TooHKZUp/baA2tfuO5zMm6Dm77CmJM4ck5zN4lZT8Pf8Oe/HX89Ii/1LIvlOBrJS2bDQBBNdyBaKORO7dpbaYffzj2z0mlsvzYip29QaUwEaefdTOpB++pOn/LVSry8PUZJt8T9HPJrfmbuwNDbavsFswI6dL/9VC55w8FvVtpD5p51kdVIVmAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/summer-2022-view-1-500.webp"
+      },
+      {
+       "w": 544,
+       "src": "images/plates/summer-2022-view-1-544.webp"
+      }
+     ]
+    },
+    {
+     "w": 1194,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAADQAwCdASoUAA8APt1apkyopSOiMAgBEBuJQBOgMYYQ15a5sNUcb6wA/HQB/nCM7Rt1KAFqXyhDqNxG9zBOo2M9vL8V/neyipF+YxULkeEEDL9YnoblOOtanQKD/ueXdpGm3JbYDDwcGH8CY+Eow+PmZrixpQTSmTP48CPeTBHfxIL97/+PoQL/YEhvPG6X+j8n+yF4IFKwEHynlTpiQsDIR27l8AAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/summer-2022-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/summer-2022-view-2-900.webp"
+      },
+      {
+       "w": 1194,
+       "src": "images/plates/summer-2022-view-2-1194.webp"
+      }
+     ]
+    },
+    {
+     "w": 740,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRiABAABXRUJQVlA4IBQBAACwBQCdASoUABkAPt1kqE+opSOiKAqpEBuJaACdL0LC2bAVxOSpcuWkWUFchBG32IKPr/8n0tgAyhvjtGilgiLfeiOEowE7TruGdHcOAOAYlljxVkKcQrBcVWeJTmeCbjjXQ0gKFROaSt3Jux3wT6oAXb+Zq7cVnifTSguzz27lp3e9AN+8auZ0vGvRk+nU5zBOcnWgNFPS44q62j3ZCkLojSqgjQ4Wh0DoCRFiqyZm8edGq4az9mBPJ3Rxu9V70TdT037vG04PabThMW/0b1G5tNPmmN85TMDx7qXdNU74vhTbHYOLbfb9e4P5PgQSLRXfzlR4DFv6KJSwqfA71JRr3uJ2O77+TrF+ikOKbOUBEeplAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/summer-2022-view-3-500.webp"
+      },
+      {
+       "w": 740,
+       "src": "images/plates/summer-2022-view-3-740.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "intensity",
+   "title": "Intensity",
+   "page": "intensity.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "60 \u00d7 80 \u00d7 4 cm",
+   "price": "\u20ac1500",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac1500",
+   "canvas": {
+    "w": 1193,
+    "h": 925,
+    "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASoUABAAPt1apkyopSOiMAgBEBuJagCdAYwm3q/FOjAGgvmAAP6lP2bhOs7s3bI0bH4lBpzSBmiYktJn/OKZrKokqL4uwOqL7dMcfZfOuv567xTmIxhTMmEFB6502sAEAJkRpz76WzchWrKDSU5kePeVYJEupkmV6o0RKiFvF1dW4nHgAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/intensity-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/intensity-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/intensity-900.webp"
+     },
+     {
+      "w": 1193,
+      "src": "images/gallery/intensity-1193.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAABwBACdASoUAA0APt1apkyopSOiMAgBEBuJbACdMoEUoERkIy4axEb1e445eAD+T6nFNbwkaQxmLcUZ4KepIq0qZjryfN5g/nMwtXqwW9yBTvLv6Zs7OQrTJLsph+JO3C/UOZo4CeBYJrPLYlscQCEem2F5nqB3a3CxEWxsDv9jtZMtFz34v1ZjgIUokOZ7Srxvp5YG7wkU1ysvy4n70a5x+a+eAAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/intensity-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/intensity-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/intensity-view-1-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-7-hearts",
+   "title": "The 7 Hearts",
+   "page": "the-7-hearts.html",
+   "medium": "Oil",
+   "year": 2022,
+   "size": "100 \u00d7 120 \u00d7 4 cm",
+   "price": "\u20ac2300",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2300",
+   "canvas": {
+    "w": 581,
+    "h": 701,
+    "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAAAwBQCdASoUABgAPt1orFEopaQiqAgBEBuJbACdMzQ1B7oAI1m9B7Qr9Yr0gD/0VQISQAD+7V//kvHbqgcQmI9Qm5niDHHG1NaP6EWUBk6N759SyXTrQS1Taw+bai+O/ZcQ3+MUb+2HCw8D0jtHSEQPUHCmdEce6Rvsor3pwjoa13jpUN9WuBjzy9Yfg7Qh3+yjtDNz2dRBlSpBkCHPNYCB1U+94f4cWQoAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-7-hearts-400.webp"
+     },
+     {
+      "w": 581,
+      "src": "images/gallery/the-7-hearts-581.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAAAQBACdASoUAA0APt1cpkyopSOiMAgBEBuJbACdMoRwAB3DhlaMX4CHAAD+1ngb5Amm4KyMXfPx270Qyl01OLpTWhvWOJu/JTWklkZ+N7tbnP690SrFusx7HyuLk9N8VIRiH4bk6PWeTGMCwjaP1fEPLxZEVpXoGT3ib7xAh3u2FL0+WHhvdWxCBoAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-7-hearts-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-7-hearts-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-7-hearts-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1200,
+     "h": 1050,
+     "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADQBACdASoUABIAPt1orFCopaQiqAgBEBuJZQDGfBERPg9Uj0cm1zr+aVpZRwDwqAD+6nSgwo+X/NXCYnP87QLLehVYtM1ZrFEDtDw9Eydh6mJxDpNNNYwGXfivnEhTmZoH0o96FE//xsFGHeGOyCJceDtVmd93yT/1Y0ehvKiB0iVR9WXXmGh+chAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-7-hearts-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-7-hearts-view-2-900.webp"
+      },
+      {
+       "w": 1200,
+       "src": "images/plates/the-7-hearts-view-2-1200.webp"
+      }
+     ]
+    },
+    {
+     "w": 694,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBQCdASoUABsAPt1apEyopSOiMAgBEBuJagCdM098IC1hYltIJbM6rLzJtUjWDvwQALfchhd11bNTIWWpSFVGTNwTyUllZdEJibx9NSSsA4Jti+jXqURliW7mOC/T9Q61OwX61gnyGtSmx/8++nGJpUDBv8zdFGgBNlvGsyAdFKwtECE7DV8r5fkKkXNR8AA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-7-hearts-view-3-500.webp"
+      },
+      {
+       "w": 694,
+       "src": "images/plates/the-7-hearts-view-3-694.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "nightfall",
+   "title": "Nightfall",
+   "page": "nightfall.html",
+   "medium": "Oil",
+   "year": 2021,
+   "size": "80 \u00d7 80 \u00d7 4 cm",
+   "price": "\u20ac1600",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac1600",
+   "canvas": {
+    "w": 1485,
+    "h": 1485,
+    "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABQBACdASoUABQAPt1iqE+opSOiKAqpEBuJQBajZfg1Psbdpym2Gtn7GcAAAP6qtGUkra/hEWAqWxEgBPzVl5RorZ4zJt721sd9EHJxNvwJXlUV8EtDlaLi1pnQRk3EAmROvlDwTVGnS5sAILKkzZA48IMM58GSUWiwAAAA",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/nightfall-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/nightfall-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/nightfall-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/nightfall-1400.webp"
+     },
+     {
+      "w": 1485,
+      "src": "images/gallery/nightfall-1485.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAA0APt1cqE0opSQiMAgBEBuJbACsACG51ZHHsBFAAP7r65F2q1PiUkNbD3EIfPaaIC9C4crbszeuHPm0CzDgacREsPqAAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/nightfall-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/nightfall-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/nightfall-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1386,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAAAwBACdASoUAA0APt1cpkyopSOiMAgBEBuJbACdMoGv/jeACZme1zoCxAAA/u3Y9aYKpQjIPg/8BmU5QQV7CU0WX0W389wG4GKrekxIuFercA8l0TWNsgg2XycTd/q917ZCwn0FQsfPsyXRjWgUMQIZSgB26mKyZ5EMzkEesna/v2ZgW+0A+2qcWqc3/hja3trbPOZeSWpnhbxBCWSe/MjVhhni/x95+Zy05tIAAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/nightfall-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/nightfall-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/nightfall-view-2-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-white-cross",
+   "title": "The White Cross",
+   "page": "the-white-cross.html",
+   "medium": "Oil",
+   "year": 2020,
+   "size": "80 \u00d7 100 \u00d7 2 cm",
+   "price": "\u20ac1700",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac1700",
+   "canvas": {
+    "w": 697,
+    "h": 575,
+    "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAADwAwCdASoUABAAPt1apkyopSOiMAgBEBuJbACdMoR3ACnHy7vIhZSYAPwRPIs52kPJztq6K5znFeLnb/24c7Jnl2IiYbpzRUK7OLbNbF8MKZod3/+JU80ljA0PGLpW9f6VF/ZWnldMT8R+L+pNiXzSaZNGy/UqQ1lDCXVwonTDP11RdwNYUZ5m2YAAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-white-cross-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-white-cross-640.webp"
+     },
+     {
+      "w": 697,
+      "src": "images/gallery/the-white-cross-697.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAADQAwCdASoUAA0APt1cpkyopSOiMAgBEBuJaACdMoADO/2aOqKnjhwA/tkVCKIDH4Z8XJDzF8T+tZQCLrJKR/P5m9bZr6QJjRJA/V/8Ssq6Ldm/pWVf5/hcH9d2nTIf4L1gAlVhLVKGoAq/M/i1+KAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-white-cross-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-white-cross-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-white-cross-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 617,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRjABAABXRUJQVlA4ICQBAABQBgCdASoUAB4APt1cpUyopSOiMAgBEBuJbACdMxngAmlpGuhABKggWpe2r4x+VxP2r0ikqVH91DbcAAD+czwSMn2blWvb2tSjPyZxBnnEkrD80M+RZ2szbrnt4jhRPqL28NC/slzimPvCdl4195DisgfQJkvfzjKL6BKA7YL7ecO4Nt2Kh/y4qg0d+NjYeeUhP+wrAfv8SVZaStpFDw62BiXEiNffYFRcySi1/UepddCIlBNsVkYS1rQlNFzzD+Pd/qFICASKo2crhLmOZPAVxNDTDsVZH7QocPZXNh7j+/3xFLsVmS8CeZQ0LBK52oq/8D/9i2HikkOWjBXVnsyOc4gFouYSUM17HxSOUonHAqWpD9+PmSDzjXv5wg4tgvEqT4AA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-white-cross-view-2-500.webp"
+      },
+      {
+       "w": 617,
+       "src": "images/plates/the-white-cross-view-2-617.webp"
+      }
+     ]
+    },
+    {
+     "w": 810,
+     "h": 1300,
+     "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAAAwBQCdASoUACAAPt1aqU6opKOiMBgIARAbiWMAyrQ1dlldqPP4lXhixke6RRy1ZJsobAD+6tEUgRTfH0Sq0Dx8DUl0PqDIa9osq8WnizcOsB8AXMUQ9PPyoqb58gvp4/HLby3sDXmlehCfgC5WtvSv+OOBdwanEwWLsvhzv86lh7OZN8GdhOllPQk/IyYFEWWLgqvanrhi6rb3h+nbCpKjg3E7LJNYdw83Veg1gCTUqbYXWXFKZuDnXLKQAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-white-cross-view-3-500.webp"
+      },
+      {
+       "w": 810,
+       "src": "images/plates/the-white-cross-view-3-810.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-red-wall",
+   "title": "The Red Wall",
+   "page": "the-red-wall.html",
+   "medium": "Oil",
+   "year": 2019,
+   "size": "97 \u00d7 130 \u00d7 2 cm",
+   "price": "\u20ac2500",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2500",
+   "canvas": {
+    "w": 703,
+    "h": 539,
+    "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwBACdASoUAA8APt1cpkyopSOiMAgBEBuJbACdMoR3ACnUHXu8DbMx7XrJgAD9bspsclZKDl6rrGn9xU0m6h+RooKHWrATUHsER8P8n8t6rpcvPFBfdetKzRSC5XJE/R8jtuxknLfzRLXTYAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-red-wall-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-red-wall-640.webp"
+     },
+     {
+      "w": 703,
+      "src": "images/gallery/the-red-wall-703.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAA0APt1apkyopSOiMAgBEBuJaACdMoADZCVZe2fVWAAA/r9GqmeVf2HPNGEX5qnh4g562A7MbdxwZe0au1Qqs14cSD3OM3Pn77YltgJC/8DUAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-red-wall-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-red-wall-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-red-wall-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1386,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoUAA0APt1epkyopSOiMAgBEBuJbACdMoGvqgNpCtkEKq2hE7zX2AD+1PcZXWpFuhY2WF+y90Eoj1bNVHB+Us6HK7rT3LDpgwzNPxipRv68j5p4RlQtNzrU/tYcF5ODz72h/qovNflgCsn6HN8lPgXE0j/j5hSGezEAlAhh/TXVQ7TGIAAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-red-wall-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-red-wall-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-red-wall-view-2-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1200,
+     "h": 960,
+     "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAwBACdASoUABAAPt1apkyopSOiMAgBEBuJQBOmUFH/AQL5AoHjEwgUJcAA/rdVCB21v0Th3p7FzftaAxQg4bJTE/RvHKj4sgV82XnMrYU0by4Xyj4GNCkzGrQLJVdTxVVHQzyaeGWkzwI6Qdo/i9pnaPNSSVTm0cC7q7rzwTF4cIegAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-red-wall-view-3-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-red-wall-view-3-900.webp"
+      },
+      {
+       "w": 1200,
+       "src": "images/plates/the-red-wall-view-3-1200.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "freedom-and-love",
+   "title": "Freedom and Love",
+   "page": "freedom-and-love.html",
+   "medium": "Oil",
+   "year": 2013,
+   "size": "100 \u00d7 100 \u00d7 4 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 1485,
+    "h": 1486,
+    "lqip": "data:image/webp;base64,UklGRvgAAABXRUJQVlA4IOwAAACQBQCdASoUABQAPt1mq1EopSOiqAgBEBuJbADMHd0jeHNEnkXn9x2IYM4276fqA3qQ9/HCaAD2vbDH79LcHPI0oSWxg7sKpQ1U7EBlrMXrt/ojrPy9Yyf3xxieeJP8w598LiudHeUn+WvbshTGhKM28gIKGiqZ7c32ek4hymkOOdyrkCQAp/fdKAFUs/NGK9s3UxLQtJvLnYbfHajLXJetWzPvaaOJl8mA27YbqNLJB+3POBU+WbzJfpIC7Cu67sSFh/S9+No8Vu/Y7OsBnyL0d6fSJgBxxaZQfhss2BUHLtiA5Dvgqf93pfwAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/freedom-and-love-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/freedom-and-love-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/freedom-and-love-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/freedom-and-love-1400.webp"
+     },
+     {
+      "w": 1485,
+      "src": "images/gallery/freedom-and-love-1485.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 617,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRhgBAABXRUJQVlA4IAwBAACQBgCdASoUAB4APt1apUyopSOiMAgBEBuJbACdM1pCyIE5/kYUa4xxb0n7LzFEMcGYdu8Eg55h0qpIretAAP7mhMhbe38uQ808D6VTHV9VHdda8uI9guiLZ3tLTAY6U6SSJfvBMV9eMd7ZI3Z3mieYQBwpHonWsrmlFdMj2EyK2+WOKKEKV+y3lhVqfBGI5zf+ydJWh9o+dZ/uIVvE8gRqQTMCatV6P0+qDiB5t+JY78ut3rfHi++d4ca4KlIyFjdLI9cq4TGcZ6JAq0jvQApuLuy+L9fhKdxZawgw1MDIqyD/Pt6/BCp6cX0vif3Q00nf3gjfM5nMYWM6e2AYdF+rQgIW0cHqr+mKQAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/freedom-and-love-view-1-500.webp"
+      },
+      {
+       "w": 617,
+       "src": "images/plates/freedom-and-love-view-1-617.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "fly-like-a-bird",
+   "title": "Fly Like a Bird",
+   "page": "fly-like-a-bird.html",
+   "medium": "Oil",
+   "year": 2012,
+   "size": "100 \u00d7 100 \u00d7 4 cm",
+   "price": "",
+   "sold": true,
+   "status": "sold",
+   "tag": "Collected",
+   "canvas": {
+    "w": 1485,
+    "h": 1485,
+    "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAABwBQCdASoUABQAPt1orVCopaQiqAgBEBuJaACdMoR5mLRBMcnB1Qsc9LNqEm1lp/5BB8mAAMlhR5c+oxQ9Bw1zcnxl25JkOwRKYvvYDif6iUkt7kByn+OavHSoCHQahgjvFV3GxIXtg6YFy+/oawK9rSbPCCWAVwQJKGMcDlocn99TplWOsdebLdoRwG4oJVLqOihCALfUcvTGKMAAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/fly-like-a-bird-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/fly-like-a-bird-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/fly-like-a-bird-900.webp"
+     },
+     {
+      "w": 1400,
+      "src": "images/gallery/fly-like-a-bird-1400.webp"
+     },
+     {
+      "w": 1485,
+      "src": "images/gallery/fly-like-a-bird-1485.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoUAA0APt1apkyopSOiMAgBEBuJbACdIKnCmXpPwFhDff/OyADONl7d9x0Xgfwom5QOxrVkUAWoWlkfHjVTx79mp9p62GPmBFeeNrLLa3QDq/M0oI5bZwtJ4zm3j8N1fsxPoAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/fly-like-a-bird-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/fly-like-a-bird-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/fly-like-a-bird-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 617,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRhABAABXRUJQVlA4IAQBAAAQBQCdASoUAB4APt1cpkyopSOiMAgBEBuJbACxHt8lzArlxHWTwKaOTRDlFtJ5uJ1wAP58i/DOnKqH8lvhqhqgorUa87S13p9cR9/H9Q3Y4/m2uNF6hPOXo3ZiBiz5F5KJiBgWQO2THE31yMvlcUhzbcpA6G8fQPLrRTnVR3k7kpDYGp5DPRkUxlC+vOCwUBkypNvWbUsKMhQDMjNNKrN51jsenqvtGxuMZCK5U8/n38fH/m6Xb3jB17sYnG90rsU3gZvq6D6xnbf/X3h/W6211wMy6i0kOyv4KZy9fCQxQSk29/PXa4QkrZfK/ZR2MMM6CeQU5af0grh3/WKSJSkKkUDAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/fly-like-a-bird-view-2-500.webp"
+      },
+      {
+       "w": 617,
+       "src": "images/plates/fly-like-a-bird-view-2-617.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "the-circle",
+   "title": "The Circle",
+   "page": "the-circle.html",
+   "medium": "Oil",
+   "year": 2012,
+   "size": "100 \u00d7 100 \u00d7 4 cm",
+   "price": "\u20ac2100",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2100",
+   "canvas": {
+    "w": 699,
+    "h": 698,
+    "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAABQBQCdASoUABQAPt1mp1AopaMiqAqpEBuJaACdMzLyTCBYSCiTd/9P7lpprlC7FBQdB0AA/usnXJl9x7hb0rFKoAUgG0me9SmaIG7yck6SBMIXeiNl/qs60DApZQYt246oNdoIHmNv9Tf2Y/PHPTtQcafqi9DC6BgOoKh4DKBqH/h7Ib1yw2th7KLMhfXLJZnlgfDM5ss55VtRuQh+EJqquaKWwCRmIUoMi9aAwQpr9gkEmQKoCleipX1ph/FQCMti0SSAAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/the-circle-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/the-circle-640.webp"
+     },
+     {
+      "w": 699,
+      "src": "images/gallery/the-circle-699.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAADQAwCdASoUAA0APt1cpkyopSOiMAgBEBuJagCdACDLD3AmMnxmiYAA/tBhqO9TqCRuqLG6NEyOxRL2MSklmOZg/OToSfJ7ANg8gLaW/8609x25SCpMUu6r4tfoA3fADrDVEwW+WgKU2d8FR23uJFwxGyO9IGR7SZ97hAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-circle-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-circle-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-circle-view-1-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 7000,
+     "h": 8000,
+     "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABwBQCdASoUABcAPt1kqU+opaOiKAqpEBuJZQC90BBRX7zdrPKXjmw1PfXr4hy6J5MiCNkAAP40ULg6MixR7X4iMXSOE4kEGc6f/3OWveq+KuSk2VH0rOd7zIomXzDZDlGv1kZ/J234NNnMgpFuEuAunqXKKJqCNgKA+UJY4R7WUn+6vik06PkdhA6SHjq2bRrSpR0wRfBKno2M0AkDMLPyakktPVuW4YPRJpwIdcog7T5DqcTOxYkAAAA=",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-circle-view-2-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-circle-view-2-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-circle-view-2-1300.webp"
+      }
+     ]
+    },
+    {
+     "w": 1387,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAABQBACdASoUAA0APt1cpkyopSOiMAgBEBuJYgCdMoADKhNGmGU1Jpau4AEAAPz2RWOG4tLTc24gmJumr8wEaUghoLrdtwtPjee3SOkV7bC2TxBD1AhuoXtIEUTbCeBLbiLzP6U6xBAtEErwi0emhf3BEYw0xzVUewAAAA==",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/the-circle-view-3-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/the-circle-view-3-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/the-circle-view-3-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "mystic-flames",
+   "title": "Mystic Flames",
+   "page": "mystic-flames.html",
+   "medium": "Oil",
+   "year": 2010,
+   "size": "100 \u00d7 100 \u00d7 2 cm",
+   "price": "\u20ac2200",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac2200",
+   "canvas": {
+    "w": 1387,
+    "h": 1387,
+    "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAADwBACdASoUABQAPt1mq1EopSOiqAgBEBuJbACdAA/lpVGlov04WRzKt6adNdgK2AAA/Y84BQe1RgomE6qFQi/tC+8dWuC1yP9lHHmbwg0zZC0b2FggA/wmrjoEubuSfSYCfOfH5fRDW9doZDdHdGJhmvr+ufyq94LXG3gJFBn3yl1a7u+J1OllSK+Gl95wEnMmtOv3c0SS4AVq2jZEwjjdj+s4AquyqJI+M7gVaOgvEQBSUpTyLhLIntzKjItAAAA=",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/mystic-flames-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/mystic-flames-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/mystic-flames-900.webp"
+     },
+     {
+      "w": 1387,
+      "src": "images/gallery/mystic-flames-1387.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 1386,
+     "h": 925,
+     "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoUAA0APt1apkyopSOiMAgBEBuJZACdEf/gPI8H9C6WnhE1LwAA/urJ6hnN/+50LLQntJFbbQACdD5uQGYjWrCvPKK27qMWmweNlVixX8vojkG012SWB7U76SKohmMp9/Tn33keuLqQ430/jvsaG4IZhKkmMTJzIR+DgAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/mystic-flames-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/mystic-flames-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/mystic-flames-view-1-1300.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "winter",
+   "title": "Winter",
+   "page": "winter.html",
+   "medium": "Oil",
+   "year": 2009,
+   "size": "54 \u00d7 65 \u00d7 2 cm",
+   "price": "\u20ac1500",
+   "sold": false,
+   "status": "available",
+   "tag": "\u20ac1500",
+   "canvas": {
+    "w": 1078,
+    "h": 924,
+    "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoUABEAPt1mq1CopSOiqAgBEBuJYwDCgYvgZcA1AZkUbBnpAvEuUUnfzgAA/gdWWEThqjbyFNiCrjbIDqf1l9sbPtY4VZXPmUbGnI0bVH9WmJBuvgsf05Z+Tnx7yyQqrHWB/cxekznc3UQeOW1xPPKWCBKBYNayHX2NuFseJyB7bkTG+pUjv8gtcebxwCc4NtiAAA==",
+    "srcset": [
+     {
+      "w": 400,
+      "src": "images/gallery/winter-400.webp"
+     },
+     {
+      "w": 640,
+      "src": "images/gallery/winter-640.webp"
+     },
+     {
+      "w": 900,
+      "src": "images/gallery/winter-900.webp"
+     },
+     {
+      "w": 1078,
+      "src": "images/gallery/winter-1078.webp"
+     }
+    ]
+   },
+   "views": [
+    {
+     "w": 2085,
+     "h": 1387,
+     "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAQBACdASoUAA0APt1apkyopSOiMAgBEBuJaACdMoMxrIAAeBaEgEMPAADNjBIK/Tumv/cHp2tvSsLml4KWffxT95OSzo2MY21BkGk2gg0AMQPQXdrTWd/A8lEcqaYN54duF6TldmQh8wRTSzRG+itHXZogP6jfF35H3UbGOO0KbxmLVh1z1SrgmITcf7CDAmQ0l6gf5sCuAAAA",
+     "srcset": [
+      {
+       "w": 500,
+       "src": "images/plates/winter-view-1-500.webp"
+      },
+      {
+       "w": 900,
+       "src": "images/plates/winter-view-1-900.webp"
+      },
+      {
+       "w": 1300,
+       "src": "images/plates/winter-view-1-1300.webp"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "exhibition": [
+  {
+   "w": 3000,
+   "h": 4000,
+   "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBQCdASoUABsAPt1cp0yopSOiMAgBEBuJYwAASTKcDkUZxK0MHkg8E0UQwPKJpaCAAMoyjAt5vJpuGrw5rYra6ifxFFLMAUfJ0ZGZLEL32GBffeYfIcJD2AfUYVzhAaxEDZsA09My0tMx0YP9p2hQpfjVJiTKF05pO6ONI+LidfravFu8dF/7oGmya/R+GauQ8xsRfQ0J9MCJgRl0AAAA",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-01-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-01-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-01-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2342,
+   "h": 3962,
+   "lqip": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAABQBgCdASoUACIAPt1apEyopSOiKq35EBuJbADH8BRAIC1wr4Q28kHX+FFlsPAWrtbUd7yFzEYuCukoEAD+56iTl+GJM9yw1OPrgQwrBKlyNaf2u23Iu7EwTfg+oUVIDJ6bfTeBB6VObW6kx75Ktv5iAMfYA+wY4gNHV7Cyd0XYO+DPoahxcMcqF30H4vB2/1+Z3yRcilRF0b9vsJjEaLQR3FuvzkRozPd8ZUOlHp8YQa/PAtgkghRLnOEq1isZPpkuDFIacrwJBwCmeMF35n0b+ffvJSZ5duYAAA==",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-02-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-02-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-02-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 1200,
+   "h": 1600,
+   "lqip": "data:image/webp;base64,UklGRvAAAABXRUJQVlA4IOQAAADwBACdASoUABsAPt1gqE4opaOiMBgIARAbiWwACwAihAJL9DkGOTridL6XTVQDXaAA31PLPPtZzxwO5/TxirnNDMvIyw5yhQoNvbn81YtOYLBYgTDIhJ/axboK5Mn/g2gpi9NzXoUGkX7oAGAQnPR5/Xh7gMN2hSinmqGROfV3btdGoUuj+TUXaRXolU5b8X1Gif/CqnTQeJtXwFBzSJARVUBhacgBxBZrxTMpe5tTIwv4InkyzkQtB3QPj1WhdLt2CuNM6lZGo37VNErsCOyq/LOJ2TLBmmEzcE9Zdy7WkicAAAA=",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-03-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-03-800.webp"
+    },
+    {
+     "w": 1200,
+     "src": "images/exhibition/noho-03-1200.webp"
+    }
+   ]
+  },
+  {
+   "w": 1010,
+   "h": 1599,
+   "lqip": "data:image/webp;base64,UklGRgQBAABXRUJQVlA4IPgAAAAwBgCdASoUACAAPt1cpUyopSOiMAgBEBuJbACdLwJ6BxVTg1Dn0AADeBPsfKbwKV/Rb6A5b9injntQAM3sRQuQD1Q+7S7zC0ybM0sfA+7m69LkATPx29J7xtxKwaZpYFCc1HpEd0GnhibJLarGxfzqdMMkoHSsF8Bixd8ENSGX7R5yDsjquBYdPf5GkOj9FJccYKoKi+ln2VJmDPT/g1domcyfsdp+6Vg/Pybisl5KmuV2FjcKvWw4i60tp+9AtfJ/IjughATd30d7XfrzbyrzaPizEqq3nfdbrXrRIuB5s4fZWOuCdoRHOw4QiI4vCYLqrXzgxXAAAA==",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-04-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-04-800.webp"
+    },
+    {
+     "w": 1010,
+     "src": "images/exhibition/noho-04-1010.webp"
+    }
+   ]
+  },
+  {
+   "w": 1080,
+   "h": 1308,
+   "lqip": "data:image/webp;base64,UklGRv4AAABXRUJQVlA4IPIAAACwBQCdASoUABgAPt1mp0+opaMiKAqpEBuJYgCdMw6ltgtxCsCfScRBzIXYCa/+BQUwpBpfhPAA+N1EIynB0hiomciQLl0lw4b5SU+OSd7cXa/MC9YTEpBejzUAqlLgK5Jr7pNBzhhc2HtjtvhDLHIvHbN4u457pzw/TYt53qv42cLVhf7cmWGaRlgkpyCaSSTgMkyAZccCuxRYmVQLgB2GabxSU/++b+76KAAzBf1lj8av/uDxdEqghK8uZjqUo4qnejNfpPTslXfBjcrVk3nDhNO2SMijfh01gkIbdmh+azqTvRKqi4Ua41rJiuzXfP8AAA==",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-05-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-05-800.webp"
+    },
+    {
+     "w": 1080,
+     "src": "images/exhibition/noho-05-1080.webp"
+    }
+   ]
+  },
+  {
+   "w": 1080,
+   "h": 1204,
+   "lqip": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAADwBACdASoUABYAPt1mq1EopSOiqAgBEBuJQBdgMY2OGq/slLWXRgQUXFbyW2/NtjgA/luwCjZBKsHa/U2t72ZcuvHmFZnjZWrJs/Hnq0UdIzapDp77M4AbU6EZ8K1cmRmwmh5WxjLYvhGdU4Silc7vIvyvRYhf4QjBrtWztiYv762OkxtXmq9VL+bQxX2dulKjFWslBPWxrmgnBJm83TaAkde6+FzYlTDyXFSc7N9QaGen8IfzPcTS8IMNrR0HPAMEnsdu348e8lTa4jANUuYmFAA=",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-06-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-06-800.webp"
+    },
+    {
+     "w": 1080,
+     "src": "images/exhibition/noho-06-1080.webp"
+    }
+   ]
+  },
+  {
+   "w": 1080,
+   "h": 1122,
+   "lqip": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAADwBACdASoUABUAPt1mq1CopSOiqAgBEBuJZgDG9Yv+TD0kcvvZv2/NYjHHQnLROAAA/eHOLMb1VljttS6ROkGdU5Unsi65ohmaru7ArQyhUEW8sVtz1/V2V81RjhBHkR+Fr2dh8yCirxQQ29ud4Dd90mveyxPUS+r0Hl00vL8Ati0TPa/WhxXdOwY1Vr7Iut5r8Hqh3NrzXCtGqK/Kzed+esSx+MRARBeUv48GYxNWHSt1XpgEF8NSQvYcVXvdS4AezJNAkK4AAA==",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-07-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-07-800.webp"
+    },
+    {
+     "w": 1080,
+     "src": "images/exhibition/noho-07-1080.webp"
+    }
+   ]
+  },
+  {
+   "w": 2800,
+   "h": 1866,
+   "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAQBACdASoUAA0APt1apkyopSOiMAgBEBuJbACdABo/S1+YIxGEp5AGAAD+mvk4ShpVYN0vHWqQjx/z2ydS/kJBy/ZUWYu9le54t85KGY5aLV/3FljItL+JTy8UAhWoiLQgeG+zN8zj9AXO+XNV9zdfuo6gN8vWcjt7Vax5cicmBVPaB+3AAr2DNpJ3W3EDDYAAAA==",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-08-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-08-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-08-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2800,
+   "h": 1867,
+   "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAABwBACdASoUAA0APt1apkyopSOiMAgBEBuJZACdMoB3ABI6So5tv2dF3eq4AAD+5cq8N8R2Ny06WRJ7S7aHwYvNLndpWx7qvBWuiFIofLeIRWBIp4hNVVigI/PNbyirkJtP2d8tId3dhZRh32TsVr0nl+jVaZj0d8R8Uez7tLfmFocuBFH2HD0c1ClLonAk+PMRlpRz2F+rYo2kJd7x5TVkDuPzQan6YAAAAA==",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-09-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-09-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-09-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2800,
+   "h": 1849,
+   "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAQBACdASoUAA0APt1apkyopSOiMAgBEBuJQBOgMXcUfNepNAjVxlcZQAD+2HalayDoj5Pbz1j1Nzii87TgXteYwFl4KYjyPBKRPRFZ18dN5RHsq+DCIgIYOtBd+0hUNKUNSxEuyX3Z1PDHqvANZesP291MRuv+35JQsS72hShzfdDWw2QGSHAfE9ovNmVkX/a5fq+ZAAA=",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-10-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-10-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-10-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 1867,
+   "h": 2800,
+   "lqip": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAADwBACdASoUAB4APt1cpUyopSOiMAgBEBuJQAB8q0EuCufEZqyo2KJQaf4TojGOdQAA/sX8MIgyGWFz3AzZ5bWaphAlpt5+5S9jC4TsUtxIKYLNYFs6h8h6ih6xSeCCfxf+A2V8Ga82G8+gJo2ovtPN653JpTv5JFVl+nhc/SBlU2bAt+W/shtJIvJZEuMR67iz6mtRGlwLGb7rl2OaMovsuMaD6BiuzYDgTLDq5YXosG/qhGfZjqmH4BPTUvlHPDMAKrcNa9PYRgAA",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-11-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-11-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-11-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2527,
+   "h": 1685,
+   "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoUAA0APt1apkyopSOiMAgBEBuJQBOgMYJXczvWBMa/NwT3Z/AA/puySAGbkrK6/xVJQnP0PUj+zKM5HmYDrQ722LMznzoscGwJp5e/a/9kBiaPT1NLDGZjYMAswU8ccVoJqc0ySPtXFa2f6gqfZU+qjfV+yUCengHZcstet5xKZ5fHK1mYQwKmWkOstZkOQXKggAAA",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-12-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-12-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-12-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2800,
+   "h": 1867,
+   "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBACdASoUAA0APt1apkyopSOiMAgBEBuJYgCdAYv+yjZ4rrd6yaoPVcAA/bWyUyaknn91pyAYmFQa+rFCc0MJ48gpzxFx/2aS9SJyfuNPby8MyS4o8t1mzVUXm8oYwpiJ/rDwIa7maxuaO5fmSxxIIqGXWkCbkWBwu6FZq5uID/LYSmk5H0nsm+e1HJBATujYWHl5oAA=",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-13-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-13-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-13-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2432,
+   "h": 1622,
+   "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADwAwCdASoUAA0APt1apkyopSOiMAgBEBuJYgCdAYvq24Pg2RiJL3jYAP7XcaPhe7o5Uv5kOoCicmTdakoPiDoCLFAPQuJmUrS7a9Btn6LRI+TZdZZeWveEeF3kocu/x6KYKntT5P0ykS3ZQ3k9APJXx96K9r2SHoOC7BsRDOJ+P7Ch9lfZM/xraNUWMh007yK57nrQ1rDsOW1OOa/CBAAA",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-14-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-14-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-14-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2800,
+   "h": 1867,
+   "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoUAA0APt1cpkyopSOiMAgBEBuJYwCdAYu43vnWDI/xf6V+gAD+7Vq32dn7DzYTFZR41SUMOc211G2EATF3lUTBojPmnMrtAjUm5wumeKNlgKyFV5VrAwpTBcMZfN0LtLpRZ93qB4YTDEJWzQ4mZZMbDqQAAA==",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-15-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-15-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-15-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 1867,
+   "h": 2800,
+   "lqip": "data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAABQBgCdASoUAB4APt1apU0opKMiMBgMARAbiUAWdB0OObfVFslG4pTTISYSmO6yC3Sc/sptJd+al/waAAD+8GD0/iplE7sMAgPRGCZ8OO0vBGI7MNrZuz1jRYhOL8gPgIUvlGbJnROsCFJyUhGYcp/0aXWv2Hy02U4vi4qHMfnKE/GTJuAxL6LVAJjta4GDRWU6Ikv/HfT2Lf4QGei+84pswGR4mCf0LeBRJxGbnc6HRni7e6VbxjhVUbPeHNw68ZRl6GDyZZjxNzYF/UiRsErfuCDoV6GQ43cdPPiOgloMRTAzRftplQtjAAA=",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-16-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-16-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-16-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2800,
+   "h": 1867,
+   "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABwBACdASoUAA0APt1apkyopSOiMAgBEBuJbACdMoADAX704KjS5bKh4X80AAD+6JOfKJfxi6szPf7cByClqnfK+ubn7rNFTLimRFW92wJ24aJyC5jwny7EM8AJP4SjgOURUeKVzJ9FL+pUwzWir+m8eqnaKqCWWor75blnBkMSJQ9S5wO+DYVpnMiTeg5hxjfvBz2z5xH5/zrnrn/D96+2I/Hhj/gSwAA=",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-17-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-17-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-17-1300.webp"
+    }
+   ]
+  },
+  {
+   "w": 2800,
+   "h": 2062,
+   "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAwBACdASoUAA8APt1apkyopSOiMAgBEBuJZgCdMoAlwQm2r52reHxjhQAA/sdl7XoxDQooGNGoN5CafjBJXpobUiahlwG9EvbhsMJVa9kpIZLnQBbxHcRjQUWwJkN4sJPBtlH/OkhkAXMLgdH61PgOY/Qn9hVwhmA5eKTX862FE6kpXaEM+M6Ur4dVIPcZvkhcNfjM8lIK54S1uI7Adt6hHBfL6svg4AA=",
+   "srcset": [
+    {
+     "w": 450,
+     "src": "images/exhibition/noho-18-450.webp"
+    },
+    {
+     "w": 800,
+     "src": "images/exhibition/noho-18-800.webp"
+    },
+    {
+     "w": 1300,
+     "src": "images/exhibition/noho-18-1300.webp"
+    }
+   ]
+  }
+ ],
+ "page": {
+  "portrait": {
+   "w": 2022,
+   "h": 3000,
+   "lqip": "data:image/webp;base64,UklGRiwBAABXRUJQVlA4ICABAABQBgCdASoUAB4APt1apkyopSOiMAgBEBuJbAC073xf2Nu0nNxSrfJsyIoT/1MbovreFGNnDaxlfJhSAAD+9N8hxOM2kMxCdultMk80KmXsirS8mIQWLK32FUmLto9olVMNgRTksbRVjLpHJc3s0h8cNE4XKg9scNwE4FGme+K0mbWX6Pi6KYwqaEnD0W7JAg0wg1qcvjoR/i95PCpB+PvG0Uve+X+3bHVjMJo/Evc9P//oW1Vud9ZKJxfN7Foww9ZHK3zL8DDr54Zm2XanQ6O3SoY54r1lWeehN5ltqva+94/pJvBDtkiOotereZyMrMlaxbsvoL3wIcp1nrpsFWPkuLIze1FUqxdMf9u09kVmgWwenJhMSQ01VkzH0poAAAA=",
+   "srcset": [
+    {
+     "w": 800,
+     "src": "images/page/portrait-800.webp"
+    },
+    {
+     "w": 1400,
+     "src": "images/page/portrait-1400.webp"
+    },
+    {
+     "w": 1800,
+     "src": "images/page/portrait-1800.webp"
+    }
+   ]
+  },
+  "home-hero": {
+   "w": 1660,
+   "h": 934,
+   "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAAsAPt1cpkyopSOiMAgBEBuJbACw7Bho/OEbzGS9XxAAAP7r+eQt0faopIXBEZtWLKRl5pKqpLxTDgw8ADn7ux3asD3ODZ3RDNBus64aT/SrKp/iMs8P4AA=",
+   "srcset": [
+    {
+     "w": 800,
+     "src": "images/page/home-hero-800.webp"
+    },
+    {
+     "w": 1400,
+     "src": "images/page/home-hero-1400.webp"
+    },
+    {
+     "w": 1660,
+     "src": "images/page/home-hero-1660.webp"
+    }
+   ]
+  },
+  "home-studio": {
+   "w": 2634,
+   "h": 2019,
+   "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQAwCdASoUAA8APt1apkyopSOiMAgBEBuJZwAFEB7YBMBBZyB6dAAA/rQPo9NN4+EeTETsOzoCCjP8ldf7MZZ2D8+KWlLrA37rTEi5kQZjyIYOWwUgk2sccT3tQFDFsANM9qjaLv79oVuwSjSkh4D/V0LDu0lBWnHy/wiauDnyOq3+zL1d/VOSb+cpXLWh3AhQ9JQAAAA=",
+   "srcset": [
+    {
+     "w": 800,
+     "src": "images/page/home-studio-800.webp"
+    },
+    {
+     "w": 1400,
+     "src": "images/page/home-studio-1400.webp"
+    },
+    {
+     "w": 1800,
+     "src": "images/page/home-studio-1800.webp"
+    }
+   ]
+  },
+  "event-exhibition": {
+   "w": 1080,
+   "h": 1080,
+   "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAAAwBQCdASoUABQAPt1mqlEopSOjqAgBEBuJbDIAAmjEl/hBgG8TANKWlHa2JoHBC9IZEAD+fFfCGI2LzEKwJztTMYfvVNvq1HzaSAIYre4gziIFwr+1CbAnTOpmOj/6c+aX/tgDceCp0REns/Ikiy8AR92+QEsWnoty5NCzBwiKy24n4mZsG5mT/pTaxT+fH8zhFuflRS37lud4P3/SkkPwnQscmtnVZWFjHFsfY/VvxZl+x7Rqv2ZcTgwC26AgAAA=",
+   "srcset": [
+    {
+     "w": 800,
+     "src": "images/page/event-exhibition-800.webp"
+    },
+    {
+     "w": 1080,
+     "src": "images/page/event-exhibition-1080.webp"
+    }
+   ]
+  },
+  "event-temptation": {
+   "w": 1080,
+   "h": 1080,
+   "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACQBACdASoUABQAPt1kp1AopSMiqAqpEBuJagCxGoAAL7gwtextctX41SM3hAAA/vDKxACMC5cZQVMb7coA+fV4UwDqYP663J7IaRJEKzPx3MT3Uqp46eWIw/TVvxPF3e2/6NlgzDd443+YeQxdBU2zAlQA3SA/qBm5IkgO6KQtyUMTSjdyGVkqpK4AAA==",
+   "srcset": [
+    {
+     "w": 800,
+     "src": "images/page/event-temptation-800.webp"
+    },
+    {
+     "w": 1080,
+     "src": "images/page/event-temptation-1080.webp"
+    }
+   ]
+  }
+ }
+}
