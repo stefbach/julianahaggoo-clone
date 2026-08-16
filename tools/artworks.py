@@ -101,13 +101,6 @@ HOME_SLIDES = [
         "caption": "In the studio",
         "focus": "center 28%",
     },
-    {
-        "key": "slide-interior",
-        "src": "images/image-01-1920x1080.webp",
-        "alt": "Juliana Haggoo seated in front of a large abstract canvas",
-        "caption": "Passion Palette",
-        "focus": "center 45%",
-    },
 ]
 
 EXHIBITION_PHOTOS = [f"images/Art-Exhibition-Gallery-{i}.jpg" for i in range(1, 19)]

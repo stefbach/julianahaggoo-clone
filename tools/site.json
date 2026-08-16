@@ -3033,25 +3033,6 @@
      "src": "images/page/slide-studio-1080.webp"
     }
    ]
-  },
-  "slide-interior": {
-   "w": 1660,
-   "h": 934,
-   "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAwCdASoUAAsAPt1cpkyopSOiMAgBEBuJbACw7Bho/OEbzGS9XxAAAP7r+eQt0faopIXBEZtWLKRl5pKqpLxTDgw8ADn7ux3asD3ODZ3RDNBus64aT/SrKp/iMs8P4AA=",
-   "srcset": [
-    {
-     "w": 800,
-     "src": "images/page/slide-interior-800.webp"
-    },
-    {
-     "w": 1400,
-     "src": "images/page/slide-interior-1400.webp"
-    },
-    {
-     "w": 1660,
-     "src": "images/page/slide-interior-1660.webp"
-    }
-   ]
   }
  }
 }
