@@ -13,7 +13,7 @@ import { readFile, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { chromium } from 'playwright';
+import { chromium, devices } from 'playwright';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const TYPES = {
@@ -418,6 +418,44 @@ describe('the home carousel', () => {
     await page.waitForFunction(
       (want) => document.querySelector('[data-slide-status]').textContent === want, SLIDE.fr(2));
     assert.deepEqual(page.failures, []);
+  });
+
+  it('keeps turning on a phone, even after a finger lands on it', async () => {
+    // Hover-pause used to apply to touch too: a tap fired pointerenter, the
+    // matching pointerleave never came, and the carousel stopped for good.
+    const context = await browser.newContext({ ...devices['iPhone 13'] });
+    const page = await context.newPage();
+    await page.goto(`${origin}/index.html`, { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]')?.textContent);
+    await page.evaluate(() => document.querySelector('[data-slider]').scrollIntoView({ block: 'center' }));
+
+    await page.touchscreen.tap(200, 400);
+
+    for (const round of [2, 1]) {
+      await page.waitForFunction(
+        (want) => document.querySelector('[data-slide-status]').textContent === want,
+        SLIDE.en(round), { timeout: 9000 });
+    }
+    await context.close();
+  });
+
+  it('rests while off screen and picks up when scrolled to', async () => {
+    const context = await browser.newContext({ ...devices['iPhone 13'] });
+    const page = await context.newPage();
+    await page.goto(`${origin}/index.html`, { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]')?.textContent);
+
+    await page.evaluate(() => scrollTo({ top: document.body.scrollHeight, behavior: 'instant' }));
+    await page.waitForTimeout(500);
+    const parked = await at(page);
+    await page.waitForTimeout(5000);
+    assert.equal(await at(page), parked, 'no need to turn where nobody is looking');
+
+    await page.evaluate(() => document.querySelector('[data-slider]').scrollIntoView({ block: 'center' }));
+    await page.waitForFunction(
+      (was) => document.querySelector('[data-slide-status]').textContent !== was,
+      parked, { timeout: 9000 });
+    await context.close();
   });
 
   it('fits a phone without spilling sideways', async () => {
