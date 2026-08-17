@@ -165,6 +165,7 @@
     let timer = 0;
     // Anyone who asked for stillness gets a carousel that only moves on demand.
     let playing = !calm.matches;
+    let onScreen = true;
 
     function show(next) {
       index = (next + slides.length) % slides.length;
@@ -184,7 +185,7 @@
        moves once and then sits there. */
     function schedule() {
       clearTimeout(timer);
-      if (playing) timer = setTimeout(() => go(index + 1), DWELL);
+      if (playing && onScreen) timer = setTimeout(() => go(index + 1), DWELL);
     }
 
     function setPlaying(on) {
@@ -206,21 +207,32 @@
       if (event.key === "ArrowRight") { event.preventDefault(); go(index + 1); }
     });
 
-    // Hovering, reading, or looking at another tab all suspend the rotation.
-    for (const [event, on] of [["pointerenter", false], ["pointerleave", true],
-                               ["focusin", false], ["focusout", true]]) {
-      slider.addEventListener(event, () => {
-        clearTimeout(timer);
-        if (on) schedule();
-      });
+    /* Pause under the cursor — but only where a cursor exists. A finger fires
+       pointerenter too, and the matching pointerleave may never come, which
+       would wedge the carousel for the whole visit. */
+    if (matchMedia("(hover: hover)").matches) {
+      slider.addEventListener("pointerenter", () => clearTimeout(timer));
+      slider.addEventListener("pointerleave", schedule);
     }
+    slider.addEventListener("focusin", () => clearTimeout(timer));
+    slider.addEventListener("focusout", () => schedule());
+
     document.addEventListener("visibilitychange", () => {
       clearTimeout(timer);
       if (!document.hidden) schedule();
     });
 
+    /* Only turn while it is on screen: it saves a phone's battery, and it
+       re-arms the timer every time the carousel is scrolled back into view,
+       so nothing can leave it stopped for good. */
+    new IntersectionObserver(([entry]) => {
+      onScreen = entry.isIntersecting;
+      schedule();
+    }).observe(slider);
+
     let swipeFrom = null;
     track.addEventListener("pointerdown", (e) => { swipeFrom = e.clientX; });
+    track.addEventListener("pointercancel", () => { swipeFrom = null; });
     track.addEventListener("pointerup", (e) => {
       if (swipeFrom === null) return;
       const delta = e.clientX - swipeFrom;
