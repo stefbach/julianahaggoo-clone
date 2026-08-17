@@ -158,7 +158,8 @@
     const status = $("[data-slide-status]", slider);
     const toggle = $("[data-slide-toggle]", slider);
     const toggleLabel = $("[data-slide-toggle-label]", slider);
-    const DWELL = 6000;
+    const say = slider.dataset;
+    const DWELL = Number(say.dwell) || 3500;
 
     let index = 0;
     let timer = 0;
@@ -170,12 +171,8 @@
       track.style.transform = `translate3d(${-index * 100}%, 0, 0)`;
       slides.forEach((slide, i) => slide.toggleAttribute("aria-hidden", i !== index));
       dots.forEach((dot, i) => dot.toggleAttribute("aria-current", i === index));
-      status.textContent = `Slide ${index + 1} of ${slides.length}`;
-    }
-
-    function schedule() {
-      clearTimeout(timer);
-      if (playing) timer = setTimeout(() => show(index + 1), DWELL);
+      status.textContent = say.statusTemplate
+        .replace("{n}", index + 1).replace("{total}", slides.length);
     }
 
     function go(next) {
@@ -183,10 +180,17 @@
       schedule();
     }
 
+    /* go(), not show(): advancing has to re-arm the timer or the carousel
+       moves once and then sits there. */
+    function schedule() {
+      clearTimeout(timer);
+      if (playing) timer = setTimeout(() => go(index + 1), DWELL);
+    }
+
     function setPlaying(on) {
       playing = on;
-      toggleLabel.textContent = on ? "Pause" : "Play";
-      toggle.setAttribute("aria-label", on ? "Pause the carousel" : "Play the carousel");
+      toggleLabel.textContent = on ? say.labelPause : say.labelPlay;
+      toggle.setAttribute("aria-label", on ? say.ariaPause : say.ariaPlay);
       schedule();
     }
 
@@ -244,6 +248,7 @@
   if (!gallery) return;
 
   const cards = $$(".card", gallery);
+  const controls = $(".controls");
   const countEl = $("[data-count]");
   const emptyEl = $("[data-empty]");
   const state = { medium: "all", status: "all", year: "all", sort: "recent" };
@@ -310,7 +315,10 @@
     layout();
     if (!animate) requestAnimationFrame(() => gallery.classList.remove("is-resizing"));
 
-    countEl.textContent = `${next.length} ${next.length === 1 ? "work" : "works"}`;
+    const template = next.length === 1
+      ? controls.dataset.countOne
+      : controls.dataset.countTemplate;
+    countEl.textContent = template.replace("{n}", next.length);
     emptyEl.hidden = next.length > 0;
     if (!calm.matches) for (const card of next) watch($(".reveal", card) ?? card);
   }

@@ -282,20 +282,20 @@ describe('portfolio gallery', () => {
 
 describe('the home carousel', () => {
   /** Open the home page and wait for the carousel to take over. */
-  async function home(options = {}) {
+  async function home(options = {}, lang = 'en') {
     const context = await browser.newContext({ viewport: { width: 1440, height: 950 }, ...options });
     const page = await context.newPage();
     const failures = [];
     page.on('pageerror', (e) => failures.push(e.message));
-    await page.goto(`${origin}/index.html`, { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(() =>
-      document.querySelector('[data-slide-status]')?.textContent.startsWith('Slide'));
+    await page.goto(`${origin}/${lang === 'fr' ? 'fr/' : ''}index.html`, { waitUntil: 'domcontentloaded' });
+    await page.waitForFunction(() => document.querySelector('[data-slide-status]')?.textContent);
     page.failures = failures;
     return page;
   }
 
   const at = (page) => page.textContent('[data-slide-status]');
   const COUNT = 2;
+  const SLIDE = { en: (n) => `Slide ${n} of ${COUNT}`, fr: (n) => `Diapositive ${n} sur ${COUNT}` };
 
   it('opens on the artist beside the black and white canvas', async () => {
     const page = await home();
@@ -322,17 +322,17 @@ describe('the home carousel', () => {
     const lands = (n) => page.waitForFunction(
       (want) => document.querySelector('[data-slide-status]').textContent === want, n);
 
-    assert.equal(await at(page), `Slide 1 of ${COUNT}`);
+    assert.equal(await at(page), SLIDE.en(1));
 
     for (let i = 2; i <= COUNT; i++) {
       await page.click('[data-slide-next]');
-      await lands(`Slide ${i} of ${COUNT}`);
+      await lands(SLIDE.en(i));
     }
     await page.click('[data-slide-next]');
-    await lands(`Slide 1 of ${COUNT}`);
+    await lands(SLIDE.en(1));
 
     await page.click('[data-slide-prev]');
-    await lands(`Slide ${COUNT} of ${COUNT}`);
+    await lands(SLIDE.en(COUNT));
   });
 
   it('jumps from the dots and marks the current one', async () => {
@@ -343,7 +343,7 @@ describe('the home carousel', () => {
     await page.click(`[data-slide-to="${last}"]`);
     await page.waitForFunction(
       (want) => document.querySelector('[data-slide-status]').textContent === want,
-      `Slide ${COUNT} of ${COUNT}`);
+      SLIDE.en(COUNT));
 
     const current = await page.$$eval('[data-slide-to]', (d) =>
       d.findIndex((x) => x.hasAttribute('aria-current')));
@@ -353,13 +353,41 @@ describe('the home carousel', () => {
     assert.deepEqual(hidden, hidden.map((_, i) => i !== last), 'only the visible slide is exposed');
   });
 
-  it('rotates on its own, and stops when told to', async () => {
+  it('keeps rotating, not just once', async () => {
+    // It used to advance a single time and stop: the timer called show()
+    // instead of go(), so it never re-armed itself.
     const page = await home();
-    await page.mouse.move(5, 5); // away from the carousel, so it is not paused by hover
+    await page.mouse.move(5, 5); // away from the carousel, so hover does not pause it
+
+    for (const round of [2, 1, 2]) {
+      await page.waitForFunction(
+        (want) => document.querySelector('[data-slide-status]').textContent === want,
+        SLIDE.en(round), { timeout: 9000 });
+    }
+  });
+
+  it('advances briskly — a slide should not outstay its welcome', async () => {
+    const page = await home();
+    await page.mouse.move(5, 5);
+    const first = await at(page);
+
+    const started = Date.now();
+    await page.waitForFunction(
+      (was) => document.querySelector('[data-slide-status]').textContent !== was,
+      first, { timeout: 9000 });
+    const dwell = Date.now() - started;
+
+    assert.ok(dwell < 5000, `a slide held for ${dwell}ms — too slow`);
+    assert.ok(dwell > 1200, `a slide held for only ${dwell}ms — too fast to read`);
+  });
+
+  it('stops when told to', async () => {
+    const page = await home();
+    await page.mouse.move(5, 5);
 
     await page.waitForFunction(
       (want) => document.querySelector('[data-slide-status]').textContent === want,
-      `Slide 2 of ${COUNT}`, { timeout: 12000 });
+      SLIDE.en(2), { timeout: 9000 });
 
     await page.click('[data-slide-toggle]');
     assert.equal(await page.textContent('[data-slide-toggle-label]'), 'Play');
@@ -378,7 +406,18 @@ describe('the home carousel', () => {
     await page.click('[data-slide-next]');
     await page.waitForFunction(
       (want) => document.querySelector('[data-slide-status]').textContent === want,
-      `Slide 2 of ${COUNT}`);
+      SLIDE.en(2));
+  });
+
+  it('speaks French on the French home page', async () => {
+    const page = await home({}, 'fr');
+    assert.equal(await at(page), SLIDE.fr(1));
+    assert.equal(await page.textContent('[data-slide-toggle-label]'), 'Pause');
+
+    await page.click('[data-slide-next]');
+    await page.waitForFunction(
+      (want) => document.querySelector('[data-slide-status]').textContent === want, SLIDE.fr(2));
+    assert.deepEqual(page.failures, []);
   });
 
   it('fits a phone without spilling sideways', async () => {
@@ -388,9 +427,109 @@ describe('the home carousel', () => {
   });
 });
 
+describe('both languages', () => {
+  const NAMES = ['index.html', 'about-me.html', 'portfolio.html', 'events.html',
+    'art-exhibition.html', 'the-temptation.html', 'summer-2025.html'];
+
+  async function visit(path, options = {}) {
+    const context = await browser.newContext({ viewport: { width: 1280, height: 900 }, ...options });
+    const page = await context.newPage();
+    await page.goto(`${origin}/${path}`, { waitUntil: 'domcontentloaded' });
+    return page;
+  }
+
+  it('serves a French twin of every page', async () => {
+    for (const name of NAMES) {
+      const page = await visit(`fr/${name}`);
+      assert.equal(await page.evaluate(() => document.documentElement.lang), 'fr', name);
+      assert.ok(await page.$('.masthead'), name);
+      await page.context().close();
+    }
+  });
+
+  it('declares each page as the alternate of the other', async () => {
+    for (const [path, self] of [['portfolio.html', ''], ['fr/portfolio.html', 'fr/']]) {
+      const page = await visit(path);
+      const links = await page.$$eval('link[rel="alternate"]', (l) =>
+        l.map((x) => `${x.hreflang} ${new URL(x.href).pathname}`));
+      assert.ok(links.includes('en /portfolio.html'), `${path}: ${links}`);
+      assert.ok(links.includes('fr /fr/portfolio.html'), `${path}: ${links}`);
+      assert.ok(links.includes('x-default /portfolio.html'), `${path}: ${links}`);
+
+      const canonical = await page.$eval('link[rel="canonical"]', (l) => new URL(l.href).pathname);
+      assert.equal(canonical, `/${self}portfolio.html`);
+      await page.context().close();
+    }
+  });
+
+  it('switches language on the same page, and back', async () => {
+    const page = await visit('portfolio.html');
+    assert.equal(await page.textContent('.masthead__lang'), 'Français');
+
+    await page.click('.masthead__lang');
+    await page.waitForURL(/\/fr\/portfolio\.html$/);
+    assert.equal(await page.textContent('.masthead__lang'), 'English');
+
+    await page.click('.masthead__lang');
+    await page.waitForURL(/\/portfolio\.html$/);
+    assert.equal(await page.evaluate(() => document.documentElement.lang), 'en');
+    await page.context().close();
+  });
+
+  it('translates the furniture but never a painting', async () => {
+    const page = await visit('fr/portfolio.html');
+    await page.waitForFunction(() => document.querySelector('#gallery')?.classList.contains('is-live'));
+
+    assert.equal(await page.textContent('h1'), 'Portfolio');
+    assert.equal(await page.textContent('[data-count]'), '36 œuvres');
+    assert.deepEqual(await page.$$eval('.chip[data-filter]', (c) => c.map((x) => x.textContent.trim())),
+      ['Toutes', 'Huile', 'Acrylique', 'Disponibles seulement']);
+
+    // The works keep their names — a gallery label does not rename a canvas.
+    const titles = await page.$$eval('.card__title', (h) => h.map((x) => x.textContent.trim()));
+    assert.ok(titles.includes('Serenity of Motion'), titles.slice(0, 5).join(', '));
+    assert.ok(titles.includes('The Red'));
+
+    await page.click('.chip[data-value="Acrylic"]');
+    await page.waitForFunction(() => document.querySelector('[data-count]').textContent === '2 œuvres');
+    await page.context().close();
+  });
+
+  it('says Vendu on a French artwork page', async () => {
+    const page = await visit('fr/the-red.html');
+    const rows = await page.$$eval('.work__facts div', (r) =>
+      r.map((x) => x.textContent.replace(/\s+/g, ' ').trim()));
+    assert.ok(rows.includes('Statut Vendu'), rows.join(' | '));
+    assert.ok(rows.some((r) => r.startsWith('Technique Huile')), rows.join(' | '));
+    assert.equal(await page.textContent('h1'), 'The Red', 'the title of the work is not translated');
+    await page.context().close();
+  });
+
+  it('keeps the French pages pointing at real assets', async () => {
+    for (const name of ['fr/index.html', 'fr/portfolio.html', 'fr/summer-2025.html']) {
+      const missing = [];
+      const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+      const page = await context.newPage();
+      page.on('response', (r) => { if (r.status() === 404) missing.push(`${name}: ${r.url()}`); });
+      await page.goto(`${origin}/${name}`, { waitUntil: 'networkidle' });
+      assert.deepEqual(missing, []);
+      await context.close();
+    }
+  });
+
+  it('navigates within its own language', async () => {
+    const page = await visit('fr/index.html');
+    await page.click('.masthead__nav a[href="portfolio.html"]');
+    await page.waitForURL(/\/fr\/portfolio\.html$/);
+    assert.equal(await page.evaluate(() => document.documentElement.lang), 'fr');
+    await page.context().close();
+  });
+});
+
 describe('the site around it', () => {
-  const PAGES = ['index.html', 'about-me.html', 'portfolio.html', 'events.html',
+  const NAMES = ['index.html', 'about-me.html', 'portfolio.html', 'events.html',
     'art-exhibition.html', 'the-temptation.html', 'summer-2025.html', 'winter.html'];
+  const PAGES = [...NAMES, ...NAMES.map((n) => `fr/${n}`)];
 
   it('serves every page with the shared shell', async () => {
     for (const name of PAGES) {
