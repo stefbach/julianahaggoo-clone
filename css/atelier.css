@@ -346,6 +346,31 @@ blockquote {
   transform: none;
 }
 
+.masthead__lang {
+  margin-left: .5rem;
+  padding: .3rem .7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: .6875rem !important;
+  letter-spacing: .14em !important;
+  transition: color .3s var(--ease), border-color .3s var(--ease);
+}
+
+.masthead__lang:hover {
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+
+.masthead__lang::after {
+  content: none !important;
+}
+
+.drawer__contact .masthead__lang {
+  margin: .75rem 0 0;
+  align-self: start;
+  text-transform: uppercase;
+}
+
 .menu-toggle {
   display: none;
   margin-left: auto;
@@ -981,7 +1006,7 @@ html:not(.no-js) .plate img:not(.is-loaded) {
   padding: 0;
   list-style: none;
   will-change: transform;
-  transition: transform .85s var(--ease-out);
+  transition: transform .55s var(--ease-out);
 }
 
 .slider.is-jumping .slider__track {

@@ -9,9 +9,27 @@ Static mirror of [julianahaggoo.art](https://julianahaggoo.art/), the official p
 - This mirror is published with the artist's permission.
 - Contact: jh@julianahaggoo.art
 
+## Languages
+
+The site is bilingual. English sits at the repository root — the URLs that were
+already live never moved — and French sits under `fr/` with the same file names,
+so switching language is a path swap and nothing else:
+
+| | English | French |
+| --- | --- | --- |
+| Home | `/index.html` | `/fr/index.html` |
+| A painting | `/summer-2025.html` | `/fr/summer-2025.html` |
+
+Both trees declare each other with `hreflang`, and `x-default` points at English.
+Every page carries a switch in its header.
+
+The **titles of the paintings are never translated** — a gallery label does not
+rename a canvas. Everything around them is: the medium, the status, the filters,
+the artist's own account. All the words live in `tools/i18n.py`.
+
 ## Contents
 
-- 42 pages: home, about, portfolio, events, the Barcelona exhibition, the Temptation film, and one page per painting
+- 84 pages: 42 per language — home, about, portfolio, events, the Barcelona exhibition, the Temptation film, and one page per painting
 - `css/atelier.css` — the whole design system, one file for every page
 - `js/atelier.js` — the whole behaviour: menu, reveal, lightbox, portfolio grid
 - `images/` — the artist's masters, untouched
@@ -27,9 +45,11 @@ Edit one of these instead, then rebuild.
 | To change | Edit |
 | --- | --- |
 | a painting, its price, its plates | `tools/artworks.py` |
+| any word on the site, in either language | `tools/i18n.py` |
 | the look of anything | `css/atelier.css` |
 | behaviour | `js/atelier.js` |
-| a page's structure or copy | `tools/build-site.py` |
+| a page's structure | `tools/build-site.py` |
+| how fast the carousel turns | `SLIDE_DWELL_MS` in `tools/build-site.py` |
 
 ```sh
 python3 tools/build-images.py   # re-encode the WebP renditions → tools/site.json

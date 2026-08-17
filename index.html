@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="format-detection" content="telephone=no">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="Juliana Haggoo — Artist Painter">
   <meta property="og:description" content="Abstract oil and acrylic paintings by Juliana Haggoo. Colour built up in layers, painted at night to music.">
   <meta property="og:url" content="https://www.julianahaggoo.art/index.html">
@@ -16,6 +17,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://www.julianahaggoo.art/index.html">
+  <link rel="alternate" hreflang="en" href="https://www.julianahaggoo.art/index.html">
+  <link rel="alternate" hreflang="fr" href="https://www.julianahaggoo.art/fr/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.julianahaggoo.art/index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Italiana&display=swap">
@@ -36,12 +40,15 @@
       <a href="portfolio.html">Portfolio</a>
       <a href="events.html">Events</a>
       <a href="mailto:jh@julianahaggoo.art">Contact</a>
+      <a class="masthead__lang" href="fr/index.html" lang="fr" hreflang="fr" aria-label="Voir ce site en français">Français</a>
     </nav>
-    <button class="menu-toggle" type="button" data-menu-open aria-label="Open menu"><span></span></button>
+    <button class="menu-toggle" type="button" data-menu-open
+      aria-label="Open menu"><span></span></button>
   </header>
 
   <dialog class="drawer" id="drawer" aria-label="Menu">
-    <button class="drawer__close" type="button" data-menu-close aria-label="Close menu">&times;</button>
+    <button class="drawer__close" type="button" data-menu-close
+      aria-label="Close menu">&times;</button>
     <nav aria-label="Primary, mobile">
       <a href="index.html" aria-current="page">Home</a>
       <a href="about-me.html">About</a>
@@ -53,6 +60,7 @@
       <a href="tel:+33665087560">+33 6 65 08 75 60</a>
       <a href="mailto:jh@julianahaggoo.art">jh@julianahaggoo.art</a>
       <a href="https://www.instagram.com/julianahaggooart/" rel="noopener">Instagram</a>
+      <a class="masthead__lang" href="fr/index.html" lang="fr" hreflang="fr" aria-label="Voir ce site en français">Français</a>
     </div>
   </dialog>
 
@@ -63,15 +71,17 @@
         <h1 class="opening__name">Juliana Haggoo</h1>
       </div>
       <div class="opening__meta">
-        <p class="lede" style="max-width:32rem">“It is at night, with music, that my creativity fully
-          blossoms.”</p>
+        <p class="lede" style="max-width:32rem">“It is at night, with music, that my creativity fully blossoms.”</p>
         <a class="link-quiet" href="portfolio.html">See the 36 works</a>
       </div>
     </section>
 
 
     <section class="slider" data-slider aria-roledescription="carousel"
-      aria-label="Juliana Haggoo and her work">
+      aria-label="Juliana Haggoo and her work" data-dwell="3500"
+      data-status-template="Slide {n} of {total}"
+      data-label-pause="Pause" data-label-play="Play"
+      data-aria-pause="Pause the carousel" data-aria-play="Play the carousel">
       <div class="slider__viewport">
         <ul class="slider__track" data-track>
           <li class="slider__slide" data-slide>
@@ -101,7 +111,8 @@
             <button type="button" data-slide-to="0" aria-label="Go to slide 1" aria-current="true"></button>
             <button type="button" data-slide-to="1" aria-label="Go to slide 2"></button>
         </div>
-        <button class="slider__play" type="button" data-slide-toggle aria-label="Pause the carousel">
+        <button class="slider__play" type="button" data-slide-toggle
+          aria-label="Pause the carousel">
           <span data-slide-toggle-label>Pause</span>
         </button>
       </div>
@@ -200,11 +211,8 @@
           <p class="eyebrow">The artist</p>
           <h2 class="section-title" style="margin-top:.75rem">From the stage to the canvas</h2>
           <div class="prose" style="margin-top:1.5rem;max-width:var(--measure)">
-            <p>My artistic journey began in 2005 when I joined a jazz band in Paris. Painting then became
-              my outlet in 2007 — I immersed myself in abstract art, letting my emotions flow onto the
-              canvas.</p>
-            <p>Today, my journey fuses music, dance and painting. It exemplifies resilience and the
-              liberating power of art.</p>
+            <p>My artistic journey began in 2005 when I joined a jazz band in Paris. Painting then became my outlet in 2007 — I immersed myself in abstract art, letting my emotions flow onto the canvas.</p>
+            <p>Today, my journey fuses music, dance and painting. It exemplifies resilience and the liberating power of art.</p>
           </div>
           <p style="margin-top:2rem"><a class="button" href="about-me.html">About the artist</a></p>
         </div>
@@ -240,14 +248,17 @@
     <div class="viewer__stage">
       <div class="viewer__canvas">
         <p class="viewer__index" data-viewer-index></p>
-        <button class="viewer__close" type="button" data-viewer-close aria-label="Close viewer">&times;</button>
-        <button class="viewer__nav viewer__nav--prev" type="button" data-viewer-prev aria-label="Previous image">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4"
-            aria-hidden="true"><path d="M15 4 7 12l8 8" /></svg>
+        <button class="viewer__close" type="button" data-viewer-close
+          aria-label="Close viewer">&times;</button>
+        <button class="viewer__nav viewer__nav--prev" type="button" data-viewer-prev
+          aria-label="Previous image">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.4" aria-hidden="true"><path d="M15 4 7 12l8 8" /></svg>
         </button>
-        <button class="viewer__nav viewer__nav--next" type="button" data-viewer-next aria-label="Next image">
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4"
-            aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>
+        <button class="viewer__nav viewer__nav--next" type="button" data-viewer-next
+          aria-label="Next image">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="1.4" aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>
         </button>
       </div>
       <div class="viewer__bar">
